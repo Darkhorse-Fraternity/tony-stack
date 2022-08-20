@@ -1,5 +1,5 @@
 {
-  "name": "tony-stack",
+  "name": "monad-stack",
   "version": "0.0.0",
   "private": true,
   "workspaces": [
@@ -10,10 +10,14 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "test": "turbo run test",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "ci:publish": "pnpm publish --access public --filter=\\!docs --recursive && pnpm changeset tag",
+    "ci:version": "pnpm changeset version"
   },
   "devDependencies": {
-    "eslint-config-custom": "workspace:*",
+    "@changesets/cli": "^2.24.3",
+    "eslint-config-monad": "workspace:*",
     "prettier": "latest",
     "turbo": "latest"
   },

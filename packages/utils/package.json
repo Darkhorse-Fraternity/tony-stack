@@ -1,0 +1,23 @@
+{
+  "name": "@monad-stack/utils",
+  "version": "0.0.0",
+  "main": "./src/index.tsx",
+  "types": "./src/index.tsx",
+  "sideEffects": false,
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src/*.ts*"
+  },
+  "devDependencies": {
+    "@monad-stack/tsconfig": "workspace:*",
+    "@types/react": "^17.0.13",
+    "@types/react-dom": "^17.0.8",
+    "eslint": "^7.32.0",
+    "eslint-config-monad": "workspace:*",
+    "react": "^17.0.2",
+    "typescript": "^4.5.3"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
