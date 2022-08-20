@@ -1,4 +1,4 @@
-import { Button } from "ui";
+import { Button } from "@monad-stack/ui";
 
 export default function Web() {
   return (
