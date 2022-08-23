@@ -8,6 +8,7 @@ import * as React from "react";
  * See: https://reactjs.org/docs/hooks-reference.html#uselayouteffect
  */
 const useIsomorphicLayoutEffect =
+  // eslint-disable-next-line @typescript-eslint/no-empty-function
   typeof window !== "undefined" ? React.useLayoutEffect : () => {};
 
 export { useIsomorphicLayoutEffect };
