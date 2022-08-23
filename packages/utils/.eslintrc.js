@@ -1,4 +1,4 @@
 module.exports = {
   root: true,
-  extends: ["monad"],
+  extends: ["monad/turbo"],
 };

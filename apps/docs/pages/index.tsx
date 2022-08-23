@@ -3,6 +3,7 @@ import { useIsomorphicLayoutEffect } from "@monad-stack/utils";
 
 export default function Docs() {
   useIsomorphicLayoutEffect(() => {
+    // eslint-disable-next-line no-console
     console.log("Acme docs page");
   }, []);
 
