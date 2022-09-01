@@ -1,0 +1,22 @@
+{
+  "name": "@monad-stack/ui",
+  "version": "0.0.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint *.ts*"
+  },
+  "devDependencies": {
+    "react-hot-toast": "^2.2.0",
+    "eslint": "^7.32.0",
+    "eslint-config-monad": "workspace:*",
+    "@monad-stack/tsconfig": "workspace:*",
+    "typescript": "^4.5.2"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16"
+  }
+}
