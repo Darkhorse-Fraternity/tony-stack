@@ -1,4 +1,4 @@
-const moduls = ["@monad-stack/ui","@monad-stack/utils"]
+const moduls = ["@monad-stack/daisy-hot-toast", "@monad-stack/utils"];
 const withTM = require("next-transpile-modules")(moduls);
 
 module.exports = withTM({

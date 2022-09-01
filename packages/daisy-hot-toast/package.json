@@ -1,5 +1,5 @@
 {
-  "name": "@monad-stack/ui",
+  "name": "@monad-stack/daisy-hot-toast",
   "version": "0.0.0",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -9,12 +9,15 @@
     "lint": "eslint *.ts*"
   },
   "devDependencies": {
-    "@types/react": "^17.0.37",
-    "@types/react-dom": "^17.0.11",
+    "react-hot-toast": "^2.2.0",
     "eslint": "^7.32.0",
     "eslint-config-monad": "workspace:*",
-    "react": "^17.0.2",
     "@monad-stack/tsconfig": "workspace:*",
     "typescript": "^4.5.2"
+  },
+  "peerDependencies": {
+    "react": ">=16",
+    "react-dom": ">=16",
+    "csstype": "^3.0.10"
   }
 }

@@ -1,16 +1,23 @@
-import { Button } from "@monad-stack/ui";
+import { DaisyToaster, toast } from "@monad-stack/daisy-hot-toast";
 import { useIsomorphicLayoutEffect } from "@monad-stack/utils";
 
 export default function Docs() {
   useIsomorphicLayoutEffect(() => {
-    // eslint-disable-next-line no-console
-    console.log("Acme docs page");
+    console.log("welcom");
   }, []);
 
   return (
     <div>
       <h1>Docs</h1>
-      <Button />
+      <button
+        className="btn"
+        onClick={() => {
+          toast.error("try");
+        }}
+      >
+        show toast
+      </button>
+      <DaisyToaster />
     </div>
   );
 }

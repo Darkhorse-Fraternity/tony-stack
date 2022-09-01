@@ -12,8 +12,9 @@
     "next": "12.2.3",
     "react": "17.0.2",
     "react-dom": "17.0.2",
-    "@monad-stack/ui": "workspace:*",
+    "@monad-stack/daisy-hot-toast": "workspace:*",
     "@monad-stack/utils": "workspace:*"
+    
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -21,8 +22,14 @@
     "eslint": "7.32.0",
     "next-transpile-modules": "9.0.0",
     "@monad-stack/tsconfig": "workspace:*",
+    "@monad-stack/tailwindcss-plugins": "workspace:*",
     "@types/node": "^17.0.12",
     "@types/react": "17.0.48",
-    "typescript": "^4.5.3"
+    "typescript": "^4.5.3",
+    "tailwindcss": "^3.0.23",
+    "daisyui": "^2.24.0",
+    "postcss": "^8.4.6",
+    "autoprefixer": "^10.4.2",
+    "tailwindcss-animate": "^1.0.5"
   }
 }
