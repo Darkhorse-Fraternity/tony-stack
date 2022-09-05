@@ -28,6 +28,7 @@ jobs:
         id: changesets
         uses: changesets/action@v1
         with:
+          release: pnpm ci:release
           version: pnpm ci:version
           commit: "ci: update version and publish"
           publish: pnpm ci:publish

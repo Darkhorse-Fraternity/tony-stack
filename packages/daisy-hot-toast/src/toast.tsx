@@ -13,7 +13,7 @@ export const DaisyToaster: FC<ToasterProps> = (props) => {
           } max-w-sm   pl-6  pr-2 py-2 shadow-2xl  rounded-t-box rounded-b-box bg-base-200 flex items-center gap-2`}
         >
           <ToastIcon toast={t} />
-          <div className="ml-2">{t.message}</div>
+          <div className="ml-2">{t.message as string}</div>
           <button
             className="btn btn-ghost btn-sm btn-circle"
             onClick={() => toast.dismiss(t.id)}
