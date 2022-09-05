@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ["next", "./base.js"],
+  extends: ["next", "./ts.js", "./base.js"],
 };
