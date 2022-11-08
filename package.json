@@ -24,7 +24,11 @@
     "eslint-config-monad": "workspace:*",
     "prettier": "latest",
     "turbo": "latest",
-    "@changesets/changelog-github": "^0.4.7"
+    "@changesets/changelog-github": "^0.4.7",
+    "husky": "^8.0.2",
+    "lint-staged": "^13.0.3",
+    "@commitlint/cli": "^17.2.0",
+    "@commitlint/config-conventional": "^17.2.0"
   },
   "engines": {
     "node": ">=14.0.0"

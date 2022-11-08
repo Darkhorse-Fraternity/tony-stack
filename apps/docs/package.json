@@ -10,7 +10,7 @@
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
   },
   "dependencies": {
-    "next": "12.3.2",
+    "next": "13.0.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "@monad-stack/daisy-hot-toast": "workspace:*",
