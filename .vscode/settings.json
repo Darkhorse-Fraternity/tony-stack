@@ -12,6 +12,6 @@
         "**/.idea": true,
         "**/.project": true,
         "**/.settings": true,
-        "**/node_modules": false
+        "**/node_modules": true
     }
 }

@@ -1,4 +1,4 @@
-import Document, { Html, Head, Main, NextScript } from "next/document";
+import Document, { Head, Html, Main, NextScript } from "next/document";
 
 class MyDocument extends Document {
   // Only uncomment if you need to customize this behaviour
@@ -6,7 +6,6 @@ class MyDocument extends Document {
   //   const initialProps = await Document.getInitialProps(ctx)
   //   return {...initialProps}
   // }
-
   render() {
     return (
       <Html>

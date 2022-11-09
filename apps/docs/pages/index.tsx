@@ -3,7 +3,7 @@ import { useIsomorphicLayoutEffect } from "@monad-stack/utils";
 
 export default function Docs() {
   useIsomorphicLayoutEffect(() => {
-    console.log("welcom");
+    console.info("welcom");
   }, []);
 
   return (
