@@ -1,10 +1,10 @@
-import { DaisyToaster, toast } from "@monad-stack/daisy-hot-toast";
-import { useIsomorphicLayoutEffect } from "@monad-stack/utils";
+import { DaisyToaster, toast } from "@monad-stack/daisy-hot-toast"
+import { useIsomorphicLayoutEffect } from "@monad-stack/use-hook-utils"
 
 export default function Docs() {
   useIsomorphicLayoutEffect(() => {
-    console.info("welcom");
-  }, []);
+    console.info("welcom")
+  }, [])
 
   return (
     <div>
@@ -12,12 +12,12 @@ export default function Docs() {
       <button
         className="btn"
         onClick={() => {
-          toast.error("try");
+          toast.error("try")
         }}
       >
         show toast
       </button>
       <DaisyToaster />
     </div>
-  );
+  )
 }

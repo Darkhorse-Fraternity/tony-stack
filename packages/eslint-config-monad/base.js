@@ -2,7 +2,15 @@ module.exports = {
   plugins: ["prettier"],
   extends: ["prettier"],
   rules: {
-    "prettier/prettier": "warn",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      },
+      {
+        "usePrettierrc": true
+      }
+    ],
     "prefer-template": 1,
     "no-param-reassign": "error",
     // "react/self-closing-comp": "warn",
@@ -122,7 +130,6 @@ module.exports = {
     'object-shorthand': 'error',
     'prefer-const': 'error',
     'prefer-object-spread': 'error',
-    'quote-props': ['error', 'consistent-as-needed'],
     'radix': 'error',
     'use-isnan': 'error',
     'valid-typeof': 'off',
