@@ -1,2 +1,2 @@
-export * from "./toast";
-export * from "react-hot-toast";
+export * from "./toast"
+export * from "react-hot-toast"

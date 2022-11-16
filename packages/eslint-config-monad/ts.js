@@ -22,25 +22,22 @@ module.exports = {
         camelcase: "off",
         "@typescript-eslint/naming-convention": [
           "error",
-          {
-            selector: "default",
-            format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
-            filter: {
-              regex: "^_.*$",
-              match: false,
-            },
-          },
+          // {
+          //   selector: "default",
+          //   format: ["camelCase", "PascalCase", "snake_case", "UPPER_CASE"],
+          //   filter: {
+          //     regex: "^_.*$",
+          //     match: false,
+          //   },
+          // },
           {
             selector: "variable",
-            format: ["camelCase", "UPPER_CASE"],
+            format: ["camelCase", "UPPER_CASE", "PascalCase"],
           },
           {
             selector: "interface",
             format: ["PascalCase"],
-            custom: {
-              regex: "^I[A-Z]",
-              match: true,
-            },
+            prefix: ['I']
           },
           {
             selector: "typeLike",
@@ -52,17 +49,20 @@ module.exports = {
             format: ["camelCase"],
             leadingUnderscore: "forbid",
           },
-          {
-            selector: "variable",
-            types: ["boolean"],
-            format: ["PascalCase"],
-            prefix: ["is", "should", "has", "can", "did", "will"],
-          },
+          // {
+          //   selector: "variable",
+          //   types: ["boolean"],
+          //   format: ["PascalCase"],
+          //   prefix: ["is", "should", "has", "can", "did", "will"],
+          // },
         ],
         "@typescript-eslint/no-unused-vars": [
           "error",
           { argsIgnorePattern: "^_", vars: "all", args: "after-used" },
         ],
+        "@typescript-eslint/ban-ts-comment": ["warn", {
+          "ts-ignore": "allow-with-description"
+        }],
         "@typescript-eslint/adjacent-overload-signatures": "error",
         "@typescript-eslint/array-type": ["error", { default: "array-simple" }],
         "@typescript-eslint/ban-types": [
