@@ -67,17 +67,13 @@ importers:
     specifiers:
       '@monad-stack/tsconfig': workspace:*
       '@types/react': latest
-      csstype: ^3.0.10
       eslint-config-monad: workspace:*
       react: ^18.2.0
-      react-dom: '>=16'
       react-hot-toast: ^2.4.0
       tsup: ^6.4.0
       typescript: ^4.5.2
     dependencies:
-      csstype: registry.npmmirror.com/csstype/3.1.0
-      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
-      react-hot-toast: 2.4.0_vt6aeitzauirmcdhimiad2yjxy
+      react-hot-toast: 2.4.0_react@18.2.0
     devDependencies:
       '@monad-stack/tsconfig': link:../tsconfig
       '@types/react': 18.0.25
@@ -89,7 +85,6 @@ importers:
   packages/eslint-config-monad:
     specifiers:
       '@typescript-eslint/eslint-plugin': ^5.36.1
-      '@typescript-eslint/parser': ^5.0.0
       eslint: ^8.27.0
       eslint-config-next: ^13.0.0
       eslint-config-prettier: ^8.3.0
@@ -99,21 +94,18 @@ importers:
       eslint-plugin-sonarjs: ^0.16.0
       eslint-plugin-unicorn: ^44.0.2
       eslint-plugin-unused-imports: ^2.0.0
-      prettier: '>=2.0.0'
       typescript: ^4.7.4
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.36.1_yollq67yvm657catt2pfkgdi4m
-      '@typescript-eslint/parser': 5.33.1_2uhzae5rel2qyw7fhfmxrmdt3q
+      '@typescript-eslint/eslint-plugin': 5.36.1_2uhzae5rel2qyw7fhfmxrmdt3q
       eslint: 8.27.0
       eslint-config-next: 13.0.2_2uhzae5rel2qyw7fhfmxrmdt3q
       eslint-config-prettier: registry.npmmirror.com/eslint-config-prettier/8.5.0_eslint@8.27.0
       eslint-config-turbo: 0.0.4_eslint@8.27.0
-      eslint-plugin-prettier: 4.2.1_v7o5sx5x3wbs57ifz6wc4f76we
+      eslint-plugin-prettier: 4.2.1_agmnmciioxxdziykcck6pdv4pe
       eslint-plugin-simple-import-sort: 8.0.0_eslint@8.27.0
       eslint-plugin-sonarjs: 0.16.0_eslint@8.27.0
       eslint-plugin-unicorn: 44.0.2_eslint@8.27.0
       eslint-plugin-unused-imports: 2.0.0_aoaabiis6um4qknstni4igrsca
-      prettier: registry.npmmirror.com/prettier/2.7.1
     devDependencies:
       typescript: registry.npmmirror.com/typescript/4.7.4
 
@@ -861,7 +853,7 @@ packages:
     resolution: {integrity: sha512-KQf+QAMWKMrtBMsB8/24w53tEsxllMj6TuA80TT/5igJalLI/zm0L3oXRbIAl4Ohfc85gyHX/jhMwsVkmhLU4A==}
     dev: true
 
-  /@typescript-eslint/eslint-plugin/5.36.1_yollq67yvm657catt2pfkgdi4m:
+  /@typescript-eslint/eslint-plugin/5.36.1_2uhzae5rel2qyw7fhfmxrmdt3q:
     resolution: {integrity: sha512-iC40UK8q1tMepSDwiLbTbMXKDxzNy+4TfPWgIL661Ym0sD42vRcQU93IsZIrmi+x292DBr60UI/gSwfdVYexCA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -872,7 +864,6 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 5.33.1_2uhzae5rel2qyw7fhfmxrmdt3q
       '@typescript-eslint/scope-manager': 5.36.1
       '@typescript-eslint/type-utils': 5.36.1_2uhzae5rel2qyw7fhfmxrmdt3q
       '@typescript-eslint/utils': 5.36.1_2uhzae5rel2qyw7fhfmxrmdt3q
@@ -2084,7 +2075,7 @@ packages:
       eslint: 8.27.0
       eslint-import-resolver-node: 0.3.6
       eslint-import-resolver-typescript: 2.7.1_dcpv4nbdr5ks2h5677xdltrk6e
-      eslint-plugin-import: 2.26.0_2im4dtl67ufyg4ca25mp5jgjji
+      eslint-plugin-import: 2.26.0_jptqnxdkibcyehga7vgssupdie
       eslint-plugin-jsx-a11y: 6.6.1_eslint@8.27.0
       eslint-plugin-react: 7.31.10_eslint@8.27.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.27.0
@@ -2121,7 +2112,7 @@ packages:
     dependencies:
       debug: 4.3.4
       eslint: 8.27.0
-      eslint-plugin-import: 2.26.0_2im4dtl67ufyg4ca25mp5jgjji
+      eslint-plugin-import: 2.26.0_jptqnxdkibcyehga7vgssupdie
       glob: 7.2.3
       is-glob: 4.0.3
       resolve: 1.22.1
@@ -2130,7 +2121,7 @@ packages:
       - supports-color
     dev: false
 
-  /eslint-module-utils/2.7.4_ht2cufaw25ep4erb45db5qfmqi:
+  /eslint-module-utils/2.7.4_w2mrz7elicd6kx7uywckis7rse:
     resolution: {integrity: sha512-j4GT+rqzCoRKHwURX7pddtIPGySnX9Si/cgMI5ztrcqOPtk5dDEeZ34CQVPphnqkJytlc97Vuk05Um2mJ3gEQA==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2155,11 +2146,12 @@ packages:
       debug: 3.2.7
       eslint: 8.27.0
       eslint-import-resolver-node: 0.3.6
+      eslint-import-resolver-typescript: 2.7.1_dcpv4nbdr5ks2h5677xdltrk6e
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /eslint-plugin-import/2.26.0_2im4dtl67ufyg4ca25mp5jgjji:
+  /eslint-plugin-import/2.26.0_jptqnxdkibcyehga7vgssupdie:
     resolution: {integrity: sha512-hYfi3FXaM8WPLf4S1cikh/r4IxnO6zrhZbEGz2b660EJRbuxgpDS5gkCuYgGWg2xxh2rBuIr4Pvhve/7c31koA==}
     engines: {node: '>=4'}
     peerDependencies:
@@ -2176,7 +2168,7 @@ packages:
       doctrine: 2.1.0
       eslint: 8.27.0
       eslint-import-resolver-node: 0.3.6
-      eslint-module-utils: 2.7.4_ht2cufaw25ep4erb45db5qfmqi
+      eslint-module-utils: 2.7.4_w2mrz7elicd6kx7uywckis7rse
       has: 1.0.3
       is-core-module: 2.10.0
       is-glob: 4.0.3
@@ -2212,7 +2204,7 @@ packages:
       semver: 6.3.0
     dev: false
 
-  /eslint-plugin-prettier/4.2.1_v7o5sx5x3wbs57ifz6wc4f76we:
+  /eslint-plugin-prettier/4.2.1_agmnmciioxxdziykcck6pdv4pe:
     resolution: {integrity: sha512-f/0rXLXUt0oFYs8ra4w49wYZBG5GKZpAYsJSm6rnYL5uVDjd+zowwMwVZHnAjf4edNrKpCDYfXDgmRE/Ak7QyQ==}
     engines: {node: '>=12.0.0'}
     peerDependencies:
@@ -2225,7 +2217,6 @@ packages:
     dependencies:
       eslint: 8.27.0
       eslint-config-prettier: registry.npmmirror.com/eslint-config-prettier/8.5.0_eslint@8.27.0
-      prettier: registry.npmmirror.com/prettier/2.7.1
       prettier-linter-helpers: 1.0.0
     dev: false
 
@@ -2319,7 +2310,7 @@ packages:
       '@typescript-eslint/eslint-plugin':
         optional: true
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.36.1_yollq67yvm657catt2pfkgdi4m
+      '@typescript-eslint/eslint-plugin': 5.36.1_2uhzae5rel2qyw7fhfmxrmdt3q
       eslint: 8.27.0
       eslint-rule-composer: 0.3.0
     dev: false
@@ -2747,12 +2738,10 @@ packages:
       merge2: 1.4.1
       slash: 3.0.0
 
-  /goober/2.1.11_csstype@3.1.0:
+  /goober/2.1.11:
     resolution: {integrity: sha512-5SS2lmxbhqH0u9ABEWq7WPU69a4i2pYcHeCxqaNq6Cw3mnrF0ghWNM4tEGid4dKy8XNIAUbuThuozDHHKJVh3A==}
     peerDependencies:
       csstype: ^3.0.10
-    dependencies:
-      csstype: registry.npmmirror.com/csstype/3.1.0
     dev: false
 
   /graceful-fs/4.2.10:
@@ -3894,16 +3883,15 @@ packages:
       scheduler: 0.23.0
     dev: false
 
-  /react-hot-toast/2.4.0_vt6aeitzauirmcdhimiad2yjxy:
+  /react-hot-toast/2.4.0_react@18.2.0:
     resolution: {integrity: sha512-qnnVbXropKuwUpriVVosgo8QrB+IaPJCpL8oBI6Ov84uvHZ5QQcTp2qg6ku2wNfgJl6rlQXJIQU5q+5lmPOutA==}
     engines: {node: '>=10'}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
     dependencies:
-      goober: 2.1.11_csstype@3.1.0
+      goober: 2.1.11
       react: 18.2.0
-      react-dom: registry.npmmirror.com/react-dom/18.2.0_react@18.2.0
     transitivePeerDependencies:
       - csstype
     dev: false
@@ -5259,12 +5247,6 @@ packages:
     dependencies:
       safe-buffer: registry.npmmirror.com/safe-buffer/5.1.2
 
-  registry.npmmirror.com/csstype/3.1.0:
-    resolution: {integrity: sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/csstype/-/csstype-3.1.0.tgz}
-    name: csstype
-    version: 3.1.0
-    dev: false
-
   registry.npmmirror.com/debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/debug/-/debug-4.3.4.tgz}
     name: debug
@@ -5321,15 +5303,6 @@ packages:
     engines: {node: '>=6'}
     hasBin: true
 
-  registry.npmmirror.com/loose-envify/1.4.0:
-    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/loose-envify/-/loose-envify-1.4.0.tgz}
-    name: loose-envify
-    version: 1.4.0
-    hasBin: true
-    dependencies:
-      js-tokens: 4.0.0
-    dev: false
-
   registry.npmmirror.com/ms/2.1.2:
     resolution: {integrity: sha512-sGkPx+VjMtmA6MX27oA4FBFELFCZZ4S4XqeGOXCv68tT+jb3vk/RyaKWP0PTKyWtmLSM0b+adUTEvbs1PEaH2w==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/ms/-/ms-2.1.2.tgz}
     name: ms
@@ -5340,39 +5313,10 @@ packages:
     name: node-releases
     version: 2.0.6
 
-  registry.npmmirror.com/prettier/2.7.1:
-    resolution: {integrity: sha512-ujppO+MkdPqoVINuDFDRLClm7D78qbDt0/NR+wp5FqEZOoTNAjPHWj17QRhu7geIHJfcNhRk1XVQmF8Bp3ye+g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prettier/-/prettier-2.7.1.tgz}
-    name: prettier
-    version: 2.7.1
-    engines: {node: '>=10.13.0'}
-    hasBin: true
-    dev: false
-
-  registry.npmmirror.com/react-dom/18.2.0_react@18.2.0:
-    resolution: {integrity: sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-dom/-/react-dom-18.2.0.tgz}
-    id: registry.npmmirror.com/react-dom/18.2.0
-    name: react-dom
-    version: 18.2.0
-    peerDependencies:
-      react: ^18.2.0
-    dependencies:
-      loose-envify: registry.npmmirror.com/loose-envify/1.4.0
-      react: 18.2.0
-      scheduler: registry.npmmirror.com/scheduler/0.23.0
-    dev: false
-
   registry.npmmirror.com/safe-buffer/5.1.2:
     resolution: {integrity: sha512-Gd2UZBJDkXlY7GbJxfsE8/nvKkUEU1G38c1siN6QP6a9PT9MmHB8GnpscSmMJSoF8LOIrt8ud/wPtojys4G6+g==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/safe-buffer/-/safe-buffer-5.1.2.tgz}
     name: safe-buffer
     version: 5.1.2
-
-  registry.npmmirror.com/scheduler/0.23.0:
-    resolution: {integrity: sha512-CtuThmgHNg7zIZWAXi3AsyIzA3n4xx7aNyjwC2VJldO2LMVDhFK+63xGqq6CsJH4rTAt6/M+N4GhZiDYPx9eUw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/scheduler/-/scheduler-0.23.0.tgz}
-    name: scheduler
-    version: 0.23.0
-    dependencies:
-      loose-envify: 1.4.0
-    dev: false
 
   registry.npmmirror.com/semver/6.3.0:
     resolution: {integrity: sha512-b39TBaTSfV6yBrapU89p5fKekE2m/NwnDocOVruQFS1/veMgdzuPcnOM34M6CwxW8jH/lxEa5rBoDeUwu5HHTw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/semver/-/semver-6.3.0.tgz}
