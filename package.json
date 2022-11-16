@@ -14,7 +14,7 @@
     "clean": "turbo run clean && rm -rf node_modules",
     "test": "turbo run test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "ci:publish": "pnpm publish --access public --filter=\\!docs --recursive && pnpm changeset tag",
+    "ci:publish": "pnpm publish --no-git-checks --access public --filter=\\!docs --recursive && pnpm changeset tag",
     "ci:version": "pnpm changeset version",
     "changeset": "changeset",
     "publish": "changeset publish"
