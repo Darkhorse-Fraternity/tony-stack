@@ -31,7 +31,7 @@ importers:
       '@monad-stack/tailwindcss-plugins': workspace:*
       '@monad-stack/tsconfig': workspace:*
       '@monad-stack/use-hook-utils': workspace:*
-      '@types/node': ^17.0.12
+      '@types/node': ^18.11.9
       '@types/react': ^18.0.22
       autoprefixer: ^10.4.13
       daisyui: ^2.38.1
@@ -53,7 +53,7 @@ importers:
       '@babel/core': registry.npmmirror.com/@babel/core/7.18.10
       '@monad-stack/tailwindcss-plugins': link:../../packages/tailwindcss-plugins
       '@monad-stack/tsconfig': link:../../packages/tsconfig
-      '@types/node': registry.npmmirror.com/@types/node/17.0.45
+      '@types/node': 18.11.9
       '@types/react': 18.0.25
       autoprefixer: 10.4.13_postcss@8.4.18
       daisyui: 2.38.1_lycaqaeny3mp632atgvyvqdgwe
@@ -826,6 +826,10 @@ packages:
 
   /@types/node/14.18.33:
     resolution: {integrity: sha512-qelS/Ra6sacc4loe/3MSjXNL1dNQ/GjxNHVzuChwMfmk7HuycRLVQN2qNY3XahK+fZc5E2szqQSKUyAF0E+2bg==}
+    dev: true
+
+  /@types/node/18.11.9:
+    resolution: {integrity: sha512-CRpX21/kGdzjOpFsZSkcrXMGIBWMGNIHXXBVFSH+ggkftxg+XYP20TESbh+zFvFj3EQOl5byk0HTRn1IL6hbqg==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
@@ -5226,12 +5230,6 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': registry.npmmirror.com/@jridgewell/resolve-uri/3.1.0
       '@jridgewell/sourcemap-codec': registry.npmmirror.com/@jridgewell/sourcemap-codec/1.4.14
-
-  registry.npmmirror.com/@types/node/17.0.45:
-    resolution: {integrity: sha512-w+tIMs3rq2afQdsPJlODhoUEKzFP1ayaoyl1CcnwtIlsVe7K7bA1NGm4s3PraqTLlXnbIN84zuBlxBWo1u9BLw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/node/-/node-17.0.45.tgz}
-    name: '@types/node'
-    version: 17.0.45
-    dev: true
 
   registry.npmmirror.com/@typescript-eslint/types/5.36.1:
     resolution: {integrity: sha512-jd93ShpsIk1KgBTx9E+hCSEuLCUFwi9V/urhjOWnOaksGZFbTOxAT47OH2d4NLJnLhkVD+wDbB48BuaycZPLBg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@typescript-eslint/types/-/types-5.36.1.tgz}
