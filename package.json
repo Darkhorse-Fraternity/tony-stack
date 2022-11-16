@@ -17,7 +17,7 @@
     "ci:publish": "pnpm publish --access public --filter=\\!docs --recursive && pnpm changeset tag",
     "ci:version": "pnpm changeset version",
     "changeset": "changeset",
-    "release": "changeset publish"
+    "publish": "changeset publish"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
