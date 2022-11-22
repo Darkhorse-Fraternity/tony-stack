@@ -4,10 +4,15 @@
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
+  "author": "Tony <lintong320@gmail.com>",
   "files": [
     "dist/**"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
+  },
   "scripts": {
     "build": "tsup src/index.tsx --format esm,cjs --dts --external react",
     "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react",
@@ -27,7 +32,6 @@
   },
   "peerDependencies": {
     "react": ">=16",
-    "react-dom": ">=16",
-    "csstype": "^3.0.10"
+    "react-dom": ">=16"
   }
 }

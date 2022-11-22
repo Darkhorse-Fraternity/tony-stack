@@ -1,3 +1,4 @@
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: [
     "next",
@@ -7,4 +8,7 @@ module.exports = {
     "./sonarjs.js",
     "./unicorn.js",
   ],
+  rules: {
+    "@next/next/no-html-link-for-pages": "off",
+  }
 };

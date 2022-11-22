@@ -1,0 +1,40 @@
+{
+  "name": "@monad-stack/daisy-react-table",
+  "version": "0.1.0",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "author": "Tony <lintong320@gmail.com>",
+  "files": [
+    "dist/**"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
+  },
+  "scripts": {
+    "lint": "eslint *.ts*",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+  },
+  "dependencies": {
+    "match-sorter": "^6.3.1",
+    "classnames": "^2.3.1",
+    "react-table": "^7.7.9",
+    "@monad-stack/use-hook-utils": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/react-table": "^7.7.9",
+    "@types/react": "^18.0.17",
+    "@types/react-modal":"^3.13.1",
+    "@types/react-dom": "^18.0.6",
+    "eslint-config-monad": "workspace:*",
+    "react": "^18.2.0",
+    "@monad-stack/tsconfig": "workspace:*",
+    "typescript": "^4.5.2",
+    "@monad-stack/tailwind-config": "workspace:*"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

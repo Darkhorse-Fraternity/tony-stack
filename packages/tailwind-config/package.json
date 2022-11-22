@@ -1,0 +1,21 @@
+{
+    "name": "@monad-stack/tailwind-config",
+    "version": "0.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "author": "Tony <lintong320@gmail.com>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
+    },
+    "devDependencies": {
+        "tailwindcss": "^3.2.2",
+        "tailwindcss-animate": "^1.0.5",
+        "autoprefixer": "^10.4.13",
+        "daisyui": "^2.38.1",
+        "@monad-stack/tailwindcss-plugins": "^0.1.0"
+    },
+    "publishConfig": {
+        "access": "public"
+    }
+}

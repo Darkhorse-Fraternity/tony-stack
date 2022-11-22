@@ -1,0 +1,3 @@
+{
+  "extends": "@monad-stack/tsconfig/base.json",
+}

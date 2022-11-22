@@ -14,13 +14,15 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "@monad-stack/daisy-hot-toast": "workspace:*",
-    "@monad-stack/use-hook-utils": "workspace:*"
+    "@monad-stack/use-hook-utils": "workspace:*",
+    "classnames": "^2.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "eslint-config-monad": "workspace:*",
     "@monad-stack/tsconfig": "workspace:*",
     "@monad-stack/tailwindcss-plugins": "workspace:*",
+    "@monad-stack/tailwind-config": "workspace:*",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.22",
     "typescript": "^4.5.3",
