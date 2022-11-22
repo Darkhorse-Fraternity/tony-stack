@@ -15,6 +15,10 @@
     "react-dom": "18.2.0",
     "@monad-stack/daisy-hot-toast": "workspace:*",
     "@monad-stack/use-hook-utils": "workspace:*",
+    "@monad-stack/axios-hook-client": "workspace:*",
+    "react-hot-toast": "^2.4.0",
+    "@monad-stack/ui": "workspace:*",
+    "@tanstack/react-query": "4.14.5",
     "classnames": "^2.3.2"
   },
   "devDependencies": {
