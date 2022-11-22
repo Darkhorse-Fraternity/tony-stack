@@ -18,7 +18,8 @@
     "ci:version": "pnpm changeset version",
     "changeset": "changeset",
     "publish": "changeset publish",
-    "preinstall": "npx only-allow pnpm"
+    "dockcer:prod": "docker-compose -f docker-compose.yml up -d --build",
+    "preinstall": "npx -y only-allow pnpm"
   },
   "devDependencies": {
     "@changesets/cli": "^2.25.2",
@@ -34,7 +35,7 @@
     "@monad-stack/tsconfig": "workspace:*"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": ">=18.0.0"
   },
   "dependencies": {},
   "packageManager": "pnpm@7.14.2"

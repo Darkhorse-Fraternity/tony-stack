@@ -30,7 +30,7 @@ export const ModalFooter: FC<PropsWithChildren<IModalFooterType>> = ({
   children,
 }) => (
   <div
-    className={`bg-white flex items-center justify-between border-t border-gray-300  rounded-b-xl px-4 py-4 sm:px-6  flex-row-reverse  `}
+    className={`flex flex-row-reverse items-center justify-between rounded-b-xl border-t  border-gray-300 bg-white px-4 py-4  sm:px-6  `}
   >
     {children}
   </div>
@@ -111,7 +111,7 @@ export const Modal: FC<ComstomModalProps & IModalFooterType> = ({
       }
     }}
     className={classnames(
-      "relative my-6 mx-auto w-auto max-w-sm min-w-[400px] outline-none ",
+      "relative my-6 mx-auto w-auto min-w-[400px] max-w-sm outline-none ",
       { "min-w-sm": size === "small" },
       { "min-w-3xl": size === "regular" },
       { "min-w-6xl": size === "large" }
@@ -120,7 +120,7 @@ export const Modal: FC<ComstomModalProps & IModalFooterType> = ({
   >
     <ModalContainer
       className={classnames(
-        ` duration-300 flex flex-col ${modalContainerClass}`,
+        ` flex flex-col duration-300 ${modalContainerClass}`,
         {
           "animate-in fade-in slide-in-from-bottom-20": isOpen,
           "animate-out fade-out slide-out-to-bottom-20": !isOpen,

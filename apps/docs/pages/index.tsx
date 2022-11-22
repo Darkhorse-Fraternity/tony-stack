@@ -1,5 +1,5 @@
-import { DaisyToaster, toast } from "@monad-stack/daisy-hot-toast"
 import { useIsomorphicLayoutEffect } from "@monad-stack/use-hook-utils"
+import toast from "react-hot-toast"
 
 export default function Docs() {
   useIsomorphicLayoutEffect(() => {
@@ -17,7 +17,6 @@ export default function Docs() {
       >
         show toast
       </button>
-      <DaisyToaster />
     </div>
   )
 }

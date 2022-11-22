@@ -15,8 +15,8 @@
     "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
   },
   "scripts": {
-    "build": "tsup ./index.tsx --format esm,cjs --dts --external react",
-    "dev": "tsup ./index.tsx --format esm,cjs --watch --dts --external react",
+    "build": "tsup ./index.ts --format esm,cjs --dts --external react",
+    "dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react",
     "lint": "TIMING=1 eslint lib --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
   },
