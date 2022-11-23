@@ -7,18 +7,19 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf .next",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "next": "13.0.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "@monad-stack/daisy-hot-toast": "workspace:*",
     "@monad-stack/use-hook-utils": "workspace:*",
     "@monad-stack/axios-hook-client": "workspace:*",
     "react-hot-toast": "^2.4.0",
     "@monad-stack/ui": "workspace:*",
-    "@tanstack/react-query": "4.14.5",
+    "@tanstack/react-query": "^4.14.5",
     "classnames": "^2.3.2"
   },
   "devDependencies": {
@@ -29,7 +30,7 @@
     "@monad-stack/tailwind-config": "workspace:*",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.22",
-    "typescript": "^4.5.3",
+    "typescript": "^4.9.3",
     "tailwindcss": "^3.2.2",
     "daisyui": "^2.38.1",
     "postcss": "^8.4.18",

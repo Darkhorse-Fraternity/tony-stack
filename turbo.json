@@ -8,6 +8,9 @@
     "lint": {
       "outputs": []
     },
+    "lint-stage": {
+      "outputs": []
+    },
     "test": {
       "dependsOn": []
     },
@@ -15,6 +18,9 @@
       "cache": false
     },
     "clean": {
+      "cache": false
+    },
+    "type-check":{
       "cache": false
     }
   }

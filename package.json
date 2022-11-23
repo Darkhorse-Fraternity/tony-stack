@@ -11,9 +11,11 @@
     "build": "turbo run build",
     "dev": "turbo run dev --parallel",
     "lint": "turbo run lint",
-    "clean": "turbo run clean && rm -rf node_modules",
+    "lint-stage": "turbo run lint-stage",
+    "clean": "turbo run clean && rm -rf node_modules && rm -rf pnpm-lock.yaml",
     "test": "turbo run test",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "type-check": "turbo run type-check",
     "ci:publish": "pnpm publish --no-git-checks --access public --filter=\\!docs --recursive && pnpm changeset tag",
     "ci:version": "pnpm changeset version",
     "changeset": "changeset",
@@ -22,21 +24,20 @@
     "preinstall": "npx -y only-allow pnpm"
   },
   "devDependencies": {
-    "@changesets/cli": "^2.25.2",
-    "eslint-config-monad": "workspace:*",
-    "prettier": "latest",
-    "prettier-plugin-tailwindcss": "^0.1.13",
-    "turbo": "latest",
     "@changesets/changelog-github": "^0.4.7",
+    "@changesets/cli": "^2.25.2",
+    "@commitlint/cli": "^17.3.0",
+    "@commitlint/config-conventional": "^17.3.0",
+    "@monad-stack/tsconfig": "workspace:0.2.0",
+    "eslint-config-monad": "workspace:0.2.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
-    "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
-    "@monad-stack/tsconfig": "workspace:*"
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "turbo": "latest"
   },
   "engines": {
     "node": ">=18.0.0"
   },
-  "dependencies": {},
   "packageManager": "pnpm@7.14.2"
 }
