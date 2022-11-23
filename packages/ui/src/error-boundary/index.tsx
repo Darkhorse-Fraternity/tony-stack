@@ -25,9 +25,9 @@ const ErrorComponent: FC<{
   justify-center
 "
   >
-    <div className="rounded-md bg-base-100 px-40 py-20 shadow-2xl">
+    <div className="bg-base-100 rounded-md px-40 py-20 shadow-2xl">
       <div className="flex flex-col items-center">
-        <h6 className="mb-2 text-center text-2xl font-bold text-base-900 md:text-3xl">
+        <h6 className="text-base-900 mb-2 text-center text-2xl font-bold md:text-3xl">
           <span className="text-error">Oops!</span>{" "}
           {error?.message ?? "there is an error!"}
         </h6>
@@ -58,9 +58,9 @@ const CodeErrorComponent: FC<{
   justify-center
 "
       >
-        <div className="rounded-md bg-base-100 px-40 py-20 shadow-2xl">
+        <div className="bg-base-100 rounded-md px-40 py-20 shadow-2xl">
           <div className="flex flex-col items-center">
-            <h1 className="mb-2 text-center font-bold text-base-900 ">
+            <h1 className="text-base-900 mb-2 text-center font-bold ">
               Please login first
             </h1>
             <button

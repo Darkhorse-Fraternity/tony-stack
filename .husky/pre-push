@@ -1,5 +1,7 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-cd ./apps/docs
-npx lint-staged # Replace the last line with "yarn lint-staged"
+# cd ./apps/docs
+# npx lint-staged # Replace the last line with "yarn lint-staged"
+# cd ..
+pnpm run type-check

@@ -14,12 +14,14 @@
     "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
   },
   "scripts": {
-    "build": "tsup src/index.tsx --format esm,cjs --dts --external react react-hot-toast",
-    "dev": "tsup src/index.tsx --format esm,cjs --watch --dts --external react react-hot-toast",
-    "lint": "TIMING=1 eslint src --fix",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    "build": "tsup ./index.ts --format esm,cjs --dts --external react react-hot-toast",
+    "dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react react-hot-toast",
+    "lint": "TIMING=1 eslint *.ts* --fix",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "type-check": "tsc --noEmit"
   },
-  "dependencies": { 
+  "dependencies": {
+    "react-hot-toast": "^2.4.0"
   },
   "devDependencies": {
     "eslint-config-monad": "workspace:*",
@@ -27,11 +29,11 @@
     "typescript": "^4.5.2",
     "react": "^18.2.0",
     "@types/react": "latest",
-    "tsup": "^6.4.0",
-    "react-hot-toast": "^2.4.0"
+    "tsup": "^6.4.0"
   },
   "peerDependencies": {
     "react": ">=16",
-    "react-dom": ">=16"
+    "react-dom": ">=16",
+    "react-hot-toast": "^2.4.0"
   }
 }

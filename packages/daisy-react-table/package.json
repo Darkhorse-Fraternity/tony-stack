@@ -16,7 +16,8 @@
   "scripts": {
     "dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react",
     "lint": "eslint *.ts*",
-    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "type-check": "tsc --noEmit"
   },
   "dependencies": {
     "match-sorter": "^6.3.1",

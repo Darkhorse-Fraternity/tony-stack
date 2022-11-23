@@ -1,14 +1,14 @@
 version: "3"
 
 services:
-  monad-stack-docs:
+  monad-stack:
     container_name: docs
     build:
       context: .
       dockerfile: ./apps/docs/Dockerfile
     restart: always
     ports:
-      - 3120:3000
+      - 3121:3000
     networks:
       - app_network
 

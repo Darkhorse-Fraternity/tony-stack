@@ -1,2 +1,2 @@
-export * from "./lib/axios-helper"
-export * from "./lib/use-fetch"
+export * from "./src/axios-helper"
+export * from "./src/use-fetch"
