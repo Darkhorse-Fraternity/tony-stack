@@ -1,9 +1,11 @@
 import { useIsomorphicLayoutEffect } from "@monad-stack/use-hook-utils"
+import MenuSlider from "components/menu-slider"
 import toast from "react-hot-toast"
+import { NextPageWithLayout } from "types/page"
 
-export default function Docs() {
+const DashBoard: NextPageWithLayout = () => {
   useIsomorphicLayoutEffect(() => {
-    console.info("welcom")
+    console.info("welcome!")
   }, [])
 
   return (
@@ -15,8 +17,12 @@ export default function Docs() {
           toast.error("try")
         }}
       >
-        show toast
+        show toast6
       </button>
     </div>
   )
 }
+
+DashBoard.getLayout = (page) => <MenuSlider>{page}</MenuSlider>
+
+export default DashBoard

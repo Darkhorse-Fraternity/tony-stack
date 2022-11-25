@@ -4,6 +4,7 @@ import { DaisyToaster } from "@monad-stack/daisy-hot-toast"
 // import "lib/config/fortawesome"
 import { AlertComponent, ErrorBoundary } from "@monad-stack/ui"
 import { Hydrate, QueryClientProvider } from "@tanstack/react-query"
+import { ClickToComponent } from "click-to-react-component"
 import queryClient from "lib/request/query-client"
 // import 'styles/resources.css'
 import type { AppProps } from "next/app"
@@ -27,7 +28,8 @@ function MyApp({ Component, pageProps }: AppPropsWithLayout) {
         <ErrorBoundary>{getLayout(<Component {...pageProps} />)}</ErrorBoundary>
       </Hydrate>
       <AlertComponent />
-      <DaisyToaster />
+      <DaisyToaster containerClassName="h-[1px]" />
+      <ClickToComponent />
     </QueryClientProvider>
   )
 }

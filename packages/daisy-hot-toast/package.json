@@ -14,8 +14,8 @@
     "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
   },
   "scripts": {
-    "build": "tsup ./index.ts --format esm,cjs --dts --external react react-hot-toast",
-    "dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react react-hot-toast",
+    "tsup:build": "tsup ./index.ts --format esm,cjs --dts --external react react-hot-toast",
+    "tsup:dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react react-hot-toast",
     "lint": "TIMING=1 eslint *.ts* --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "type-check": "tsc --noEmit"
@@ -24,8 +24,8 @@
     "react-hot-toast": "^2.4.0"
   },
   "devDependencies": {
-    "eslint-config-monad": "workspace:*",
-    "@monad-stack/tsconfig": "workspace:*",
+    "eslint-config-monad": "*",
+    "@monad-stack/tsconfig": "*",
     "typescript": "^4.5.2",
     "react": "^18.2.0",
     "@types/react": "latest",

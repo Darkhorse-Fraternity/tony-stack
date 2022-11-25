@@ -25,12 +25,12 @@ COPY --from=builder /app/out/pnpm-workspace.yaml ./pnpm-workspace.yaml
 COPY --from=builder /app/out/pnpm-lock.yaml ./pnpm-lock.yaml
 RUN yarn global add pnpm
 # RUN pnpm i --frozen-lockfile --prod
-RUN pnpm i
+RUN pnpm install
 
 # Build the project
 
 COPY turbo.json turbo.json
-RUN npx turbo run build --filter=docs...
+RUN npx turbo run build
 
 FROM node:18-alpine AS runner
 WORKDIR /app

@@ -22,6 +22,12 @@
     },
     "type-check":{
       "cache": false
+    },
+    "tsup:dev": {
+      "cache": false
+    },
+    "tsup:build": {
+      "cache": false
     }
   }
 }

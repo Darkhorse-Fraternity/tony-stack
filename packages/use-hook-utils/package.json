@@ -15,17 +15,17 @@
     "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
   },
   "scripts": {
-    "build": "tsup ./index.ts --format esm,cjs --dts --external react",
-    "dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react",
+    "tsup:build": "tsup ./index.ts --format esm,cjs --dts --external react",
+    "tsup:dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react",
     "lint": "TIMING=1 eslint lib --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "type-check": "tsc --noEmit"
   },
   "devDependencies": {
-    "@monad-stack/tsconfig": "workspace:*",
+    "@monad-stack/tsconfig": "*",
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.06",
-    "eslint-config-monad": "workspace:*",
+    "eslint-config-monad": "*",
     "typescript": "^4.5.3",
     "react": "^18.2.0",
     "tsup": "^6.4.0"

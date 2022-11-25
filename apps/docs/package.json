@@ -11,23 +11,23 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "13.0.2",
+    "next": "13.0.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@monad-stack/daisy-hot-toast": "workspace:*",
-    "@monad-stack/use-hook-utils": "workspace:*",
-    "@monad-stack/axios-hook-client": "workspace:*",
+    "@monad-stack/daisy-hot-toast": "*",
+    "@monad-stack/use-hook-utils": "*",
+    "@monad-stack/axios-hook-client": "*",
     "react-hot-toast": "^2.4.0",
-    "@monad-stack/ui": "workspace:*",
+    "@monad-stack/ui": "*",
     "@tanstack/react-query": "^4.14.5",
     "classnames": "^2.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "eslint-config-monad": "workspace:*",
-    "@monad-stack/tsconfig": "workspace:*",
-    "@monad-stack/tailwindcss-plugins": "workspace:*",
-    "@monad-stack/tailwind-config": "workspace:*",
+    "eslint-config-monad": "*",
+    "@monad-stack/tsconfig": "*",
+    "@monad-stack/tailwindcss-plugins": "*",
+    "@monad-stack/tailwind-config": "*",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.22",
     "typescript": "^4.9.3",
@@ -35,6 +35,7 @@
     "daisyui": "^2.38.1",
     "postcss": "^8.4.18",
     "autoprefixer": "^10.4.13",
-    "tailwindcss-animate": "^1.0.5"
+    "tailwindcss-animate": "^1.0.5",
+    "click-to-react-component": "^1.0.8"
   }
 }

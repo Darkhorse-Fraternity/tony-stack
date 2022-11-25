@@ -7,21 +7,14 @@
   "files": [
     "dist/**"
   ],
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.js"
-    },
-    "./package.json": "./package.json"
-  },
   "license": "MIT",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
   },
   "scripts": {
-    "build": "tsup ./index.ts --format esm,cjs --dts --external  @tanstack/react-query",
-    "dev": "tsup ./index.ts --format esm,cjs --watch --dts --external  @tanstack/react-query",
+    "tsup:build": "tsup ./index.ts --format esm,cjs --dts --external  @tanstack/react-query",
+    "tsup:dev": "tsup ./index.ts --format esm,cjs --watch --dts --external  @tanstack/react-query",
     "lint": "TIMING=1 eslint *.ts* --fix",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "type-check": "tsc --noEmit"
@@ -31,8 +24,8 @@
     "@tanstack/react-query": "^4.14.5"
   },
   "devDependencies": {
-    "eslint-config-monad": "workspace:*",
-    "@monad-stack/tsconfig": "workspace:*",
+    "eslint-config-monad": "*",
+    "@monad-stack/tsconfig": "*",
     "typescript": "^4.9.3",
     "tsup": "^6.4.0"
   },

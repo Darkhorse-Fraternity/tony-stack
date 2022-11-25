@@ -9,7 +9,7 @@
     "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
 },
   "devDependencies": {
-    "eslint-config-monad": "workspace:*"
+    "eslint-config-monad": "*"
   },
   "publishConfig": {
     "access": "public"

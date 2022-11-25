@@ -14,8 +14,8 @@
     "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
   },
   "scripts": {
-    "dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react",
-    "lint": "eslint *.ts*",
+    "tsup:dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react",
+    "p:lint": "eslint *.ts*",
     "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
     "type-check": "tsc --noEmit"
   },
@@ -23,18 +23,18 @@
     "match-sorter": "^6.3.1",
     "classnames": "^2.3.1",
     "react-table": "^7.7.9",
-    "@monad-stack/use-hook-utils": "workspace:*"
+    "@monad-stack/use-hook-utils": "*"
   },
   "devDependencies": {
     "@types/react-table": "^7.7.9",
     "@types/react": "^18.0.17",
     "@types/react-modal":"^3.13.1",
     "@types/react-dom": "^18.0.6",
-    "eslint-config-monad": "workspace:*",
+    "eslint-config-monad": "*",
     "react": "^18.2.0",
-    "@monad-stack/tsconfig": "workspace:*",
+    "@monad-stack/tsconfig": "*",
     "typescript": "^4.5.2",
-    "@monad-stack/tailwind-config": "workspace:*",
+    "@monad-stack/tailwind-config": "*",
     "tsup": "^6.4.0"
   },
   "publishConfig": {
