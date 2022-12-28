@@ -1,5 +1,5 @@
 {
-  "extends": "@monad-stack/tsconfig/react-library.json",
-  "include": ["."],
+  "extends": "../../tsconfig.json",
+  "include": ["src", "index.ts"],
   "exclude": ["dist", "build", "node_modules"]
 }

@@ -1,8 +1,15 @@
 {
-  "extends": "@monad-stack/tsconfig/nextjs.json",
+  "extends": "../../tsconfig.json",
+  "exclude": [],
   "compilerOptions": {
     "baseUrl": ".",
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
-  "exclude": ["node_modules"]
+  "include": [
+    "next-env.d.ts",
+    "../../packages/auth/next-auth.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.cjs",
+    "**/*.mjs"
+  ]
 }
