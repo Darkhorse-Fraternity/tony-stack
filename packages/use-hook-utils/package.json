@@ -26,7 +26,7 @@
     "@types/react": "^18.0.18",
     "@types/react-dom": "^18.0.06",
     "eslint-config-monad": "*",
-    "typescript": "^4.5.3",
+    "typescript": "^4.9.5",
     "react": "^18.2.0",
     "tsup": "^6.4.0"
   },
