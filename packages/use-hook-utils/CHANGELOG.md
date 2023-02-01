@@ -1,5 +1,11 @@
 # @monad-stack/utils
 
+## 1.1.0
+
+### Minor Changes
+
+- update code
+
 ## 1.0.0
 
 ### Major Changes
