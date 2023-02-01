@@ -15,7 +15,6 @@ module.exports = {
   experimental: {
     outputFileTracingRoot: path.join(__dirname, "../../"),
     transpilePackages: [
-      "@monad-stack/daisy-hot-toast",
       "@monad-stack/use-hook-utils",
       "@monad-stack/ui",
       "@monad-stack/axios-hook-client",
