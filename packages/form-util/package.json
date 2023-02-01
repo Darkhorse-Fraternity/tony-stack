@@ -31,7 +31,7 @@
     "eslint-config-monad": "*",
     "react": "^18.2.0",
     "@monad-stack/tsconfig": "*",
-    "typescript": "^4.5.2",
+    "typescript": "^4.9.5",
     "tsup": "^6.5.0"
   },
   "publishConfig": {

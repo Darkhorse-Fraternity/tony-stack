@@ -26,7 +26,7 @@ export const useAxiosQuery = <
   method?: Method
 ) =>
   useQuery<TQueryFnData, TError, TData, QueryKey>(
-    Boolean(payload) ? [path, payload] : [path],
+    payload ? [path, payload] : [path],
     async () => request({ url: path, payload, method }).then((r) => r.data),
     options
   )
