@@ -1,5 +1,11 @@
 # @monad-stack/utils
 
+## 2.0.0
+
+### Major Changes
+
+- [#14](https://github.com/Darkhorse-Fraternity/monad-stack/pull/14) [`7424745`](https://github.com/Darkhorse-Fraternity/monad-stack/commit/7424745455ec685c37eac44382e1fadefeeb4784) Thanks [@Darkhorse-Fraternity](https://github.com/Darkhorse-Fraternity)! - asd
+
 ## 1.1.0
 
 ### Minor Changes
