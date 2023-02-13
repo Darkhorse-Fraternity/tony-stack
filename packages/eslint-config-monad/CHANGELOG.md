@@ -1,5 +1,11 @@
 # eslint-config-monad
 
+## 0.2.2
+
+### Patch Changes
+
+- [`9fde199`](https://github.com/Darkhorse-Fraternity/monad-stack/commit/9fde199bf657ce0095c9da6b4f9047504452f0fe) Thanks [@Darkhorse-Fraternity](https://github.com/Darkhorse-Fraternity)! - update dependences version
+
 ## 0.2.1
 
 ### Patch Changes
