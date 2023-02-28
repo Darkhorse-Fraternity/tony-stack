@@ -21,8 +21,8 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "react-hook-form": "^7.39.4",
-    "@hookform/resolvers": "^2.9.10",
+    "react-hook-form": "^7.43.1",
+    "@hookform/resolvers": "^2.9.11",
     "zod": "^3.20.6"
   },
   "devDependencies": {

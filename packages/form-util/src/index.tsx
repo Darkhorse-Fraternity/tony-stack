@@ -10,10 +10,10 @@ export interface IFormProps<S extends z.ZodType<any, any>>
   children?: ReactNode
   /** Text to display in the submit button */
   submitText?: string
-  submitBtnClass?: string
   schema?: S
   onSubmit: (values: z.infer<S>) => Promise<void | IOnSubmitResult>
   initialValues?: UseFormProps<z.infer<S>>["defaultValues"]
+  loading?: boolean
 }
 
 interface IOnSubmitResult {
@@ -26,10 +26,10 @@ export const FORM_ERROR = "FORM_ERROR"
 export function Form<S extends z.ZodType<any, any>>({
   children,
   submitText,
-  submitBtnClass,
   schema,
   initialValues,
   onSubmit,
+  loading,
   ...props
 }: IFormProps<S>) {
   const ctx = useForm<z.infer<S>>({
@@ -38,8 +38,10 @@ export function Form<S extends z.ZodType<any, any>>({
     defaultValues: initialValues,
   })
   const [formError, setFormError] = useState<string | null>(null)
-  // console.log('errors', ctx.formState.errors)
-  // console.log('xx', ctx.getValues());
+
+  if (ctx.formState.errors) {
+    console.error("ctx.formState.errors", ctx.formState.errors)
+  }
 
   return (
     <FormProvider {...ctx}>
@@ -58,7 +60,6 @@ export function Form<S extends z.ZodType<any, any>>({
             }
           }
         })}
-        onReset={() => ctx.reset(initialValues, { keepDefaultValues: true })}
         className="form"
         {...props}
       >
@@ -70,11 +71,12 @@ export function Form<S extends z.ZodType<any, any>>({
             {formError}
           </div>
         )}
+
         {submitText && (
           <button
-            className={submitBtnClass ?? "btn"}
             type="submit"
             disabled={ctx.formState.isSubmitting}
+            className={`btn btn-ghost ${loading ? "loading" : ""}`}
           >
             {submitText}
           </button>

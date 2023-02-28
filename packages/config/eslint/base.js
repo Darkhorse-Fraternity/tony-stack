@@ -1,3 +1,4 @@
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
   plugins: ["prettier"],
   extends: ["prettier"],
@@ -18,13 +19,13 @@ module.exports = {
     'no-await-in-loop': 'error',
     'padding-line-between-statements': [
       'error',
-      {blankLine: 'always', prev: '*', next: 'return'},
-      {blankLine: 'always', prev: '*', next: 'try'},
-      {blankLine: 'always', prev: 'try', next: '*'},
-      {blankLine: 'always', prev: '*', next: 'block-like'},
-      {blankLine: 'always', prev: 'block-like', next: '*'},
-      {blankLine: 'always', prev: '*', next: 'throw'},
-      {blankLine: 'always', prev: 'var', next: '*'},
+      { blankLine: 'always', prev: '*', next: 'return' },
+      { blankLine: 'always', prev: '*', next: 'try' },
+      { blankLine: 'always', prev: 'try', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'block-like' },
+      { blankLine: 'always', prev: 'block-like', next: '*' },
+      { blankLine: 'always', prev: '*', next: 'throw' },
+      { blankLine: 'always', prev: 'var', next: '*' },
     ],
     'arrow-body-style': 'error',
     'arrow-parens': ['error', 'always'],

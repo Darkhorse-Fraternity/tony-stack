@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base"],
+  "packageRules": [
+    {
+      "matchPackagePatterns": ["^@monad-stack/", "eslint-config-monad"],
+      "enabled": false
+    }
+  ],
+  "updateInternalDeps": true
+}

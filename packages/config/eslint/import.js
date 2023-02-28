@@ -1,3 +1,4 @@
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
   plugins: ["unused-imports", "simple-import-sort"],
   rules: {

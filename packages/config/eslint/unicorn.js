@@ -1,6 +1,7 @@
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
   extends: ["plugin:unicorn/recommended"],
-  plugins: ["unicorn"],  
+  plugins: ["unicorn"],
   rules: {
     "unicorn/filename-case": [
       "error",
@@ -17,6 +18,6 @@ module.exports = {
     "unicorn/no-static-only-class": "off",
     "unicorn/prefer-module": "off",
     "unicorn/prefer-node-protocol": "off",
-    "unicorn/no-nested-ternary":'off'
+    "unicorn/no-nested-ternary": 'off'
   },
 };
