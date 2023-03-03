@@ -10,7 +10,7 @@ const config = {
         project: [
           "./tsconfig.json",
           "./apps/*/tsconfig.json",
-          "./packages/*/tsconfig.json",
+          "./packages/**/*/tsconfig.json",
         ],
       },
     },

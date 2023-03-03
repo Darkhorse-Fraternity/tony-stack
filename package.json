@@ -12,7 +12,8 @@
     "dev": "turbo run dev --parallel",
     "tsup:build": "turbo run tsup:build --parallel",
     "tsup:dev": "turbo run tsup:dev --parallel",
-    "lint": "turbo run lint",
+    "lint": "turbo lint && manypkg check",
+    "lint:fix": "turbo lint:fix && manypkg fix",
     "lint-stage": "turbo run lint-stage",
     "clean": "turbo run clean && rm -rf node_modules && rm -rf pnpm-lock.yaml",
     "test": "turbo run test",
@@ -28,6 +29,7 @@
     "@changesets/changelog-github": "^0.4.7",
     "@changesets/cli": "^2.25.2",
     "@commitlint/cli": "^17.3.0",
+    "@manypkg/cli": "^0.20.0",
     "@commitlint/config-conventional": "^17.3.0",
     "@monad-stack/tsconfig": "*",
     "eslint-config-monad": "*",
@@ -35,10 +37,10 @@
     "lint-staged": "^13.0.3",
     "prettier": "latest",
     "prettier-plugin-tailwindcss": "^0.1.13",
-    "turbo": "latest"
+    "turbo": "^1.8.2"
   },
   "engines": {
     "node": ">=18.0.0"
   },
-  "packageManager": "pnpm@7.26.2"
+  "packageManager": "pnpm@7.28.0"
 }
