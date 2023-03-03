@@ -20,7 +20,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@tanstack/react-table": "8.7.8"
+    "@tanstack/react-table": "8.7.9"
   },
   "devDependencies": {
     "@types/react": "^18.0.17",
