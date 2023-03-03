@@ -18,7 +18,6 @@ type AppPropsWithLayout = AppProps & {
 //   console.log(metric)
 // }
 
-// eslint-disable-next-line @typescript-eslint/naming-convention
 function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const getLayout = Component.getLayout ?? ((page) => page)
 

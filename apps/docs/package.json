@@ -35,6 +35,7 @@
     "postcss": "^8.4.18",
     "autoprefixer": "^10.4.13",
     "tailwindcss-animate": "^1.0.5",
-    "click-to-react-component": "^1.0.8"
+    "click-to-react-component": "^1.0.8",
+    "csstype": "^3.0.10"
   }
 }
