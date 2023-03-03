@@ -1,6 +1,7 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
   plugins: ["@typescript-eslint"],
+  parser: "@typescript-eslint/parser",
   overrides: [
     {
       files: ["*.ts", "*.tsx"], // Your TypeScript files extension
