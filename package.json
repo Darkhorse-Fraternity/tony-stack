@@ -36,11 +36,11 @@
     "husky": "^8.0.2",
     "lint-staged": "^13.0.3",
     "prettier": "latest",
-    "prettier-plugin-tailwindcss": "^0.1.13",
+    "prettier-plugin-tailwindcss": "^0.2.0",
     "turbo": "^1.8.2"
   },
   "engines": {
     "node": ">=18.0.0"
   },
-  "packageManager": "pnpm@7.28.0"
+  "packageManager": "pnpm@7.29.1"
 }
