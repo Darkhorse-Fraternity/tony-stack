@@ -1,6 +1,6 @@
 import React from "react"
 
-import { SignInForm } from "~/components/form/entity/beat-board-form"
+import { SignInForm } from "~/components/form/entity/sign-in"
 import MenuSlider from "~/components/menu-slider"
 import { signInSchema } from "~/lib/schema"
 import { type NextPageWithLayout } from "~/types/page"

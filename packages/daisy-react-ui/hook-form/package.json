@@ -21,18 +21,18 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "react-hook-form": "^7.43.4",
     "@hookform/resolvers": "^2.9.11",
+    "react-hook-form": "^7.43.4",
     "zod": "^3.21.4"
   },
   "devDependencies": {
+    "@monad-stack/tsconfig": "*",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "eslint-config-monad": "*",
     "react": "^18.2.0",
-    "@monad-stack/tsconfig": "*",
-    "typescript": "^4.9.5",
-    "tsup": "^6.5.0"
+    "tsup": "^6.4.0",
+    "typescript": "^4.9.5"
   },
   "publishConfig": {
     "access": "public"

@@ -21,19 +21,19 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "react-error-boundary": "^3.1.4",
     "classnames": "^2.3.2",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-error-boundary": "^3.1.4"
   },
   "devDependencies": {
+    "@monad-stack/tailwind-config": "*",
+    "@monad-stack/tsconfig": "*",
     "@types/react": "^18.0.17",
-    "@types/react-modal": "^3.13.1",
     "@types/react-dom": "^18.0.6",
+    "@types/react-modal": "^3.13.1",
     "eslint-config-monad": "*",
     "react": "^18.2.0",
-    "@monad-stack/tsconfig": "*",
-    "typescript": "^4.9.5",
-    "@monad-stack/tailwind-config": "*",
-    "tsup": "^6.4.0"
+    "tsup": "^6.4.0",
+    "typescript": "^4.9.5"
   }
 }

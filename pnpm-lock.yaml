@@ -46,19 +46,18 @@ importers:
       '@monad-stack/use-hook-utils': '*'
       '@tanstack/react-query': ^4.14.5
       '@types/node': ^18.11.9
-      '@types/react': ^18.0.22
+      '@types/react': ^18.0.17
       autoprefixer: ^10.4.13
       classnames: ^2.3.2
       click-to-react-component: ^1.0.8
       csstype: ^3.0.10
-      daisyui: ^2.38.1
       eslint-config-monad: '*'
       next: 13.2.0
-      postcss: ^8.4.18
+      postcss: ^8.4.21
       react: ^18.2.0
       react-dom: ^18.2.0
       react-hot-toast: ^2.4.0
-      tailwindcss: ^3.2.2
+      tailwindcss: ^3.2.7
       tailwindcss-animate: ^1.0.5
       typescript: ^4.9.5
       zod: ^3.21.4
@@ -88,7 +87,6 @@ importers:
       autoprefixer: 10.4.13_postcss@8.4.21
       click-to-react-component: 1.0.8_zula6vjvt3wdocc4mwcxqa6nzi
       csstype: 3.1.1
-      daisyui: 2.51.3_gbtt6ss3tbiz4yjtvdr6fbrj44
       eslint-config-monad: link:../../packages/config/eslint
       postcss: 8.4.21
       tailwindcss: 3.2.7_postcss@8.4.21
@@ -99,7 +97,7 @@ importers:
     specifiers:
       '@typescript-eslint/eslint-plugin': ^5.49.0
       '@typescript-eslint/parser': ^5.49.0
-      eslint: ^8.27.0
+      eslint: ^8.34.0
       eslint-config-next: ^13.2.3
       eslint-config-prettier: ^8.6.0
       eslint-config-turbo: ^0.0.9
@@ -185,7 +183,7 @@ importers:
       eslint-config-monad: '*'
       react: ^18.2.0
       react-hook-form: ^7.43.4
-      tsup: ^6.5.0
+      tsup: ^6.4.0
       typescript: ^4.9.5
       zod: ^3.21.4
     dependencies:
@@ -285,7 +283,7 @@ importers:
       '@tanstack/react-query': ^4.14.5
       axios: ^1.1.3
       eslint-config-monad: '*'
-      react: ^18.0.0
+      react: ^18.2.0
       tsup: ^6.4.0
       typescript: ^4.9.5
     dependencies:
@@ -301,7 +299,7 @@ importers:
   packages/hooks/use-hook-utils:
     specifiers:
       '@monad-stack/tsconfig': '*'
-      '@types/react': ^18.0.18
+      '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.06
       eslint-config-monad: '*'
       react: ^18.2.0
@@ -2078,7 +2076,7 @@ packages:
     hasBin: true
     dependencies:
       caniuse-lite: 1.0.30001462
-      electron-to-chromium: 1.4.322
+      electron-to-chromium: 1.4.324
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
 
@@ -2659,8 +2657,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: false
 
-  /electron-to-chromium/1.4.322:
-    resolution: {integrity: sha512-KovjizNC9XB7dno/2GjxX8VS0SlfPpCjtyoKft+bCO+UfD8bFy16hY4Sh9s0h9BDxbRH2U0zX5VBjpM1LTcNlg==}
+  /electron-to-chromium/1.4.324:
+    resolution: {integrity: sha512-m+eBs/kh3TXnCuqDF6aHLLRwLK2U471JAbZ1KYigf0TM96fZglxv0/ZFBvyIxnLKsIWUoDiVnHTA2mhYz1fqdA==}
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
