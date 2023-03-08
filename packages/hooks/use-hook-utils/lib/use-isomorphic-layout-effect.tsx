@@ -9,6 +9,6 @@ import * as React from "react"
  */
 const useIsomorphicLayoutEffect =
   // eslint-disable-next-line @typescript-eslint/no-empty-function
-  typeof window !== "undefined" ? React.useLayoutEffect : () => {}
+  typeof window === "undefined" ? () => {} : React.useLayoutEffect
 
 export { useIsomorphicLayoutEffect }
