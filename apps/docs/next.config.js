@@ -1,23 +1,17 @@
-const path = require("path")
 
 /** @type {import('next').NextConfig} */
 module.exports = {
-  reactStrictMode: true,
+  eslint: { ignoreDuringBuilds: !!process.env.CI },
+  typescript: { ignoreBuildErrors: !!process.env.CI },
   output: "standalone",
-  eslint: {
-    // Warning: This allows production builds to successfully complete even if
-    // your project has ESLint errors.
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  experimental: {
-    outputFileTracingRoot: path.join(__dirname, "../../"),
-    transpilePackages: [
+  transpilePackages: [
       "@monad-stack/use-hook-utils",
-      "@monad-stack/ui",
       "@monad-stack/axios-hook-client",
+      "@monad-stack/daisy-layout",
+      "@monad-stack/daisy-modal",
+      "@monad-stack/daisy-error-boundary",
+      "@monad-stack/daisy-hook-form",
+      "@monad-stack/daisy-react-table",
     ],
-  },
+
 }

@@ -1,20 +1,15 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-  extends: [
-    "plugin:@typescript-eslint/recommended",
-    "plugin:@typescript-eslint/recommended-requiring-type-checking",
-  ],
-  parser: "@typescript-eslint/parser",
   overrides: [
     {
       files: ["*.ts", "*.tsx"], // Your TypeScript files extension
-
+      parser: "@typescript-eslint/parser",
       // As mentioned in the comments, you should extend TypeScript plugins here,
       // instead of extending them outside the `overrides`.
       // If you don't want to extend any rules, you don't need an `extends` attribute.
       extends: [
         "plugin:@typescript-eslint/recommended",
-        // "plugin:@typescript-eslint/recommended-requiring-type-checking",
+        "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:@typescript-eslint/eslint-recommended",
       ],
 
@@ -63,7 +58,15 @@ module.exports = {
         ],
         "@typescript-eslint/no-unused-vars": [
           "error",
-          { argsIgnorePattern: "^_", vars: "all", args: "after-used" },
+          {
+            argsIgnorePattern: "^_",
+            varsIgnorePattern: "^_",
+            caughtErrorsIgnorePattern: "^_",
+          },
+        ],
+        "@typescript-eslint/consistent-type-imports": [
+          "error",
+          { prefer: "type-imports", fixStyle: "inline-type-imports" },
         ],
         "@typescript-eslint/ban-ts-comment": ["warn", {
           "ts-ignore": "allow-with-description"

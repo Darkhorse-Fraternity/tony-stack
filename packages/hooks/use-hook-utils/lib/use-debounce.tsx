@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react"
 
 // Our hook
-// eslint-disable-next-line @typescript-eslint/explicit-module-boundary-types
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function useDebounce(value: any, delay: number): any {
   // State and setters for debounced value

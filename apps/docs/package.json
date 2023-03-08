@@ -11,31 +11,37 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "next": "13.0.5",
+    "@faker-js/faker": "^7.6.0",
+    "@monad-stack/axios-hook-client": "*",
+    "@monad-stack/daisy-error-boundary": "*",
+    "@monad-stack/daisy-hook-form": "*",
+    "@monad-stack/daisy-layout": "*",
+    "@monad-stack/daisy-modal": "*",
+    "@monad-stack/daisy-react-table": "*",
+    "@monad-stack/use-hook-utils": "*",
+    "@tanstack/react-query": "^4.14.5",
+    "classnames": "^2.3.2",
+    "next": "13.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "@monad-stack/use-hook-utils": "*",
-    "@monad-stack/axios-hook-client": "*",
     "react-hot-toast": "^2.4.0",
-    "@monad-stack/ui": "*",
-    "@tanstack/react-query": "^4.14.5",
-    "classnames": "^2.3.2"
+    "zod": "^3.21.4"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
-    "eslint-config-monad": "*",
-    "@monad-stack/tsconfig": "*",
-    "@monad-stack/tailwindcss-plugins": "*",
     "@monad-stack/tailwind-config": "*",
+    "@monad-stack/tailwindcss-plugins": "*",
+    "@monad-stack/tsconfig": "*",
     "@types/node": "^18.11.9",
     "@types/react": "^18.0.22",
-    "typescript": "^4.9.5",
-    "tailwindcss": "^3.2.2",
-    "daisyui": "^2.38.1",
-    "postcss": "^8.4.18",
     "autoprefixer": "^10.4.13",
-    "tailwindcss-animate": "^1.0.5",
     "click-to-react-component": "^1.0.8",
-    "csstype": "^3.0.10"
+    "csstype": "^3.0.10",
+    "daisyui": "^2.38.1",
+    "eslint-config-monad": "*",
+    "postcss": "^8.4.18",
+    "tailwindcss": "^3.2.2",
+    "tailwindcss-animate": "^1.0.5",
+    "typescript": "^4.9.5"
   }
 }

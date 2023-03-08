@@ -1,0 +1,40 @@
+{
+  "name": "@monad-stack/daisy-hook-form",
+  "version": "0.1.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "author": "Tony <lintong320@gmail.com>",
+  "files": [
+    "dist/**"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
+  },
+  "scripts": {
+    "tsup:build": "tsup ./index.ts --format esm,cjs --dts --external react ",
+    "tsup:dev": "tsup ./index.ts --format esm,cjs --watch --dts --external react",
+    "lint": "eslint *.ts*",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react-hook-form": "^7.43.4",
+    "@hookform/resolvers": "^2.9.11",
+    "zod": "^3.21.4"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "eslint-config-monad": "*",
+    "react": "^18.2.0",
+    "@monad-stack/tsconfig": "*",
+    "typescript": "^4.9.5",
+    "tsup": "^6.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

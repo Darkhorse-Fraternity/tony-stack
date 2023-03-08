@@ -25,12 +25,12 @@
     "publish": "changeset publish",
     "dockcer:prod": "docker-compose -f docker-compose.yml up -d --build"
   },
-  "devDependencies": {
+  "dependencies": {
     "@changesets/changelog-github": "^0.4.7",
     "@changesets/cli": "^2.25.2",
     "@commitlint/cli": "^17.3.0",
-    "@manypkg/cli": "^0.20.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "@manypkg/cli": "^0.20.0",
     "@monad-stack/tsconfig": "*",
     "eslint-config-monad": "*",
     "husky": "^8.0.2",
