@@ -1,5 +1,9 @@
-import { BrandWrap, Layout, MenuCompact } from "@monad-stack/daisy-layout"
-import { NavBarWrap } from "@monad-stack/daisy-layout/src/nav-bar"
+import {
+  BrandWrap,
+  Layout,
+  MenuCompact,
+  NavBarWrap,
+} from "@monad-stack/daisy-layout"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { type FC, type PropsWithChildren } from "react"

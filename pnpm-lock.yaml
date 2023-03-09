@@ -66,9 +66,9 @@ importers:
       '@monad-stack/axios-hook-client': link:../../packages/hooks/axios-hook-client
       '@monad-stack/daisy-error-boundary': link:../../packages/daisy-react-ui/error-boundary
       '@monad-stack/daisy-hook-form': link:../../packages/daisy-react-ui/hook-form
-      '@monad-stack/daisy-layout': link:../../packages/daisy-react-ui/layout
+      '@monad-stack/daisy-layout': 0.0.2
       '@monad-stack/daisy-modal': link:../../packages/daisy-react-ui/modal
-      '@monad-stack/daisy-react-table': link:../../packages/daisy-react-ui/table
+      '@monad-stack/daisy-react-table': 0.2.1_react@18.2.0
       '@monad-stack/use-hook-utils': link:../../packages/hooks/use-hook-utils
       '@tanstack/react-query': 4.26.1_biqbaboplfbrettd7655fr4n2y
       classnames: 2.3.2
@@ -257,24 +257,30 @@ importers:
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       '@types/react-modal': ^3.13.1
+      autoprefixer: ^10.4.13
       eslint-config-monad: '*'
+      postcss: ^8.4.21
       react: ^18.2.0
       react-dom: ^18.2.0
+      tailwindcss: ^3.2.7
       tsup: ^6.4.0
       typescript: ^4.9.5
     dependencies:
       '@tanstack/match-sorter-utils': 8.7.6
       '@tanstack/react-table': 8.7.9_biqbaboplfbrettd7655fr4n2y
-      react-dom: 18.2.0_react@18.2.0
     devDependencies:
       '@monad-stack/tailwind-config': link:../../config/tailwind
       '@monad-stack/tsconfig': link:../../config/tsconfig
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       '@types/react-modal': 3.13.1
+      autoprefixer: 10.4.13_postcss@8.4.21
       eslint-config-monad: link:../../config/eslint
+      postcss: 8.4.21
       react: 18.2.0
-      tsup: 6.6.3_typescript@4.9.5
+      react-dom: 18.2.0_react@18.2.0
+      tailwindcss: 3.2.7_postcss@8.4.21
+      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
       typescript: 4.9.5
 
   packages/hooks/axios-hook-client:
@@ -1294,6 +1300,20 @@ packages:
       globby: 11.1.0
       jju: 1.4.0
       read-yaml-file: 1.1.0
+    dev: false
+
+  /@monad-stack/daisy-layout/0.0.2:
+    resolution: {integrity: sha512-iBQzTu7petdAbS3FP5lqcAi2dURlGoZoyvnarbsyVliOZBllP3gZgbLLx2OVDx4FBugBc3sxqQwAat6dFugmYQ==}
+    dev: false
+
+  /@monad-stack/daisy-react-table/0.2.1_react@18.2.0:
+    resolution: {integrity: sha512-6IIMuF4NYUrsUqmSPUpj5QoshyCEftf3Hb0SQY3/NJ3WL7hgiciPjQ8iTlg4xJYH8UbU73T/HbPJKzKs3jcx6g==}
+    dependencies:
+      '@tanstack/match-sorter-utils': 8.7.6
+      '@tanstack/react-table': 8.7.9_biqbaboplfbrettd7655fr4n2y
+      react-dom: 18.2.0_react@18.2.0
+    transitivePeerDependencies:
+      - react
     dev: false
 
   /@next/env/13.2.3:
@@ -5955,6 +5975,43 @@ packages:
       globby: 11.1.0
       joycon: 3.1.1
       postcss-load-config: 3.1.4
+      resolve-from: 5.0.0
+      rollup: 3.18.0
+      source-map: 0.8.0-beta.0
+      sucrase: 3.29.0
+      tree-kill: 1.2.2
+      typescript: 4.9.5
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+    dev: true
+
+  /tsup/6.6.3_uujdqti2krmttzhqvubwnsmcci:
+    resolution: {integrity: sha512-OLx/jFllYlVeZQ7sCHBuRVEQBBa1tFbouoc/gbYakyipjVQdWy/iQOvmExUA/ewap9iQ7tbJf9pW0PgcEFfJcQ==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': ^1
+      postcss: ^8.4.12
+      typescript: ^4.1.0
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      postcss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      bundle-require: 4.0.1_esbuild@0.17.11
+      cac: 6.7.14
+      chokidar: 3.5.3
+      debug: 4.3.4
+      esbuild: 0.17.11
+      execa: 5.1.1
+      globby: 11.1.0
+      joycon: 3.1.1
+      postcss: 8.4.21
+      postcss-load-config: 3.1.4_postcss@8.4.21
       resolve-from: 5.0.0
       rollup: 3.18.0
       source-map: 0.8.0-beta.0
