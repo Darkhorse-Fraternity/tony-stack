@@ -23,7 +23,8 @@
     "ci:version": "pnpm changeset version",
     "changeset": "changeset",
     "publish": "changeset publish",
-    "dockcer:prod": "docker-compose -f docker-compose.yml up -d --build"
+    "dockcer:prod": "docker-compose -f docker-compose.yml up -d --build",
+    "prepare": "husky install"
   },
   "dependencies": {
     "@changesets/changelog-github": "^0.4.7",
