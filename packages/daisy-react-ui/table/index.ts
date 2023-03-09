@@ -1,3 +1,4 @@
+import "./styles.css"
 export { default } from "./src"
 export { TableBody } from "./src/body"
 export { default as IndeterminateCheckbox } from "./src/checkbox"
