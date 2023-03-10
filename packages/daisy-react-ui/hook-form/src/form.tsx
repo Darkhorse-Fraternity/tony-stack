@@ -14,7 +14,7 @@ export interface IFormProps<S extends z.ZodType<any, any>>
   /** All your form fields */
   submitText?: string
   schema?: S
-  onSubmit: (values: z.infer<S>) => Promise<void | IOnSubmitResult>
+  onSubmit: (values: z.infer<S>) => Promise<void | IOnSubmitResult> | void
   initialValues?: UseFormProps<z.infer<S>>["defaultValues"]
   loading?: boolean
 }
