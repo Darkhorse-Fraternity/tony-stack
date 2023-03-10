@@ -7,4 +7,5 @@ export default defineConfig((options) => ({
   clean: true,
   dts: true,
   external: ["react", "react-dom", "zod"],
+  sourcemap: true,
 }))

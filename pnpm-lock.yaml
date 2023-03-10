@@ -196,6 +196,7 @@ importers:
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       autoprefixer: ^10.4.13
+      dayjs: ^1.11.7
       eslint-config-monad: '*'
       postcss: ^8.4.21
       react: ^18.2.0
@@ -206,6 +207,7 @@ importers:
       zod: ^3.21.4
     dependencies:
       '@hookform/resolvers': 2.9.11_react-hook-form@7.43.5
+      dayjs: 1.11.7
       react-hook-form: 7.43.5_react@18.2.0
     devDependencies:
       '@monad-stack/tsconfig': link:../../config/tsconfig
@@ -2528,6 +2530,10 @@ packages:
 
   /dataloader/1.4.0:
     resolution: {integrity: sha512-68s5jYdlvasItOJnCuI2Q9s4q98g0pCyL3HrcKJu8KNugUl8ahgmZYg38ysLTgQjjXX3H8CJLkAvWrclWfcalw==}
+    dev: false
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
     dev: false
 
   /debug/3.2.7:

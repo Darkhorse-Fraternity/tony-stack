@@ -7,9 +7,9 @@ import { type NextPageWithLayout } from "~/types/page"
 
 const DaisyForm: NextPageWithLayout = () => (
   <SignInForm
+    initialValues={{ account: "", password: "" }}
     schema={signInSchema}
-    // eslint-disable-next-line @typescript-eslint/require-await
-    onSubmit={async (data) => {
+    onSubmit={(data) => {
       console.info("submit", data)
     }}
   />
