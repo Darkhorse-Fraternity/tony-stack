@@ -1,5 +1,4 @@
-import { Input } from "@monad-stack/daisy-hook-form"
-import Form, { type IFormProps } from "@monad-stack/daisy-hook-form/src/form"
+import { Form, type IFormProps, Input } from "@monad-stack/daisy-hook-form"
 import { type z } from "zod"
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any

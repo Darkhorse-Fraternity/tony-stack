@@ -7,7 +7,7 @@ import React, {
 } from "react"
 import ReactModal, { type Props } from "react-modal"
 
-type ComstomModalProps = Props & {
+export type ComstomModalProps = Props & {
   size?: "small" | "regular" | "large"
   title: string
   footChildren?: React.ReactNode

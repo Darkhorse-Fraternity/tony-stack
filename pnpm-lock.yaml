@@ -82,9 +82,9 @@ importers:
       '@monad-stack/tailwind-config': link:../../packages/config/tailwind
       '@monad-stack/tailwindcss-plugins': link:../../packages/tailwindcss-plugins
       '@monad-stack/tsconfig': link:../../packages/config/tsconfig
-      '@types/node': 18.14.6
+      '@types/node': 18.15.0
       '@types/react': 18.0.28
-      autoprefixer: 10.4.13_postcss@8.4.21
+      autoprefixer: 10.4.14_postcss@8.4.21
       click-to-react-component: 1.0.8_zula6vjvt3wdocc4mwcxqa6nzi
       csstype: 3.1.1
       eslint-config-monad: link:../../packages/config/eslint
@@ -112,7 +112,7 @@ importers:
       '@typescript-eslint/eslint-plugin': 5.54.1_mlk7dnz565t663n4razh6a6v6i
       '@typescript-eslint/parser': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
       eslint: 8.35.0
-      eslint-config-next: 13.2.3_ycpbpc6yetojsgtrx3mwntkhsu
+      eslint-config-next: 13.2.4_ycpbpc6yetojsgtrx3mwntkhsu
       eslint-config-prettier: 8.7.0_eslint@8.35.0
       eslint-config-turbo: 0.0.9_eslint@8.35.0
       eslint-plugin-prettier: 4.2.1_xprnzp4ul2bcpmfe73av4voica
@@ -136,8 +136,8 @@ importers:
     devDependencies:
       '@monad-stack/tailwindcss-plugins': link:../../tailwindcss-plugins
       '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
-      autoprefixer: 10.4.13_postcss@8.4.21
-      daisyui: 2.51.3_gbtt6ss3tbiz4yjtvdr6fbrj44
+      autoprefixer: 10.4.14_postcss@8.4.21
+      daisyui: 2.51.3_j7yt3jd32cwenjqavrrga47yr4
       postcss: 8.4.21
       tailwindcss: 3.2.7_postcss@8.4.21
       tailwindcss-animate: 1.0.5_tailwindcss@3.2.7
@@ -145,113 +145,152 @@ importers:
   packages/config/tsconfig:
     specifiers: {}
 
+  packages/config/tsup:
+    specifiers:
+      tsup: ^6.4.0
+    devDependencies:
+      tsup: 6.6.3
+
   packages/daisy-react-ui/error-boundary:
     specifiers:
       '@monad-stack/tailwind-config': '*'
       '@monad-stack/tsconfig': '*'
+      '@monad-stack/tsup-config': '*'
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       '@types/react-modal': ^3.13.1
+      autoprefixer: ^10.4.13
       classnames: ^2.3.2
       eslint-config-monad: '*'
+      postcss: ^8.4.21
       react: ^18.2.0
       react-dom: ^18.2.0
       react-error-boundary: ^3.1.4
+      tailwindcss: ^3.2.7
       tsup: ^6.4.0
       typescript: ^4.9.5
     dependencies:
       classnames: 2.3.2
-      react-dom: 18.2.0_react@18.2.0
       react-error-boundary: 3.1.4_react@18.2.0
     devDependencies:
       '@monad-stack/tailwind-config': link:../../config/tailwind
       '@monad-stack/tsconfig': link:../../config/tsconfig
+      '@monad-stack/tsup-config': link:../../config/tsup
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       '@types/react-modal': 3.13.1
+      autoprefixer: 10.4.14_postcss@8.4.21
       eslint-config-monad: link:../../config/eslint
+      postcss: 8.4.21
       react: 18.2.0
-      tsup: 6.6.3_typescript@4.9.5
+      react-dom: 18.2.0_react@18.2.0
+      tailwindcss: 3.2.7_postcss@8.4.21
+      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
       typescript: 4.9.5
 
   packages/daisy-react-ui/hook-form:
     specifiers:
       '@hookform/resolvers': ^2.9.11
       '@monad-stack/tsconfig': '*'
+      '@monad-stack/tsup-config': '*'
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
+      autoprefixer: ^10.4.13
       eslint-config-monad: '*'
+      postcss: ^8.4.21
       react: ^18.2.0
       react-hook-form: ^7.43.4
+      tailwindcss: ^3.2.7
       tsup: ^6.4.0
       typescript: ^4.9.5
       zod: ^3.21.4
     dependencies:
       '@hookform/resolvers': 2.9.11_react-hook-form@7.43.5
       react-hook-form: 7.43.5_react@18.2.0
-      zod: 3.21.4
     devDependencies:
       '@monad-stack/tsconfig': link:../../config/tsconfig
+      '@monad-stack/tsup-config': link:../../config/tsup
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
+      autoprefixer: 10.4.14_postcss@8.4.21
       eslint-config-monad: link:../../config/eslint
+      postcss: 8.4.21
       react: 18.2.0
-      tsup: 6.6.3_typescript@4.9.5
+      tailwindcss: 3.2.7_postcss@8.4.21
+      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
       typescript: 4.9.5
+      zod: 3.21.4
 
   packages/daisy-react-ui/layout:
     specifiers:
       '@monad-stack/tailwind-config': '*'
       '@monad-stack/tsconfig': '*'
+      '@monad-stack/tsup-config': '*'
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
+      autoprefixer: ^10.4.13
       eslint-config-monad: '*'
+      postcss: ^8.4.21
       react: ^18.2.0
+      tailwindcss: ^3.2.7
       tsup: ^6.4.0
       typescript: ^4.9.5
     devDependencies:
       '@monad-stack/tailwind-config': link:../../config/tailwind
       '@monad-stack/tsconfig': link:../../config/tsconfig
+      '@monad-stack/tsup-config': link:../../config/tsup
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
+      autoprefixer: 10.4.14_postcss@8.4.21
       eslint-config-monad: link:../../config/eslint
+      postcss: 8.4.21
       react: 18.2.0
-      tsup: 6.6.3_typescript@4.9.5
+      tailwindcss: 3.2.7_postcss@8.4.21
+      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
       typescript: 4.9.5
 
   packages/daisy-react-ui/modal:
     specifiers:
       '@monad-stack/tailwind-config': '*'
       '@monad-stack/tsconfig': '*'
+      '@monad-stack/tsup-config': '*'
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       '@types/react-modal': ^3.13.1
+      autoprefixer: ^10.4.13
       classnames: ^2.3.2
       eslint-config-monad: '*'
+      postcss: ^8.4.21
       react: ^18.2.0
       react-dom: ^18.2.0
       react-modal: ^3.16.1
+      tailwindcss: ^3.2.7
       tsup: ^6.4.0
       typescript: ^4.9.5
     dependencies:
       classnames: 2.3.2
-      react-dom: 18.2.0_react@18.2.0
       react-modal: 3.16.1_biqbaboplfbrettd7655fr4n2y
     devDependencies:
       '@monad-stack/tailwind-config': link:../../config/tailwind
       '@monad-stack/tsconfig': link:../../config/tsconfig
+      '@monad-stack/tsup-config': link:../../config/tsup
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       '@types/react-modal': 3.13.1
+      autoprefixer: 10.4.14_postcss@8.4.21
       eslint-config-monad: link:../../config/eslint
+      postcss: 8.4.21
       react: 18.2.0
-      tsup: 6.6.3_typescript@4.9.5
+      react-dom: 18.2.0_react@18.2.0
+      tailwindcss: 3.2.7_postcss@8.4.21
+      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
       typescript: 4.9.5
 
   packages/daisy-react-ui/table:
     specifiers:
       '@monad-stack/tailwind-config': '*'
       '@monad-stack/tsconfig': '*'
+      '@monad-stack/tsup-config': '*'
       '@tanstack/match-sorter-utils': ^8.7.6
       '@tanstack/react-table': 8.7.9
       '@types/react': ^18.0.17
@@ -271,10 +310,11 @@ importers:
     devDependencies:
       '@monad-stack/tailwind-config': link:../../config/tailwind
       '@monad-stack/tsconfig': link:../../config/tsconfig
+      '@monad-stack/tsup-config': link:../../config/tsup
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       '@types/react-modal': 3.13.1
-      autoprefixer: 10.4.13_postcss@8.4.21
+      autoprefixer: 10.4.14_postcss@8.4.21
       eslint-config-monad: link:../../config/eslint
       postcss: 8.4.21
       react: 18.2.0
@@ -805,15 +845,15 @@ packages:
       '@commitlint/execute-rule': 17.4.0
       '@commitlint/resolve-extends': 17.4.4
       '@commitlint/types': 17.4.4
-      '@types/node': 18.14.6
+      '@types/node': 18.15.0
       chalk: 4.1.2
       cosmiconfig: 8.1.0
-      cosmiconfig-typescript-loader: 4.3.0_y2okb5cfqgxv537umje5rj3w6m
+      cosmiconfig-typescript-loader: 4.3.0_lmcvhluzh3a7wwwkanu7ndhele
       lodash.isplainobject: 4.0.6
       lodash.merge: 4.6.2
       lodash.uniq: 4.5.0
       resolve-from: 5.0.0
-      ts-node: 10.9.1_alpjt73dvgv6kni625hu7f2l4m
+      ts-node: 10.9.1_lwgqdwokjtwlohdqtbb6s252kq
       typescript: 4.9.5
     transitivePeerDependencies:
       - '@swc/core'
@@ -1306,8 +1346,8 @@ packages:
     resolution: {integrity: sha512-+Mq3TtpkeeKFZanPturjcXt+KHfKYnLlX6jMLyCrmpq6OOs4i1GqBOAauSkii9QeKCMTYzGppar21JU57b/GEA==}
     dev: false
 
-  /@next/eslint-plugin-next/13.2.3:
-    resolution: {integrity: sha512-QmMPItnU7VeojI1KnuwL9SLFWEwmaNHNlnOGpoTwdLoSiP9sc8KYiAHWEc4/44L+cAdCxcZYvn7frcRNP5l84Q==}
+  /@next/eslint-plugin-next/13.2.4:
+    resolution: {integrity: sha512-ck1lI+7r1mMJpqLNa3LJ5pxCfOB1lfJncKmRJeJxcJqcngaFwylreLP7da6Rrjr6u2gVRTfmnkSkjc80IiQCwQ==}
     dependencies:
       glob: 7.1.7
     dev: false
@@ -1589,7 +1629,7 @@ packages:
   /@types/keyv/3.1.4:
     resolution: {integrity: sha512-BQ5aZNSCpj7D6K2ksrRCTmKRLEpnPvWDiLPfoGyhZ++8YtiK9d/3DBKPJgry359X/P1PfruyYwvnvwFjuEiEIg==}
     dependencies:
-      '@types/node': 18.14.6
+      '@types/node': 18.15.0
     dev: false
 
   /@types/minimist/1.2.2:
@@ -1600,8 +1640,8 @@ packages:
     resolution: {integrity: sha512-J8xLz7q2OFulZ2cyGTLE1TbbZcjpno7FaN6zdJNrgAdrJ+DZzh/uFR6YrTb4C+nXakvud8Q4+rbhoIWlYQbUFQ==}
     dev: false
 
-  /@types/node/18.14.6:
-    resolution: {integrity: sha512-93+VvleD3mXwlLI/xASjw0FzKcwzl3OdTCzm1LaRfqgS21gfFtK3zDXM5Op9TeeMsJVOaJ2VRDpT9q4Y3d0AvA==}
+  /@types/node/18.15.0:
+    resolution: {integrity: sha512-z6nr0TTEOBGkzLGmbypWOGnpSpSIBorEhC4L+4HeQ2iezKCi4f77kyslRwvHeNitymGQ+oFyIWGP96l/DPSV9w==}
 
   /@types/normalize-package-data/2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -1634,7 +1674,7 @@ packages:
   /@types/responselike/1.0.0:
     resolution: {integrity: sha512-85Y2BjiufFzaMIlvJDvTTB8Fxl2xfLo4HgmHzVBz08w4wDePCTjYw66PdrolO0kzli3yam/YCgRufyo1DdQVTA==}
     dependencies:
-      '@types/node': 18.14.6
+      '@types/node': 18.15.0
     dev: false
 
   /@types/scheduler/0.16.2:
@@ -2001,15 +2041,15 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
 
-  /autoprefixer/10.4.13_postcss@8.4.21:
-    resolution: {integrity: sha512-49vKpMqcZYsJjwotvt4+h/BCjJVnhGwcLpDt5xkcaOG3eLrG/HUYLagrihYsQ+qrIBgIzX1Rw7a6L8I/ZA1Atg==}
+  /autoprefixer/10.4.14_postcss@8.4.21:
+    resolution: {integrity: sha512-FQzyfOsTlwVzjHxKEqRIAdJx9niO6VCBCoEwax/VLSoQF29ggECcPuBqUMZ+u8jCZOPSy8b8/8KnuFbp0SaFZQ==}
     engines: {node: ^10 || ^12 || >=14}
     hasBin: true
     peerDependencies:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.21.5
-      caniuse-lite: 1.0.30001462
+      caniuse-lite: 1.0.30001464
       fraction.js: 4.2.0
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -2081,8 +2121,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001462
-      electron-to-chromium: 1.4.324
+      caniuse-lite: 1.0.30001464
+      electron-to-chromium: 1.4.327
       node-releases: 2.0.10
       update-browserslist-db: 1.0.10_browserslist@4.21.5
 
@@ -2154,8 +2194,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /caniuse-lite/1.0.30001462:
-    resolution: {integrity: sha512-PDd20WuOBPiasZ7KbFnmQRyuLE7cFXW2PVd7dmALzbkUXEP46upAuCDm9eY9vho8fgNMGmbAX92QBZHzcnWIqw==}
+  /caniuse-lite/1.0.30001464:
+    resolution: {integrity: sha512-oww27MtUmusatpRpCGSOneQk2/l5czXANDSFvsc7VuOQ86s3ANhZetpwXNf1zY/zdfP63Xvjz325DAdAoES13g==}
 
   /chalk/2.4.2:
     resolution: {integrity: sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==}
@@ -2378,7 +2418,7 @@ packages:
   /convert-source-map/1.9.0:
     resolution: {integrity: sha512-ASFBup0Mz1uyiIjANan1jzLQami9z1PoYSZCiiYW2FczPbenXc45FZdBZLzOT+r6+iciuEModtmCti+hjaAk0A==}
 
-  /cosmiconfig-typescript-loader/4.3.0_y2okb5cfqgxv537umje5rj3w6m:
+  /cosmiconfig-typescript-loader/4.3.0_lmcvhluzh3a7wwwkanu7ndhele:
     resolution: {integrity: sha512-NTxV1MFfZDLPiBMjxbHRwSh5LaLcPMwNdCutmnHJCKoVnlvldPWlllonKwrsRJ5pYZBIBGRWWU2tfvzxgeSW5Q==}
     engines: {node: '>=12', npm: '>=6'}
     peerDependencies:
@@ -2387,9 +2427,9 @@ packages:
       ts-node: '>=10'
       typescript: '>=3'
     dependencies:
-      '@types/node': 18.14.6
+      '@types/node': 18.15.0
       cosmiconfig: 8.1.0
-      ts-node: 10.9.1_alpjt73dvgv6kni625hu7f2l4m
+      ts-node: 10.9.1_lwgqdwokjtwlohdqtbb6s252kq
       typescript: 4.9.5
     dev: false
 
@@ -2461,13 +2501,13 @@ packages:
       stream-transform: 2.1.3
     dev: false
 
-  /daisyui/2.51.3_gbtt6ss3tbiz4yjtvdr6fbrj44:
+  /daisyui/2.51.3_j7yt3jd32cwenjqavrrga47yr4:
     resolution: {integrity: sha512-AQa9exq/DsnvjyDi6bwOqHExQr9LJJag0iKRXNvRRtHXPo1gaAQ3ASJWylUB8J8KMH2M9zIpr7cvPHc7yGckyQ==}
     peerDependencies:
       autoprefixer: ^10.0.2
       postcss: ^8.1.6
     dependencies:
-      autoprefixer: 10.4.13_postcss@8.4.21
+      autoprefixer: 10.4.14_postcss@8.4.21
       color: 4.2.3
       css-selector-tokenizer: 0.8.0
       postcss: 8.4.21
@@ -2663,8 +2703,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: false
 
-  /electron-to-chromium/1.4.324:
-    resolution: {integrity: sha512-m+eBs/kh3TXnCuqDF6aHLLRwLK2U471JAbZ1KYigf0TM96fZglxv0/ZFBvyIxnLKsIWUoDiVnHTA2mhYz1fqdA==}
+  /electron-to-chromium/1.4.327:
+    resolution: {integrity: sha512-DIk2H4g/3ZhjgiABJjVdQvUdMlSABOsjeCm6gmUzIdKxAuFrGiJ8QXMm3i09grZdDBMC/d8MELMrdwYRC0+YHg==}
 
   /emoji-regex/8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -2821,8 +2861,8 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /eslint-config-next/13.2.3_ycpbpc6yetojsgtrx3mwntkhsu:
-    resolution: {integrity: sha512-kPulHiQEHGei9hIaaNGygHRc0UzlWM+3euOmYbxNkd2Nbhci5rrCDeMBMPSV8xgUssphDGmwDHWbk4VZz3rlZQ==}
+  /eslint-config-next/13.2.4_ycpbpc6yetojsgtrx3mwntkhsu:
+    resolution: {integrity: sha512-lunIBhsoeqw6/Lfkd6zPt25w1bn0znLA/JCL+au1HoEpSb4/PpsOYsYtgV/q+YPsoKIOzFyU5xnb04iZnXjUvg==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
       typescript: '>=3.3.1'
@@ -2830,7 +2870,7 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@next/eslint-plugin-next': 13.2.3
+      '@next/eslint-plugin-next': 13.2.4
       '@rushstack/eslint-patch': 1.2.0
       '@typescript-eslint/parser': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
       eslint: 8.35.0
@@ -4504,7 +4544,7 @@ packages:
     dependencies:
       '@next/env': 13.2.4
       '@swc/helpers': 0.4.14
-      caniuse-lite: 1.0.30001462
+      caniuse-lite: 1.0.30001464
       postcss: 8.4.14
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -5369,8 +5409,8 @@ packages:
       glob: 7.2.3
     dev: false
 
-  /rollup/3.18.0:
-    resolution: {integrity: sha512-J8C6VfEBjkvYPESMQYxKHxNOh4A5a3FlP+0BETGo34HEcE4eTlgCrO2+eWzlu2a/sHs2QUkZco+wscH7jhhgWg==}
+  /rollup/3.19.0:
+    resolution: {integrity: sha512-xZzJZlH9Ca6cosfdNGPwl2z7Pby8dTi9TrYLPeg6/j7aUoDOhBd706tCUFvbiBj45h/cS7z/a4gS8xd5Yg0jBw==}
     engines: {node: '>=14.18.0', npm: '>=8.0.0'}
     hasBin: true
     optionalDependencies:
@@ -5889,7 +5929,7 @@ packages:
     resolution: {integrity: sha512-Y/arvbn+rrz3JCKl9C4kVNfTfSm2/mEp5FSz5EsZSANGPSlQrpRI5M4PKF+mJnE52jOO90PnPSc3Ur3bTQw0gA==}
     dev: true
 
-  /ts-node/10.9.1_alpjt73dvgv6kni625hu7f2l4m:
+  /ts-node/10.9.1_lwgqdwokjtwlohdqtbb6s252kq:
     resolution: {integrity: sha512-NtVysVPkxxrwFGUUxGYhfux8k78pQB3JqYBXlLRZgdGUqTO5wU/UyHop5p70iEbGhB7q5KmiZiU0Y3KlJrScEw==}
     hasBin: true
     peerDependencies:
@@ -5908,7 +5948,7 @@ packages:
       '@tsconfig/node12': 1.0.11
       '@tsconfig/node14': 1.0.3
       '@tsconfig/node16': 1.0.3
-      '@types/node': 18.14.6
+      '@types/node': 18.15.0
       acorn: 8.8.2
       acorn-walk: 8.2.0
       arg: 4.1.3
@@ -5936,6 +5976,41 @@ packages:
   /tslib/2.5.0:
     resolution: {integrity: sha512-336iVw3rtn2BUK7ORdIAHTyxHGRIHVReokCR3XjbckJMK7ms8FysBfhLR8IXnAgy7T0PTPNBWKiH514FOW/WSg==}
 
+  /tsup/6.6.3:
+    resolution: {integrity: sha512-OLx/jFllYlVeZQ7sCHBuRVEQBBa1tFbouoc/gbYakyipjVQdWy/iQOvmExUA/ewap9iQ7tbJf9pW0PgcEFfJcQ==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': ^1
+      postcss: ^8.4.12
+      typescript: ^4.1.0
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      postcss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      bundle-require: 4.0.1_esbuild@0.17.11
+      cac: 6.7.14
+      chokidar: 3.5.3
+      debug: 4.3.4
+      esbuild: 0.17.11
+      execa: 5.1.1
+      globby: 11.1.0
+      joycon: 3.1.1
+      postcss-load-config: 3.1.4
+      resolve-from: 5.0.0
+      rollup: 3.19.0
+      source-map: 0.8.0-beta.0
+      sucrase: 3.29.0
+      tree-kill: 1.2.2
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+    dev: true
+
   /tsup/6.6.3_typescript@4.9.5:
     resolution: {integrity: sha512-OLx/jFllYlVeZQ7sCHBuRVEQBBa1tFbouoc/gbYakyipjVQdWy/iQOvmExUA/ewap9iQ7tbJf9pW0PgcEFfJcQ==}
     engines: {node: '>=14.18'}
@@ -5962,7 +6037,7 @@ packages:
       joycon: 3.1.1
       postcss-load-config: 3.1.4
       resolve-from: 5.0.0
-      rollup: 3.18.0
+      rollup: 3.19.0
       source-map: 0.8.0-beta.0
       sucrase: 3.29.0
       tree-kill: 1.2.2
@@ -5999,7 +6074,7 @@ packages:
       postcss: 8.4.21
       postcss-load-config: 3.1.4_postcss@8.4.21
       resolve-from: 5.0.0
-      rollup: 3.18.0
+      rollup: 3.19.0
       source-map: 0.8.0-beta.0
       sucrase: 3.29.0
       tree-kill: 1.2.2
@@ -6440,4 +6515,3 @@ packages:
 
   /zod/3.21.4:
     resolution: {integrity: sha512-m46AKbrzKVzOzs/DZgVnG5H55N1sv1M8qZU3A8RIKbs3mrACDNeIOeilDymVb2HdmP8uwshOCF4uJ8uM9rCqJw==}
-    dev: false

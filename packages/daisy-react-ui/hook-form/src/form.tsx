@@ -84,7 +84,7 @@ export function FormInside<S extends z.ZodType<any, any>>({
   )
 }
 
-export function Form<S extends z.ZodType<any, any>>({
+function Form<S extends z.ZodType<any, any>>({
   schema,
   initialValues,
   ...props

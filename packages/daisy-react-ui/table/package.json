@@ -27,6 +27,7 @@
   "devDependencies": {
     "@monad-stack/tailwind-config": "*",
     "@monad-stack/tsconfig": "*",
+    "@monad-stack/tsup-config": "*",
     "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.6",
     "@types/react-modal": "^3.13.1",
