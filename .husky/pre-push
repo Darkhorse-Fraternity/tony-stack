@@ -5,3 +5,4 @@
 # npx lint-staged # Replace the last line with "yarn lint-staged"
 # cd ..
 pnpm run type-check
+pnpm manypkg check

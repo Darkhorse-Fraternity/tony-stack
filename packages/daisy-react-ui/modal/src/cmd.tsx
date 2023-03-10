@@ -39,6 +39,7 @@ export const CmdManage = {
 
     if (timers) {
       for (const iterator of timers) {
+        // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
         clearTimeout(iterator)
       }
 
@@ -55,6 +56,7 @@ export const CmdManage = {
         const timer = setTimeout(() => {
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
+          // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
           callback(...args)
         }, 0)
 
@@ -78,6 +80,7 @@ export const CMD = <D extends { isOpen: boolean }>({
   useEffect(() => {
     // eslint-disable-next-line @typescript-eslint/no-shadow
     CmdManage.on(event, (data) => {
+      // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
       setData(data)
     })
 
