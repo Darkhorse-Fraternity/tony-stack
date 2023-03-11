@@ -7,7 +7,7 @@ interface ITableBodyProps<TData extends RowData> {
 export const TableBody = <TData extends RowData>({
   table,
 }: ITableBodyProps<TData>) => (
-  <tbody>
+  <tbody className="max-h-48">
     {table.getRowModel().rows.map((row) => (
       <tr key={row.id}>
         {row.getVisibleCells().map((cell) => (

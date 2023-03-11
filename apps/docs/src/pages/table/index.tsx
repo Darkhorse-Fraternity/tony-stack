@@ -9,7 +9,7 @@ import { type IPerson, makeData } from "~/lib/fake-data/make-data"
 import { type NextPageWithLayout } from "~/types/page"
 
 const MyTable: NextPageWithLayout = () => {
-  const [data, setData] = React.useState(() => makeData(100_000))
+  const [data, setData] = React.useState(() => makeData(100_100))
 
   const columnHelper = createColumnHelper<IPerson>()
 
@@ -48,13 +48,44 @@ const MyTable: NextPageWithLayout = () => {
 
   return (
     <>
-      <div className="flex  flex-1">
+      <div className="flex  flex-1 flex-col">
+        <div className="flex  h-[300px] flex-1 flex-col">
+          <DaisyTable
+            columns={columns}
+            data={data ?? []}
+            enableRowSelection
+            onAdd={onAdd}
+            onDelete={onDelete}
+          />
+        </div>
+        <span>Loading:</span>
         <DaisyTable
           columns={columns}
-          data={data ?? []}
-          enableRowSelection
-          onAdd={onAdd}
-          onDelete={onDelete}
+          data={data.slice(0, 10) ?? []}
+          isLoading={true}
+          enableToolbar={false}
+          enablePagination={false}
+        />
+
+        <span>Width and height limit:</span>
+        <div className=" max-w-[400px] overflow-auto">
+          <DaisyTable
+            columns={columns}
+            data={data.slice(0, 10) ?? []}
+            // isLoading={true}
+            maxHeight={200}
+            enableToolbar={false}
+            enablePagination={false}
+          />
+        </div>
+
+        <span>Empty:</span>
+        <DaisyTable
+          columns={columns}
+          data={[]}
+          // isLoading={true}
+          enableToolbar={false}
+          enablePagination={false}
         />
       </div>
     </>

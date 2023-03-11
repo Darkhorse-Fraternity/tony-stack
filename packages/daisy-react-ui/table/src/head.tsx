@@ -9,7 +9,7 @@ interface ITableHeadProps<TData extends RowData> {
 export const TableHead = <TData extends RowData>({
   table,
 }: ITableHeadProps<TData>) => (
-  <thead className=" border-b-0">
+  <thead className=" sticky top-0 z-50 border-b-0">
     {table.getHeaderGroups().map((headerGroup) => (
       <tr key={headerGroup.id}>
         {headerGroup.headers.map((header) => (

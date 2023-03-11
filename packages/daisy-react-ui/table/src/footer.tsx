@@ -7,7 +7,7 @@ interface ITableFooterProps<TData extends RowData> {
 export const TableFooter = <TData extends RowData>({
   table,
 }: ITableFooterProps<TData>) => (
-  <tfoot className=" border-t-0">
+  <tfoot className=" sticky bottom-0 z-50 border-t-0">
     {table.getFooterGroups().map((footerGroup) => (
       <tr key={footerGroup.id}>
         {footerGroup.headers.map((header) => (
