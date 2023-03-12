@@ -11,6 +11,6 @@
   "linked": [],
   "access": "public",
   "updateInternalDependencies": "patch",
-  "baseBranch": "main",
+  "baseBranch": "origin/main",
   "ignore": ["docs"]
 }
