@@ -1,5 +1,11 @@
 # @monad-stack/daisy-react-table
 
+## 0.3.2
+
+### Patch Changes
+
+- [#42](https://github.com/Darkhorse-Fraternity/monad-stack/pull/42) [`fc943a5`](https://github.com/Darkhorse-Fraternity/monad-stack/commit/fc943a57d4ae4f9144bc45d84d835e9dab050464) Thanks [@Darkhorse-Fraternity](https://github.com/Darkhorse-Fraternity)! - update table load
+
 ## 0.3.1
 
 ### Patch Changes
