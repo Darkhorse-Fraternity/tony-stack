@@ -17,6 +17,7 @@ export interface IFormProps<S extends z.ZodType<any, any>>
   onSubmit: (values: z.infer<S>) => Promise<void | IOnSubmitResult> | void
   initialValues?: UseFormProps<z.infer<S>>["defaultValues"]
   loading?: boolean
+  errorClassName?: string
 }
 
 interface IOnSubmitResult {
@@ -31,6 +32,7 @@ export function FormInside<S extends z.ZodType<any, any>>({
   submitText,
   onSubmit,
   loading,
+  errorClassName,
   ...props
 }: PropsWithChildren<Omit<IFormProps<S>, "schema" | "initialValues">>) {
   const ctx = useFormContext()
@@ -66,7 +68,7 @@ export function FormInside<S extends z.ZodType<any, any>>({
       {children}
 
       {formError && (
-        <div role="alert" style={{ color: "red" }}>
+        <div role="alert" style={{ color: "red" }} className={errorClassName}>
           {formError}
         </div>
       )}

@@ -15,5 +15,8 @@ export {
   SortUpIcon,
 } from "./src/icons"
 export { Pagination } from "./src/pagination"
-export { type TableToolbarProps, ToolBar } from "./src/toolbar"
+export {
+  type ITableToolbarProps as TableToolbarProps,
+  ToolBar,
+} from "./src/toolbar"
 export { createColumnHelper, type Table } from "@tanstack/react-table"

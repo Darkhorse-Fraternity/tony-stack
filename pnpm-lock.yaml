@@ -69,7 +69,7 @@ importers:
       '@monad-stack/daisy-hook-form': link:../../packages/daisy-react-ui/hook-form
       '@monad-stack/daisy-layout': link:../../packages/daisy-react-ui/layout
       '@monad-stack/daisy-modal': link:../../packages/daisy-react-ui/modal
-      '@monad-stack/daisy-react-table': link:../../packages/daisy-react-ui/table
+      '@monad-stack/daisy-react-table': 0.3.2_biqbaboplfbrettd7655fr4n2y
       '@monad-stack/use-hook-utils': link:../../packages/hooks/use-hook-utils
       '@tanstack/react-query': 4.26.1_biqbaboplfbrettd7655fr4n2y
       classnames: 2.3.2
@@ -332,7 +332,6 @@ importers:
       '@monad-stack/tsconfig': '*'
       '@tanstack/react-query': ^4.14.5
       axios: ^1.1.3
-      eslint-config-monad: '*'
       react: ^18.2.0
       tsup: ^6.4.0
       typescript: ^4.9.5
@@ -342,7 +341,6 @@ importers:
       react: 18.2.0
     devDependencies:
       '@monad-stack/tsconfig': link:../../config/tsconfig
-      eslint-config-monad: link:../../config/eslint
       tsup: 6.6.3_typescript@4.9.5
       typescript: 4.9.5
 
@@ -1344,6 +1342,16 @@ packages:
       globby: 11.1.0
       jju: 1.4.0
       read-yaml-file: 1.1.0
+    dev: false
+
+  /@monad-stack/daisy-react-table/0.3.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-qT3lkfjLLK6wDL55UeDEiW/AbJj0EICMvduGOZw0JBqGrF/eRq0fzODEqhuSu/hc2IjNAP9NI/Kje2u3gs8Utg==}
+    dependencies:
+      '@tanstack/match-sorter-utils': 8.7.6
+      '@tanstack/react-table': 8.7.9_biqbaboplfbrettd7655fr4n2y
+    transitivePeerDependencies:
+      - react
+      - react-dom
     dev: false
 
   /@next/env/13.2.4:

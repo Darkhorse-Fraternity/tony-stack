@@ -1,11 +1,11 @@
 import {
-  QueryKey,
+  type QueryKey,
   useMutation,
-  UseMutationOptions,
+  type UseMutationOptions,
   useQuery,
-  UseQueryOptions,
+  type UseQueryOptions,
 } from "@tanstack/react-query"
-import { Method } from "axios"
+import { type Method } from "axios"
 
 import { baseRequest as request } from "./axios-helper"
 

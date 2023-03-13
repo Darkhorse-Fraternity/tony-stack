@@ -64,6 +64,7 @@ export const FilterBar = <TData extends RowData>({
       className="input input-xs mt-1"
       onChange={table.setGlobalFilter}
       placeholder="Search..."
+      defaultValue={""}
     />
   </div>
 )
