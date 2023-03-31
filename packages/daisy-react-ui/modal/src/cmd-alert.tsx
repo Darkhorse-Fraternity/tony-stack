@@ -30,7 +30,7 @@ const AlertComponent = () => {
         }}
       />
     ),
-    [onClose]
+    [onClose],
   )
 
   return <CMD event={CmdAlertKey} render={render} />

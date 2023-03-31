@@ -5,4 +5,4 @@ module.exports = {
   rules: {
     "sonarjs/no-duplicate-string": "off",
   },
-};
+}

@@ -40,7 +40,7 @@ export function useLocalStorage(key: string, initialValue: any) {
         console.log(error)
       }
     },
-    [key]
+    [key],
   )
 
   return [storedValue, setValue]

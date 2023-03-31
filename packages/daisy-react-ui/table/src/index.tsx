@@ -6,9 +6,9 @@ import {
   getFilteredRowModel as getDefaultFilteredRowModel,
   getPaginationRowModel as getDefaultPaginationRowModel,
   getSortedRowModel as getDefaultSortedRowModel,
+  useReactTable,
   type RowData,
   type TableOptions,
-  useReactTable,
 } from "@tanstack/react-table"
 
 import { TableBody } from "./body"
@@ -18,7 +18,7 @@ import { FilterBar, fuzzyFilter } from "./filter"
 import { TableFooter } from "./footer"
 import { TableHead } from "./head"
 import { Pagination } from "./pagination"
-import { type ITableToolbarProps, ToolBar } from "./toolbar"
+import { ToolBar, type ITableToolbarProps } from "./toolbar"
 
 type Optional<T, K extends keyof T> = Omit<T, K> & Partial<T>
 

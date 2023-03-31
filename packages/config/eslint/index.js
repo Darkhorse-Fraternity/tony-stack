@@ -7,5 +7,5 @@ module.exports = {
     "./import.js",
     "./sonarjs.js",
     "./unicorn.js",
-  ]
-};
+  ],
+}

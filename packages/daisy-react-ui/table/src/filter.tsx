@@ -1,6 +1,6 @@
+import React, { useRef } from "react"
 import { rankItem } from "@tanstack/match-sorter-utils"
 import { type FilterFn, type RowData, type Table } from "@tanstack/react-table"
-import React, { useRef } from "react"
 
 interface IFilterProps<TData extends RowData> {
   table: Table<TData>

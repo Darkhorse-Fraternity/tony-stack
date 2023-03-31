@@ -11,11 +11,11 @@ export const ColumnVisibility = <TData extends RowData>({
 }: IColumnVisibilityProps<TData>) => {
   const allLeafColumns = table.getAllLeafColumns()
   const hideableColumns = allLeafColumns.filter(
-    (column) => column.id !== "_selector" && column.getCanHide()
+    (column) => column.id !== "_selector" && column.getCanHide(),
   )
   const checkedCount = hideableColumns.reduce(
     (acc, val) => acc + (val.getIsVisible() ? 0 : 1),
-    0
+    0,
   )
   const onlyOneOptionLeft = checkedCount + 1 >= hideableColumns.length
 
@@ -35,7 +35,7 @@ export const ColumnVisibility = <TData extends RowData>({
       </div>
       <ul
         tabIndex={0}
-        className="dropdown-content menu rounded-box bg-base-200 w-52 p-2 shadow-lg"
+        className="dropdown-content menu rounded-box w-52 bg-base-200 p-2 shadow-lg"
       >
         {hideableColumns.map((column) => (
           <li key={column.id} className="flex">

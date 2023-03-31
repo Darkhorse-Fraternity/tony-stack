@@ -1,1 +1,1 @@
-module.exports = require("@hireez-internal/tailwind-config");
+module.exports = require("@hireez-internal/tailwind-config")

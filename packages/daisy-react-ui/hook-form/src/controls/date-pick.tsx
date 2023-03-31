@@ -1,15 +1,16 @@
-import dayjs from "dayjs"
 import {
   type DetailedHTMLProps,
   type InputHTMLAttributes,
   type PropsWithChildren,
 } from "react"
+import dayjs from "dayjs"
 import {
-  type Control,
   Controller,
+  type Control,
   type FieldValues,
   type Path,
 } from "react-hook-form"
+
 // import { Input } from '@hireteammate/hiretual-design'
 export type CDatePickType<T extends FieldValues> = DetailedHTMLProps<
   InputHTMLAttributes<HTMLInputElement>,
@@ -54,7 +55,7 @@ const DatePick = <T extends FieldValues = FieldValues>({
       render={({ field, fieldState: { error } }) => {
         const value = field.value as Date
         const dateString = dayjs(value).format(
-          type === "date" ? "YYYY-MM-DD" : "YYYY-MM-DDTHH:mm"
+          type === "date" ? "YYYY-MM-DD" : "YYYY-MM-DDTHH:mm",
         )
 
         return (

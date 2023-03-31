@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
-const plugin = require("tailwindcss/plugin");
+const plugin = require("tailwindcss/plugin")
 
 module.exports = plugin(
   function ({ addComponents, theme }) {
@@ -36,7 +36,7 @@ module.exports = plugin(
           color: "rgb(255 68 27)",
         },
       },
-    });
+    })
   },
   {
     theme: {
@@ -50,5 +50,5 @@ module.exports = plugin(
         },
       },
     },
-  }
-);
+  },
+)

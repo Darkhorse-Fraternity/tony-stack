@@ -12,7 +12,7 @@ export const Layout: FC<PropsWithChildren<ILayoutProps>> = ({
   brand,
   navBar,
 }) => (
-  <div className="drawer-mobile drawer bg-base-100  h-screen">
+  <div className="drawer-mobile drawer h-screen  bg-base-100">
     <input id="drawer" type="checkbox" className="drawer-toggle" />
     <div
       className="drawer-content "
@@ -30,7 +30,7 @@ export const Layout: FC<PropsWithChildren<ILayoutProps>> = ({
       style={{ scrollBehavior: "smooth", scrollPaddingTop: "5rem" }}
     >
       <label htmlFor="drawer" className="drawer-overlay" />
-      <aside className="bg-base-200 w-80">
+      <aside className="w-80 bg-base-200">
         {brand}
         {menu}
       </aside>

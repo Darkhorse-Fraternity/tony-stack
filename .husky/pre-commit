@@ -3,4 +3,3 @@
 
 cd ./apps/docs
 npx lint-staged # Replace the last line with "yarn lint-staged"
-pnpm manypkg fix

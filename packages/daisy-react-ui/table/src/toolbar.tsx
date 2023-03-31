@@ -1,5 +1,5 @@
-import { type RowData, type Table } from "@tanstack/react-table"
 import { type PropsWithChildren } from "react"
+import { type RowData, type Table } from "@tanstack/react-table"
 
 import { MinusIcon, PlusIcon } from "./icons"
 
@@ -21,7 +21,7 @@ export function ToolBar<TData extends RowData>({
     <div className="sm:flex sm:gap-x-2">
       {Boolean(rowSelection) && Object.keys(rowSelection).length > 0 && (
         <div
-          className=" tooltip-top tooltip   hover:tooltip-open"
+          className=" tooltip tooltip-top   hover:tooltip-open"
           data-tip="Delete"
         >
           <button
@@ -39,7 +39,7 @@ export function ToolBar<TData extends RowData>({
       )}
       {onAdd && (
         <div
-          className="  tooltip-top tooltip  hover:tooltip-open"
+          className="  tooltip tooltip-top  hover:tooltip-open"
           data-tip="Add"
         >
           <button

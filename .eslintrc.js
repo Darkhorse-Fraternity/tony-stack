@@ -7,6 +7,7 @@ const config = {
       parser: "@typescript-eslint/parser",
       files: ["**/*.ts", "**/*.tsx"],
       parserOptions: {
+        ecmaVersion: 6,
         tsconfigRootDir: __dirname,
         project: [
           "./tsconfig.json",
@@ -24,8 +25,6 @@ const config = {
     "**/*.config.cjs",
     "packages/config/**",
   ],
-};
+}
 
-module.exports = config;
-
-
+module.exports = config

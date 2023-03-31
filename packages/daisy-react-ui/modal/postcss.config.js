@@ -1,1 +1,1 @@
-module.exports = require("@monad-stack/tailwind-config/postcss");
+module.exports = require("@monad-stack/tailwind-config/postcss")

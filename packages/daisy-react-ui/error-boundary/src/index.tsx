@@ -25,7 +25,7 @@ const ErrorComponent: FC<{
   justify-center
 "
   >
-    <div className="bg-base-100 rounded-md px-40 py-20 shadow-2xl">
+    <div className="rounded-md bg-base-100 px-40 py-20 shadow-2xl">
       <div className="flex flex-col items-center">
         <h6 className="text-base-900 mb-2 text-center text-2xl font-bold md:text-3xl">
           <span className="text-error">Oops!</span>{" "}
@@ -34,7 +34,7 @@ const ErrorComponent: FC<{
 
         <button
           type="button"
-          className="btn btn-primary mt-2"
+          className="btn-primary btn mt-2"
           onClick={onClick}
         >
           Try again?
@@ -58,14 +58,14 @@ const CodeErrorComponent: FC<{
   justify-center
 "
       >
-        <div className="bg-base-100 rounded-md px-40 py-20 shadow-2xl">
+        <div className="rounded-md bg-base-100 px-40 py-20 shadow-2xl">
           <div className="flex flex-col items-center">
             <h1 className="text-base-900 mb-2 text-center font-bold ">
               Please login first
             </h1>
             <button
               type="button"
-              className="btn btn-primary mt-2"
+              className="btn-primary btn mt-2"
               onClick={onClick}
             >
               Log in

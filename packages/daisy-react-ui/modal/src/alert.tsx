@@ -24,8 +24,8 @@ export const AlertModal: FC<IAlertType> = ({
     isOpen={isOpen}
   >
     <div
-      className="bg-base-100 relative inline-block transform
-    overflow-hidden rounded-lg text-left align-bottom shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:align-middle"
+      className="relative inline-block transform overflow-hidden
+    rounded-lg bg-base-100 text-left align-bottom shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:align-middle"
     >
       {/* <button className="btn btn-sm btn-circle absolute right-2 top-2">
         ✕

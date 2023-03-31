@@ -1,10 +1,11 @@
 import { useFieldArray, type UseFieldArrayReturn } from "react-hook-form"
+
 interface IFieldArrayPro {
   fieldArrayName: string
   render: (
     arg: Pick<UseFieldArrayReturn, "append" | "remove" | "fields"> & {
       fieldArrayName: string
-    }
+    },
   ) => JSX.Element | null
 }
 

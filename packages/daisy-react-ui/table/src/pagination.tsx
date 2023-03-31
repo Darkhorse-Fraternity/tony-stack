@@ -49,7 +49,7 @@ export const Pagination = <TData extends RowData>({
           </label>
           <label>
             <select
-              className="select select-bordered   mt-1 block w-full "
+              className="select-bordered select   mt-1 block w-full "
               value={pageSize}
               onChange={(e) => {
                 setPageSize(Number(e.target.value))

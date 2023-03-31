@@ -63,7 +63,7 @@ export const errorHandler = (error: IDMCError) => {
           errorText ?? "relogin",
           () => {
             window.location.href = signInPath
-          }
+          },
           // { nextBtnTitle: "relogin" }
         )
       }, 10)

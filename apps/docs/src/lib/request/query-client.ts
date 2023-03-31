@@ -1,6 +1,7 @@
 import { QueryClient } from "@tanstack/react-query"
 
 import errorHandler from "./error-handle"
+
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
