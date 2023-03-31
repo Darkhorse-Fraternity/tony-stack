@@ -26,8 +26,8 @@ importers:
       eslint-config-monad: link:packages/config/eslint
       husky: 8.0.3
       lint-staged: 13.1.2
-      prettier: 2.8.4
-      prettier-plugin-tailwindcss: 0.2.4_prettier@2.8.4
+      prettier: 2.8.7
+      prettier-plugin-tailwindcss: 0.2.4_prettier@2.8.7
       turbo: 1.8.3
 
   apps/docs:
@@ -60,7 +60,7 @@ importers:
       react-json-view: ^1.21.3
       tailwindcss: ^3.2.7
       tailwindcss-animate: ^1.0.5
-      typescript: ^4.9.5
+      typescript: ^5.0.0
       zod: ^3.21.4
     dependencies:
       '@faker-js/faker': 7.6.0
@@ -69,7 +69,7 @@ importers:
       '@monad-stack/daisy-hook-form': link:../../packages/daisy-react-ui/hook-form
       '@monad-stack/daisy-layout': link:../../packages/daisy-react-ui/layout
       '@monad-stack/daisy-modal': link:../../packages/daisy-react-ui/modal
-      '@monad-stack/daisy-react-table': 0.3.2_biqbaboplfbrettd7655fr4n2y
+      '@monad-stack/daisy-react-table': link:../../packages/daisy-react-ui/table
       '@monad-stack/use-hook-utils': link:../../packages/hooks/use-hook-utils
       '@tanstack/react-query': 4.26.1_biqbaboplfbrettd7655fr4n2y
       classnames: 2.3.2
@@ -93,7 +93,7 @@ importers:
       postcss: 8.4.21
       tailwindcss: 3.2.7_postcss@8.4.21
       tailwindcss-animate: 1.0.5_tailwindcss@3.2.7
-      typescript: 4.9.5
+      typescript: 5.0.2
 
   packages/config/eslint:
     specifiers:
@@ -102,29 +102,29 @@ importers:
       eslint: ^8.34.0
       eslint-config-next: ^13.2.3
       eslint-config-prettier: ^8.6.0
-      eslint-config-turbo: ^0.0.9
+      eslint-config-turbo: ^1.0.0
       eslint-plugin-prettier: ^4.2.1
       eslint-plugin-simple-import-sort: ^10.0.0
-      eslint-plugin-sonarjs: ^0.18.0
+      eslint-plugin-sonarjs: ^0.19.0
       eslint-plugin-unicorn: ^46.0.0
       eslint-plugin-unused-imports: ^2.0.0
       prettier: ^2.8.4
-      typescript: ^4.9.5
+      typescript: ^5.0.0
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.54.1_mlk7dnz565t663n4razh6a6v6i
-      '@typescript-eslint/parser': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
+      '@typescript-eslint/eslint-plugin': 5.54.1_ptmzjahj2lzv7vrsfzwjsq4mpu
+      '@typescript-eslint/parser': 5.54.1_byynos7ffx3cepxtk6gvolkky4
       eslint: 8.35.0
-      eslint-config-next: 13.2.4_ycpbpc6yetojsgtrx3mwntkhsu
+      eslint-config-next: 13.2.4_byynos7ffx3cepxtk6gvolkky4
       eslint-config-prettier: 8.7.0_eslint@8.35.0
-      eslint-config-turbo: 0.0.9_eslint@8.35.0
+      eslint-config-turbo: 1.8.8_eslint@8.35.0
       eslint-plugin-prettier: 4.2.1_xprnzp4ul2bcpmfe73av4voica
       eslint-plugin-simple-import-sort: 10.0.0_eslint@8.35.0
-      eslint-plugin-sonarjs: 0.18.0_eslint@8.35.0
+      eslint-plugin-sonarjs: 0.19.0_eslint@8.35.0
       eslint-plugin-unicorn: 46.0.0_eslint@8.35.0
       eslint-plugin-unused-imports: 2.0.0_vkrezerrv4xnu4uoc4gpfx7tv4
     devDependencies:
       prettier: 2.8.4
-      typescript: 4.9.5
+      typescript: 5.0.2
 
   packages/config/tailwind:
     specifiers:
@@ -167,13 +167,13 @@ importers:
       postcss: ^8.4.21
       react: ^18.2.0
       react-dom: ^18.2.0
-      react-error-boundary: ^3.1.4
+      react-error-boundary: ^4.0.0
       tailwindcss: ^3.2.7
       tsup: ^6.4.0
-      typescript: ^4.9.5
+      typescript: ^5.0.0
     dependencies:
       classnames: 2.3.2
-      react-error-boundary: 3.1.4_react@18.2.0
+      react-error-boundary: 4.0.0_react@18.2.0
     devDependencies:
       '@monad-stack/tailwind-config': link:../../config/tailwind
       '@monad-stack/tsconfig': link:../../config/tsconfig
@@ -187,12 +187,12 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tailwindcss: 3.2.7_postcss@8.4.21
-      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
-      typescript: 4.9.5
+      tsup: 6.6.3_7ebhnmodlyu4vpxptcd62x65qe
+      typescript: 5.0.2
 
   packages/daisy-react-ui/hook-form:
     specifiers:
-      '@hookform/resolvers': ^2.9.11
+      '@hookform/resolvers': ^3.0.0
       '@monad-stack/tsconfig': '*'
       '@monad-stack/tsup-config': '*'
       '@types/react': ^18.0.17
@@ -205,10 +205,10 @@ importers:
       react-hook-form: ^7.43.4
       tailwindcss: ^3.2.7
       tsup: ^6.4.0
-      typescript: ^4.9.5
+      typescript: ^5.0.0
       zod: ^3.21.4
     dependencies:
-      '@hookform/resolvers': 2.9.11_react-hook-form@7.43.5
+      '@hookform/resolvers': 3.0.0_react-hook-form@7.43.5
       dayjs: 1.11.7
       react-hook-form: 7.43.5_react@18.2.0
     devDependencies:
@@ -221,8 +221,8 @@ importers:
       postcss: 8.4.21
       react: 18.2.0
       tailwindcss: 3.2.7_postcss@8.4.21
-      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
-      typescript: 4.9.5
+      tsup: 6.6.3_7ebhnmodlyu4vpxptcd62x65qe
+      typescript: 5.0.2
       zod: 3.21.4
 
   packages/daisy-react-ui/layout:
@@ -238,7 +238,7 @@ importers:
       react: ^18.2.0
       tailwindcss: ^3.2.7
       tsup: ^6.4.0
-      typescript: ^4.9.5
+      typescript: ^5.0.0
     devDependencies:
       '@monad-stack/tailwind-config': link:../../config/tailwind
       '@monad-stack/tsconfig': link:../../config/tsconfig
@@ -250,8 +250,8 @@ importers:
       postcss: 8.4.21
       react: 18.2.0
       tailwindcss: 3.2.7_postcss@8.4.21
-      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
-      typescript: 4.9.5
+      tsup: 6.6.3_7ebhnmodlyu4vpxptcd62x65qe
+      typescript: 5.0.2
 
   packages/daisy-react-ui/modal:
     specifiers:
@@ -270,7 +270,7 @@ importers:
       react-modal: ^3.16.1
       tailwindcss: ^3.2.7
       tsup: ^6.4.0
-      typescript: ^4.9.5
+      typescript: ^5.0.0
     dependencies:
       classnames: 2.3.2
       react-modal: 3.16.1_biqbaboplfbrettd7655fr4n2y
@@ -287,8 +287,8 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tailwindcss: 3.2.7_postcss@8.4.21
-      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
-      typescript: 4.9.5
+      tsup: 6.6.3_7ebhnmodlyu4vpxptcd62x65qe
+      typescript: 5.0.2
 
   packages/daisy-react-ui/table:
     specifiers:
@@ -296,7 +296,7 @@ importers:
       '@monad-stack/tsconfig': '*'
       '@monad-stack/tsup-config': '*'
       '@tanstack/match-sorter-utils': ^8.7.6
-      '@tanstack/react-table': 8.7.9
+      '@tanstack/react-table': 8.8.4
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       '@types/react-modal': ^3.13.1
@@ -307,10 +307,10 @@ importers:
       react-dom: ^18.2.0
       tailwindcss: ^3.2.7
       tsup: ^6.4.0
-      typescript: ^4.9.5
+      typescript: ^5.0.0
     dependencies:
       '@tanstack/match-sorter-utils': 8.7.6
-      '@tanstack/react-table': 8.7.9_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-table': 8.8.4_biqbaboplfbrettd7655fr4n2y
     devDependencies:
       '@monad-stack/tailwind-config': link:../../config/tailwind
       '@monad-stack/tsconfig': link:../../config/tsconfig
@@ -324,8 +324,8 @@ importers:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       tailwindcss: 3.2.7_postcss@8.4.21
-      tsup: 6.6.3_uujdqti2krmttzhqvubwnsmcci
-      typescript: 4.9.5
+      tsup: 6.6.3_7ebhnmodlyu4vpxptcd62x65qe
+      typescript: 5.0.2
 
   packages/hooks/axios-hook-client:
     specifiers:
@@ -334,15 +334,15 @@ importers:
       axios: ^1.1.3
       react: ^18.2.0
       tsup: ^6.4.0
-      typescript: ^4.9.5
+      typescript: ^5.0.0
     dependencies:
       '@tanstack/react-query': 4.26.1_react@18.2.0
       axios: 1.3.4
       react: 18.2.0
     devDependencies:
       '@monad-stack/tsconfig': link:../../config/tsconfig
-      tsup: 6.6.3_typescript@4.9.5
-      typescript: 4.9.5
+      tsup: 6.6.3_typescript@5.0.2
+      typescript: 5.0.2
 
   packages/hooks/use-hook-utils:
     specifiers:
@@ -352,15 +352,15 @@ importers:
       eslint-config-monad: '*'
       react: ^18.2.0
       tsup: ^6.4.0
-      typescript: ^4.9.5
+      typescript: ^5.0.0
     devDependencies:
       '@monad-stack/tsconfig': link:../../config/tsconfig
       '@types/react': 18.0.28
       '@types/react-dom': 18.0.11
       eslint-config-monad: link:../../config/eslint
       react: 18.2.0
-      tsup: 6.6.3_typescript@4.9.5
-      typescript: 4.9.5
+      tsup: 6.6.3_typescript@5.0.2
+      typescript: 5.0.2
 
   packages/tailwindcss-plugins:
     specifiers:
@@ -571,7 +571,7 @@ packages:
       fs-extra: 7.0.1
       lodash.startcase: 4.4.0
       outdent: 0.5.0
-      prettier: 2.8.4
+      prettier: 2.8.7
       resolve-from: 5.0.0
       semver: 5.7.1
     dev: false
@@ -758,7 +758,7 @@ packages:
       '@changesets/types': 5.2.1
       fs-extra: 7.0.1
       human-id: 1.0.2
-      prettier: 2.8.4
+      prettier: 2.8.7
     dev: false
 
   /@commitlint/cli/17.4.4:
@@ -1209,8 +1209,8 @@ packages:
       - '@types/react'
     dev: true
 
-  /@hookform/resolvers/2.9.11_react-hook-form@7.43.5:
-    resolution: {integrity: sha512-bA3aZ79UgcHj7tFV7RlgThzwSSHZgvfbt2wprldRkYBcMopdMvHyO17Wwp/twcJasNFischFfS7oz8Katz8DdQ==}
+  /@hookform/resolvers/3.0.0_react-hook-form@7.43.5:
+    resolution: {integrity: sha512-SQPefakODpyq25b/phHXDKCdRrEfPcCXV7B4nAa139wE1DxufYbbNAjeo0T04ZXBokRxZ+wD8iA1kkVMa3QwjQ==}
     peerDependencies:
       react-hook-form: ^7.0.0
     dependencies:
@@ -1342,16 +1342,6 @@ packages:
       globby: 11.1.0
       jju: 1.4.0
       read-yaml-file: 1.1.0
-    dev: false
-
-  /@monad-stack/daisy-react-table/0.3.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-qT3lkfjLLK6wDL55UeDEiW/AbJj0EICMvduGOZw0JBqGrF/eRq0fzODEqhuSu/hc2IjNAP9NI/Kje2u3gs8Utg==}
-    dependencies:
-      '@tanstack/match-sorter-utils': 8.7.6
-      '@tanstack/react-table': 8.7.9_biqbaboplfbrettd7655fr4n2y
-    transitivePeerDependencies:
-      - react
-      - react-dom
     dev: false
 
   /@next/env/13.2.4:
@@ -1591,20 +1581,20 @@ packages:
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
-  /@tanstack/react-table/8.7.9_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-6MbbQn5AupSOkek1+6IYu+1yZNthAKTRZw9tW92Vi6++iRrD1GbI3lKTjJalf8lEEKOqapPzQPE20nywu0PjCA==}
+  /@tanstack/react-table/8.8.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-5w2AoBnDBJYuUa80sLOqelcG/eJdGwIPFBRnEiU3RCAEeZ1QIhYse/0vzhTY8VAcTXa2sjWhXNDWci4VlktNmg==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
     dependencies:
-      '@tanstack/table-core': 8.7.9
+      '@tanstack/table-core': 8.8.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@tanstack/table-core/8.7.9:
-    resolution: {integrity: sha512-4RkayPMV1oS2SKDXfQbFoct1w5k+pvGpmX18tCXMofK/VDRdA2hhxfsQlMvsJ4oTX8b0CI4Y3GDKn5T425jBCw==}
+  /@tanstack/table-core/8.8.4:
+    resolution: {integrity: sha512-4gq0A/Qz/JFuclxPd1UnNi5P57vbVF10mPK743Iuv2ORLLgF/O/XkaYjYDGw5SHMof8CgiT/nfdJdlgHsOfRIg==}
     engines: {node: '>=12'}
     dev: false
 
@@ -1698,7 +1688,7 @@ packages:
     resolution: {integrity: sha512-21cFJr9z3g5dW8B0CVI9g2O9beqaThGQ6ZFBqHfwhzLDKUxaqTIy3vnfah/UPkfOiF2pLq+tGz+W8RyCskuslw==}
     dev: false
 
-  /@typescript-eslint/eslint-plugin/5.54.1_mlk7dnz565t663n4razh6a6v6i:
+  /@typescript-eslint/eslint-plugin/5.54.1_ptmzjahj2lzv7vrsfzwjsq4mpu:
     resolution: {integrity: sha512-a2RQAkosH3d3ZIV08s3DcL/mcGc2M/UC528VkPULFxR9VnVPT8pBu0IyBAJJmVsCmhVfwQX1v6q+QGnmSe1bew==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -1709,10 +1699,10 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
+      '@typescript-eslint/parser': 5.54.1_byynos7ffx3cepxtk6gvolkky4
       '@typescript-eslint/scope-manager': 5.54.1
-      '@typescript-eslint/type-utils': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
-      '@typescript-eslint/utils': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
+      '@typescript-eslint/type-utils': 5.54.1_byynos7ffx3cepxtk6gvolkky4
+      '@typescript-eslint/utils': 5.54.1_byynos7ffx3cepxtk6gvolkky4
       debug: 4.3.4
       eslint: 8.35.0
       grapheme-splitter: 1.0.4
@@ -1720,13 +1710,13 @@ packages:
       natural-compare-lite: 1.4.0
       regexpp: 3.2.0
       semver: 7.3.8
-      tsutils: 3.21.0_typescript@4.9.5
-      typescript: 4.9.5
+      tsutils: 3.21.0_typescript@5.0.2
+      typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@typescript-eslint/parser/5.54.1_ycpbpc6yetojsgtrx3mwntkhsu:
+  /@typescript-eslint/parser/5.54.1_byynos7ffx3cepxtk6gvolkky4:
     resolution: {integrity: sha512-8zaIXJp/nG9Ff9vQNh7TI+C3nA6q6iIsGJ4B4L6MhZ7mHnTMR4YP5vp2xydmFXIy8rpyIVbNAG44871LMt6ujg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -1738,10 +1728,10 @@ packages:
     dependencies:
       '@typescript-eslint/scope-manager': 5.54.1
       '@typescript-eslint/types': 5.54.1
-      '@typescript-eslint/typescript-estree': 5.54.1_typescript@4.9.5
+      '@typescript-eslint/typescript-estree': 5.54.1_typescript@5.0.2
       debug: 4.3.4
       eslint: 8.35.0
-      typescript: 4.9.5
+      typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1754,7 +1744,7 @@ packages:
       '@typescript-eslint/visitor-keys': 5.54.1
     dev: false
 
-  /@typescript-eslint/type-utils/5.54.1_ycpbpc6yetojsgtrx3mwntkhsu:
+  /@typescript-eslint/type-utils/5.54.1_byynos7ffx3cepxtk6gvolkky4:
     resolution: {integrity: sha512-WREHsTz0GqVYLIbzIZYbmUUr95DKEKIXZNH57W3s+4bVnuF1TKe2jH8ZNH8rO1CeMY3U4j4UQeqPNkHMiGem3g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -1764,12 +1754,12 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@typescript-eslint/typescript-estree': 5.54.1_typescript@4.9.5
-      '@typescript-eslint/utils': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
+      '@typescript-eslint/typescript-estree': 5.54.1_typescript@5.0.2
+      '@typescript-eslint/utils': 5.54.1_byynos7ffx3cepxtk6gvolkky4
       debug: 4.3.4
       eslint: 8.35.0
-      tsutils: 3.21.0_typescript@4.9.5
-      typescript: 4.9.5
+      tsutils: 3.21.0_typescript@5.0.2
+      typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
     dev: false
@@ -1779,7 +1769,7 @@ packages:
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     dev: false
 
-  /@typescript-eslint/typescript-estree/5.54.1_typescript@4.9.5:
+  /@typescript-eslint/typescript-estree/5.54.1_typescript@5.0.2:
     resolution: {integrity: sha512-bjK5t+S6ffHnVwA0qRPTZrxKSaFYocwFIkZx5k7pvWfsB1I57pO/0M0Skatzzw1sCkjJ83AfGTL0oFIFiDX3bg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -1794,13 +1784,13 @@ packages:
       globby: 11.1.0
       is-glob: 4.0.3
       semver: 7.3.8
-      tsutils: 3.21.0_typescript@4.9.5
-      typescript: 4.9.5
+      tsutils: 3.21.0_typescript@5.0.2
+      typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
     dev: false
 
-  /@typescript-eslint/utils/5.54.1_ycpbpc6yetojsgtrx3mwntkhsu:
+  /@typescript-eslint/utils/5.54.1_byynos7ffx3cepxtk6gvolkky4:
     resolution: {integrity: sha512-IY5dyQM8XD1zfDe5X8jegX6r2EVU5o/WJnLu/znLPWCBF7KNGC+adacXnt5jEYS9JixDcoccI6CvE4RCjHMzCQ==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -1810,7 +1800,7 @@ packages:
       '@types/semver': 7.3.13
       '@typescript-eslint/scope-manager': 5.54.1
       '@typescript-eslint/types': 5.54.1
-      '@typescript-eslint/typescript-estree': 5.54.1_typescript@4.9.5
+      '@typescript-eslint/typescript-estree': 5.54.1_typescript@5.0.2
       eslint: 8.35.0
       eslint-scope: 5.1.1
       eslint-utils: 3.0.0_eslint@8.35.0
@@ -2890,7 +2880,7 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /eslint-config-next/13.2.4_ycpbpc6yetojsgtrx3mwntkhsu:
+  /eslint-config-next/13.2.4_byynos7ffx3cepxtk6gvolkky4:
     resolution: {integrity: sha512-lunIBhsoeqw6/Lfkd6zPt25w1bn0znLA/JCL+au1HoEpSb4/PpsOYsYtgV/q+YPsoKIOzFyU5xnb04iZnXjUvg==}
     peerDependencies:
       eslint: ^7.23.0 || ^8.0.0
@@ -2901,7 +2891,7 @@ packages:
     dependencies:
       '@next/eslint-plugin-next': 13.2.4
       '@rushstack/eslint-patch': 1.2.0
-      '@typescript-eslint/parser': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
+      '@typescript-eslint/parser': 5.54.1_byynos7ffx3cepxtk6gvolkky4
       eslint: 8.35.0
       eslint-import-resolver-node: 0.3.7
       eslint-import-resolver-typescript: 3.5.3_yckic57kx266ph64dhq6ozvb54
@@ -2909,7 +2899,7 @@ packages:
       eslint-plugin-jsx-a11y: 6.7.1_eslint@8.35.0
       eslint-plugin-react: 7.32.2_eslint@8.35.0
       eslint-plugin-react-hooks: 4.6.0_eslint@8.35.0
-      typescript: 4.9.5
+      typescript: 5.0.2
     transitivePeerDependencies:
       - eslint-import-resolver-webpack
       - supports-color
@@ -2924,13 +2914,13 @@ packages:
       eslint: 8.35.0
     dev: false
 
-  /eslint-config-turbo/0.0.9_eslint@8.35.0:
-    resolution: {integrity: sha512-j1cTdx3tRmKo0csyfQKhpuT8dynK9oddbK5nmrShoMpXI2qMbxHLYH7MWAid4FmJN8rYympy3VKw5U63Yazycg==}
+  /eslint-config-turbo/1.8.8_eslint@8.35.0:
+    resolution: {integrity: sha512-+yT22sHOT5iC1sbBXfLIdXfbZuiv9bAyOXsxTxFCWelTeFFnANqmuKB3x274CFvf7WRuZ/vYP/VMjzU9xnFnxA==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
       eslint: 8.35.0
-      eslint-plugin-turbo: 0.0.9_eslint@8.35.0
+      eslint-plugin-turbo: 1.8.8_eslint@8.35.0
     dev: false
 
   /eslint-import-resolver-node/0.3.7:
@@ -2984,7 +2974,7 @@ packages:
       eslint-import-resolver-webpack:
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
+      '@typescript-eslint/parser': 5.54.1_byynos7ffx3cepxtk6gvolkky4
       debug: 3.2.7
       eslint: 8.35.0
       eslint-import-resolver-node: 0.3.7
@@ -3003,7 +2993,7 @@ packages:
       '@typescript-eslint/parser':
         optional: true
     dependencies:
-      '@typescript-eslint/parser': 5.54.1_ycpbpc6yetojsgtrx3mwntkhsu
+      '@typescript-eslint/parser': 5.54.1_byynos7ffx3cepxtk6gvolkky4
       array-includes: 3.1.6
       array.prototype.flat: 1.3.1
       array.prototype.flatmap: 1.3.1
@@ -3109,8 +3099,8 @@ packages:
       eslint: 8.35.0
     dev: false
 
-  /eslint-plugin-sonarjs/0.18.0_eslint@8.35.0:
-    resolution: {integrity: sha512-DJ3osLnt6KFdT5e9ZuIDOjT5A6wUGSLeiJJT03lPgpdD+7CVWlYAw9Goe3bt7SmbFO3Xh89NOCZAuB9XA7bAUQ==}
+  /eslint-plugin-sonarjs/0.19.0_eslint@8.35.0:
+    resolution: {integrity: sha512-6+s5oNk5TFtVlbRxqZN7FIGmjdPCYQKaTzFPmqieCmsU1kBYDzndTeQav0xtQNwZJWu5awWfTGe8Srq9xFOGnw==}
     engines: {node: '>=14'}
     peerDependencies:
       eslint: ^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0
@@ -3118,8 +3108,8 @@ packages:
       eslint: 8.35.0
     dev: false
 
-  /eslint-plugin-turbo/0.0.9_eslint@8.35.0:
-    resolution: {integrity: sha512-fEsuSnYU3GLtT+s66mUuzDL1LaSieIx5uk3tPO0ToGv7hI2XzOfP24aPkQItTBGl7kq2JaVkRzPwcnfz8hkp0w==}
+  /eslint-plugin-turbo/1.8.8_eslint@8.35.0:
+    resolution: {integrity: sha512-zqyTIvveOY4YU5jviDWw9GXHd4RiKmfEgwsjBrV/a965w0PpDwJgEUoSMB/C/dU310Sv9mF3DSdEjxjJLaw6rA==}
     peerDependencies:
       eslint: '>6.6.0'
     dependencies:
@@ -3161,7 +3151,7 @@ packages:
       '@typescript-eslint/eslint-plugin':
         optional: true
     dependencies:
-      '@typescript-eslint/eslint-plugin': 5.54.1_mlk7dnz565t663n4razh6a6v6i
+      '@typescript-eslint/eslint-plugin': 5.54.1_ptmzjahj2lzv7vrsfzwjsq4mpu
       eslint: 8.35.0
       eslint-rule-composer: 0.3.0
     dev: false
@@ -5123,7 +5113,7 @@ packages:
       fast-diff: 1.2.0
     dev: false
 
-  /prettier-plugin-tailwindcss/0.2.4_prettier@2.8.4:
+  /prettier-plugin-tailwindcss/0.2.4_prettier@2.8.7:
     resolution: {integrity: sha512-wMyugRI2yD8gqmMpZSS8kTA0gGeKozX/R+w8iWE+yiCZL09zY0SvfiHfHabNhjGhzxlQ2S2VuTxPE3T72vppCQ==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
@@ -5175,13 +5165,19 @@ packages:
       prettier-plugin-twig-melody:
         optional: true
     dependencies:
-      prettier: 2.8.4
+      prettier: 2.8.7
     dev: false
 
   /prettier/2.8.4:
     resolution: {integrity: sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==}
     engines: {node: '>=10.13.0'}
     hasBin: true
+
+  /prettier/2.8.7:
+    resolution: {integrity: sha512-yPngTo3aXUUmyuTjeTUT75txrf+aMh9FiD7q9ZE/i6r0bPb22g4FsE6Y338PQX1bmfy08i9QQCB7/rcUAVntfw==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
+    dev: false
 
   /promise/7.3.1:
     resolution: {integrity: sha512-nolQXZ/4L+bP/UGlkfaIujX9BKxGwmQ9OT4mOt5yvy8iK1h3wqTEJCijzGANTCCl9nWjY41juyAn2K3Q1hLLTg==}
@@ -5266,9 +5262,8 @@ packages:
       react: 18.2.0
       scheduler: 0.23.0
 
-  /react-error-boundary/3.1.4_react@18.2.0:
-    resolution: {integrity: sha512-uM9uPzZJTF6wRQORmSrvOIgt4lJ9MC1sNgEOj2XGsDTRE4kmpWxg7ENK9EWNKJRMAOY9z0MuF4yIfl6gp4sotA==}
-    engines: {node: '>=10', npm: '>=6'}
+  /react-error-boundary/4.0.0_react@18.2.0:
+    resolution: {integrity: sha512-vNbTyivmwBxCpJA68Ry55rJhZMzJSB+egkEm8hkEzbEBJLsJp5054zEVpoK/8ndxt6B+dvEA2LDw33xUfvE8og==}
     peerDependencies:
       react: '>=16.13.1'
     dependencies:
@@ -6152,43 +6147,7 @@ packages:
       - ts-node
     dev: true
 
-  /tsup/6.6.3_typescript@4.9.5:
-    resolution: {integrity: sha512-OLx/jFllYlVeZQ7sCHBuRVEQBBa1tFbouoc/gbYakyipjVQdWy/iQOvmExUA/ewap9iQ7tbJf9pW0PgcEFfJcQ==}
-    engines: {node: '>=14.18'}
-    hasBin: true
-    peerDependencies:
-      '@swc/core': ^1
-      postcss: ^8.4.12
-      typescript: ^4.1.0
-    peerDependenciesMeta:
-      '@swc/core':
-        optional: true
-      postcss:
-        optional: true
-      typescript:
-        optional: true
-    dependencies:
-      bundle-require: 4.0.1_esbuild@0.17.11
-      cac: 6.7.14
-      chokidar: 3.5.3
-      debug: 4.3.4
-      esbuild: 0.17.11
-      execa: 5.1.1
-      globby: 11.1.0
-      joycon: 3.1.1
-      postcss-load-config: 3.1.4
-      resolve-from: 5.0.0
-      rollup: 3.19.0
-      source-map: 0.8.0-beta.0
-      sucrase: 3.29.0
-      tree-kill: 1.2.2
-      typescript: 4.9.5
-    transitivePeerDependencies:
-      - supports-color
-      - ts-node
-    dev: true
-
-  /tsup/6.6.3_uujdqti2krmttzhqvubwnsmcci:
+  /tsup/6.6.3_7ebhnmodlyu4vpxptcd62x65qe:
     resolution: {integrity: sha512-OLx/jFllYlVeZQ7sCHBuRVEQBBa1tFbouoc/gbYakyipjVQdWy/iQOvmExUA/ewap9iQ7tbJf9pW0PgcEFfJcQ==}
     engines: {node: '>=14.18'}
     hasBin: true
@@ -6219,20 +6178,56 @@ packages:
       source-map: 0.8.0-beta.0
       sucrase: 3.29.0
       tree-kill: 1.2.2
-      typescript: 4.9.5
+      typescript: 5.0.2
     transitivePeerDependencies:
       - supports-color
       - ts-node
     dev: true
 
-  /tsutils/3.21.0_typescript@4.9.5:
+  /tsup/6.6.3_typescript@5.0.2:
+    resolution: {integrity: sha512-OLx/jFllYlVeZQ7sCHBuRVEQBBa1tFbouoc/gbYakyipjVQdWy/iQOvmExUA/ewap9iQ7tbJf9pW0PgcEFfJcQ==}
+    engines: {node: '>=14.18'}
+    hasBin: true
+    peerDependencies:
+      '@swc/core': ^1
+      postcss: ^8.4.12
+      typescript: ^4.1.0
+    peerDependenciesMeta:
+      '@swc/core':
+        optional: true
+      postcss:
+        optional: true
+      typescript:
+        optional: true
+    dependencies:
+      bundle-require: 4.0.1_esbuild@0.17.11
+      cac: 6.7.14
+      chokidar: 3.5.3
+      debug: 4.3.4
+      esbuild: 0.17.11
+      execa: 5.1.1
+      globby: 11.1.0
+      joycon: 3.1.1
+      postcss-load-config: 3.1.4
+      resolve-from: 5.0.0
+      rollup: 3.19.0
+      source-map: 0.8.0-beta.0
+      sucrase: 3.29.0
+      tree-kill: 1.2.2
+      typescript: 5.0.2
+    transitivePeerDependencies:
+      - supports-color
+      - ts-node
+    dev: true
+
+  /tsutils/3.21.0_typescript@5.0.2:
     resolution: {integrity: sha512-mHKK3iUXL+3UF6xL5k0PEhKRUBKPBCv/+RkEOpjRWxxx27KKRBmmA60A9pgOUvMi8GKhRMPEmjBRPzs2W7O1OA==}
     engines: {node: '>= 6'}
     peerDependencies:
       typescript: '>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta'
     dependencies:
       tslib: 1.14.1
-      typescript: 4.9.5
+      typescript: 5.0.2
     dev: false
 
   /tty-table/4.1.6:
@@ -6358,6 +6353,12 @@ packages:
   /typescript/4.9.5:
     resolution: {integrity: sha512-1FXk9E2Hm+QzZQ7z+McJiHL4NW1F2EzMu9Nq9i3zAaGqibafqYwCVU6WyWAuyQRRzOlxou8xZSyXLEN8oKj24g==}
     engines: {node: '>=4.2.0'}
+    hasBin: true
+    dev: false
+
+  /typescript/5.0.2:
+    resolution: {integrity: sha512-wVORMBGO/FAs/++blGNeAVdbNKtIh1rbBL2EyQ1+J9lClJ93KiiKe8PmFIVdXhHcyv44SL9oglmfeSsndo0jRw==}
+    engines: {node: '>=12.20'}
     hasBin: true
 
   /ua-parser-js/0.7.34:
