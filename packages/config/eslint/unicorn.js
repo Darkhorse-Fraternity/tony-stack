@@ -18,6 +18,6 @@ module.exports = {
     "unicorn/no-static-only-class": "off",
     "unicorn/prefer-module": "off",
     "unicorn/prefer-node-protocol": "off",
-    "unicorn/no-nested-ternary": 'off'
+    "unicorn/no-nested-ternary": "off",
   },
-};
+}

@@ -1,4 +1,4 @@
-import axios, { AxiosRequestConfig } from "axios"
+import axios, { type AxiosRequestConfig } from "axios"
 
 type BaseRequestOption = AxiosRequestConfig & { payload?: unknown }
 export type RequestOption = Omit<BaseRequestOption, "url"> & { path: string }

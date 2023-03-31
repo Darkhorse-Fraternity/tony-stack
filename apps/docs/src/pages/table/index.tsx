@@ -1,11 +1,11 @@
+import React from "react"
 import DaisyTable, {
   createColumnHelper,
   type Table,
 } from "@monad-stack/daisy-react-table"
-import React from "react"
 
 import MenuSlider from "~/components/menu-slider"
-import { type IPerson, makeData } from "~/lib/fake-data/make-data"
+import { makeData, type IPerson } from "~/lib/fake-data/make-data"
 import { type NextPageWithLayout } from "~/types/page"
 
 const MyTable: NextPageWithLayout = () => {

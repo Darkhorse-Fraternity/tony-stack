@@ -1,5 +1,5 @@
 import { type FC } from "react"
-import toast, { Toaster, type ToasterProps, ToastIcon } from "react-hot-toast"
+import toast, { ToastIcon, Toaster, type ToasterProps } from "react-hot-toast"
 
 export const DaisyToaster: FC<ToasterProps> = (props) => (
   <Toaster position="top-right" {...props}>
@@ -9,14 +9,15 @@ export const DaisyToaster: FC<ToasterProps> = (props) => (
           t.visible
             ? "animate-in fade-in "
             : `animate-out fade-out duration-1000`
-        } rounded-t-box rounded-b-box   bg-base-200  flex  max-w-sm  items-center gap-2 py-2 pl-6 pr-2 shadow-2xl`}
+        } rounded-t-box rounded-b-box   flex  max-w-sm  items-center  gap-2 bg-base-200 py-2 pl-6 pr-2 shadow-2xl`}
       >
         <ToastIcon toast={t} />
         <div className="ml-2 overflow-hidden text-ellipsis break-words">
           {t.message as string}
         </div>
         <button
-          className="btn btn-ghost btn-sm btn-circle"
+          type="button"
+          className="btn-ghost btn-sm btn-circle btn"
           onClick={() => toast.dismiss(t.id)}
         >
           <svg

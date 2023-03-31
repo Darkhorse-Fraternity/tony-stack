@@ -1,11 +1,10 @@
 import "../styles/globals.css"
-
+// import 'styles/resources.css'
+import type { AppProps } from "next/app"
 import { ErrorBoundary } from "@monad-stack/daisy-error-boundary"
 import { AlertComponent } from "@monad-stack/daisy-modal"
 // import "lib/config/fortawesome"
 import { Hydrate, QueryClientProvider } from "@tanstack/react-query"
-// import 'styles/resources.css'
-import type { AppProps } from "next/app"
 import { DaisyToaster } from "src/components/daisy-hot-toast"
 import queryClient from "src/lib/request/query-client"
 import { type NextPageWithLayout } from "src/types/page"

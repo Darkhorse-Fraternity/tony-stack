@@ -4,8 +4,8 @@ import {
   type PropsWithChildren,
 } from "react"
 import {
-  type Control,
   Controller,
+  type Control,
   type FieldValues,
   type Path,
 } from "react-hook-form"

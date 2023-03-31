@@ -5,7 +5,7 @@ export const NavBarWrap: FC<PropsWithChildren<{ brand?: JSX.Element }>> = ({
   brand,
 }) => (
   <div
-    className="bg-base-100 text-base-content sticky top-0 z-30 flex h-16 w-full justify-center bg-opacity-90 backdrop-blur
+    className="sticky top-0 z-30 flex h-16 w-full justify-center bg-base-100 bg-opacity-90 text-base-content backdrop-blur
   transition-all duration-100"
   >
     <nav className="navbar w-full">

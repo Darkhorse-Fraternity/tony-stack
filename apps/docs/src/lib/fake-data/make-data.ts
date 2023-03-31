@@ -43,7 +43,7 @@ export function makeData(...lens: number[]) {
       (): IPerson => ({
         ...newPerson(),
         subRows: lens[depth + 1] ? makeDataLevel(depth + 1) : undefined,
-      })
+      }),
     )
   }
 

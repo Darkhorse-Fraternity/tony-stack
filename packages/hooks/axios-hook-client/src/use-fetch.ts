@@ -1,11 +1,11 @@
 import {
-  QueryKey,
   useMutation,
-  UseMutationOptions,
   useQuery,
-  UseQueryOptions,
+  type QueryKey,
+  type UseMutationOptions,
+  type UseQueryOptions,
 } from "@tanstack/react-query"
-import { Method } from "axios"
+import { type Method } from "axios"
 
 import { baseRequest as request } from "./axios-helper"
 
@@ -15,7 +15,7 @@ type Variables = Record<string, any>
 export const useAxiosQuery = <
   TQueryFnData = unknown,
   TError = unknown,
-  TData = TQueryFnData
+  TData = TQueryFnData,
 >(
   path: string,
   payload?: Variables,
@@ -23,30 +23,30 @@ export const useAxiosQuery = <
     UseQueryOptions<TQueryFnData, TError, TData, QueryKey>,
     "queryKey" | "queryFn"
   >,
-  method?: Method
+  method?: Method,
 ) =>
   useQuery<TQueryFnData, TError, TData, QueryKey>(
     payload ? [path, payload] : [path],
     async () => request({ url: path, payload, method }).then((r) => r.data),
-    options
+    options,
   )
 
 export const useAxiosMutation = <
   TData = unknown,
   TVariables = Variables,
   TError = unknown,
-  TContext = unknown
+  TContext = unknown,
 >(
   path: string,
   options?: Omit<
     UseMutationOptions<TData, TError, TVariables, TContext>,
     "mutationKey" | "mutationFn"
   >,
-  method: Method = "POST"
+  method: Method = "POST",
 ) =>
   useMutation<TData, TError, TVariables, TContext>(
     [path],
     async (payload) =>
       request({ url: path, payload, method }).then((r) => r.data),
-    options
+    options,
   )

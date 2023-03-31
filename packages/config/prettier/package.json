@@ -1,5 +1,5 @@
 {
-  "name": "@monad-stack/tailwindcss-plugins",
+  "name": "@monad-stack/prettier-config",
   "version": "0.1.0",
   "main": "index.js",
   "license": "MIT",
@@ -9,9 +9,14 @@
     "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
   },
   "devDependencies": {
-    "eslint-config-monad": "*",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7"
+    "@ianvs/prettier-plugin-sort-imports": "^3.7.1",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.2.4"
+  },
+  "peerDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "*",
+    "prettier": "*",
+    "prettier-plugin-tailwindcss": "*"
   },
   "publishConfig": {
     "access": "public"

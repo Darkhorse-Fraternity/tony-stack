@@ -1,1 +1,1 @@
-module.exports = require("@monad-stack/tailwind-config");
+module.exports = require("@monad-stack/tailwind-config")

@@ -4,11 +4,12 @@ import {
   type PropsWithChildren,
 } from "react"
 import {
-  type Control,
   Controller,
+  type Control,
   type FieldValues,
   type Path,
 } from "react-hook-form"
+
 // import { Input } from '@hireteammate/hiretual-design'
 export type CInputType<T extends FieldValues> = DetailedHTMLProps<
   InputHTMLAttributes<HTMLInputElement>,

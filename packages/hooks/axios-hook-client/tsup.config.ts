@@ -6,6 +6,6 @@ export default defineConfig((options) => ({
   format: ["esm", "cjs"],
   clean: true,
   dts: true,
+  external: ["react", "@tanstack/react-query", "axios"],
   sourcemap: true,
-  external: ["react", "react-dom"],
 }))

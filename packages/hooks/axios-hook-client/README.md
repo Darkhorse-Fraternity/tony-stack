@@ -1,7 +1,7 @@
-
-This package is an extension to daisyui 
+This package is an extension to daisyui
 
 install base depends
+
 ```bash
 pnpm i  tailwindcss postcss autoprefixer daisyui
 ```

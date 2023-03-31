@@ -1,13 +1,14 @@
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import classnames from "classnames"
+
 import React, {
   type FC,
   type HTMLAttributes,
   type PropsWithChildren,
 } from "react"
+import classnames from "classnames"
 import ReactModal, { type Props } from "react-modal"
 
-export type ComstomModalProps = Props & {
+export interface IComstomModalProps extends Props {
   size?: "small" | "regular" | "large"
   title: string
   footChildren?: React.ReactNode
@@ -50,14 +51,14 @@ export const ModalFooterDefaultBtn: FC<IModalFooterType> = ({
   type,
 }) => (
   <div>
-    <button className="btn btn-outline mr-2 " type="button" onClick={onClose}>
+    <button className="btn-outline btn mr-2 " type="button" onClick={onClose}>
       Cancel
     </button>
     {hideSubmitBtn ? (
       ""
     ) : (
       <button
-        className={classnames("btn btn-primary", { loading })}
+        className={classnames("btn-primary btn", { loading })}
         type={type ?? "submit"}
         onClick={onSubmit}
         form={form}
@@ -90,7 +91,9 @@ export const ModalContainer: FC<
   </div>
 )
 
-export const Modal: FC<ComstomModalProps & IModalFooterType> = ({
+export const Modal: FC<
+  PropsWithChildren<IComstomModalProps & IModalFooterType>
+> = ({
   isOpen,
   children,
   size = "large",
@@ -118,7 +121,7 @@ export const Modal: FC<ComstomModalProps & IModalFooterType> = ({
       "relative my-6 mx-auto w-auto min-w-[400px] max-w-sm outline-none ",
       { "min-w-sm": size === "small" },
       { "min-w-3xl": size === "regular" },
-      { "min-w-6xl": size === "large" }
+      { "min-w-6xl": size === "large" },
     )}
     {...props}
   >
@@ -128,7 +131,7 @@ export const Modal: FC<ComstomModalProps & IModalFooterType> = ({
         {
           "animate-in fade-in slide-in-from-bottom-20": isOpen,
           "animate-out fade-out slide-out-to-bottom-20": !isOpen,
-        }
+        },
       )}
       title={title}
       onClose={onClose}

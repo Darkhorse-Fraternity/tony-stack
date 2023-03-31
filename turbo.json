@@ -24,7 +24,7 @@
     "clean": {
       "cache": false
     },
-    "type-check":{
+    "type-check": {
       "cache": false
     },
     "tsup:dev": {

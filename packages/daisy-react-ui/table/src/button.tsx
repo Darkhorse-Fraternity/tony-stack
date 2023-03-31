@@ -8,7 +8,7 @@ export const Button: FC<ButtonHTMLAttributes<never>> = ({
     type="button"
     className={
       "relative inline-flex items-center rounded-md border" +
-      "border-base-300  hover:bg-base-200 px-4 py-2 text-sm  font-medium"
+      "border-base-300  px-4 py-2 text-sm font-medium  hover:bg-base-200"
     }
     {...rest}
   >
@@ -23,7 +23,7 @@ export const PageButton: FC<ButtonHTMLAttributes<never>> = ({
 }) => (
   <button
     type="button"
-    className={`border-base-300 hover:bg-base-200 relative inline-flex items-center  border px-2 py-2 text-sm  font-medium ${className}`}
+    className={`relative inline-flex items-center border border-base-300  px-2 py-2 text-sm font-medium  hover:bg-base-200 ${className}`}
     {...rest}
   >
     {children}

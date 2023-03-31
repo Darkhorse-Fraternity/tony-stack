@@ -6,9 +6,9 @@ import {
   getFilteredRowModel as getDefaultFilteredRowModel,
   getPaginationRowModel as getDefaultPaginationRowModel,
   getSortedRowModel as getDefaultSortedRowModel,
+  useReactTable,
   type RowData,
   type TableOptions,
-  useReactTable,
 } from "@tanstack/react-table"
 
 import { TableBody } from "./body"
@@ -18,7 +18,7 @@ import { FilterBar, fuzzyFilter } from "./filter"
 import { TableFooter } from "./footer"
 import { TableHead } from "./head"
 import { Pagination } from "./pagination"
-import { type TableToolbarProps, ToolBar } from "./toolbar"
+import { ToolBar, type ITableToolbarProps } from "./toolbar"
 
 type Optional<T, K extends keyof T> = Omit<T, K> & Partial<T>
 
@@ -33,7 +33,7 @@ type IDaisyTableProps<TData extends RowData> = Optional<
   isLoading?: boolean
   maxHeight?: number
   tableClassName?: string
-} & Omit<TableToolbarProps<TData>, "table">
+} & Omit<ITableToolbarProps<TData>, "table">
 
 const DaisyTable = <TData extends RowData>({
   enableTableHead = true,
@@ -73,7 +73,7 @@ const DaisyTable = <TData extends RowData>({
   })
 
   const emptyClassname =
-    table.getRowModel().rows.length === 0 && !isLoading ? " min-h-[200px]" : ""
+    table.getRowModel().rows.length === 0 ? " min-h-[200px]" : ""
 
   return (
     <div className="my-4 flex flex-1 flex-col">

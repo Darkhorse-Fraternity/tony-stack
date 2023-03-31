@@ -1,12 +1,12 @@
+import { type FC, type PropsWithChildren } from "react"
+import Link from "next/link"
+import { useRouter } from "next/router"
 import {
   BrandWrap,
   Layout,
   MenuCompact,
   NavBarWrap,
 } from "@monad-stack/daisy-layout"
-import Link from "next/link"
-import { useRouter } from "next/router"
-import { type FC, type PropsWithChildren } from "react"
 
 interface IMenuItemProps {
   href: string

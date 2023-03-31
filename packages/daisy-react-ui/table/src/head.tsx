@@ -25,7 +25,7 @@ export const TableHead = <TData extends RowData>({
               >
                 {flexRender(
                   header.column.columnDef.header,
-                  header.getContext()
+                  header.getContext(),
                 )}
                 {/* {header.column.getCanFilter() ? (
                     <div>

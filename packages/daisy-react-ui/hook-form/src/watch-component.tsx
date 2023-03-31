@@ -1,15 +1,15 @@
 import {
+  useWatch,
   type Control,
   type FieldPath,
   type FieldPathValue,
   type FieldValues,
   type PathValue,
-  useWatch,
 } from "react-hook-form"
 
 const WatchComponent = <
   TFieldValues extends FieldValues = FieldValues,
-  TFieldName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>
+  TFieldName extends FieldPath<TFieldValues> = FieldPath<TFieldValues>,
 >({
   name,
   control,
