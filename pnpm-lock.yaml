@@ -296,7 +296,7 @@ importers:
       '@monad-stack/tsconfig': '*'
       '@monad-stack/tsup-config': '*'
       '@tanstack/match-sorter-utils': ^8.7.6
-      '@tanstack/react-table': 8.7.9
+      '@tanstack/react-table': 8.8.4
       '@types/react': ^18.0.17
       '@types/react-dom': ^18.0.6
       '@types/react-modal': ^3.13.1
@@ -310,7 +310,7 @@ importers:
       typescript: ^5.0.0
     dependencies:
       '@tanstack/match-sorter-utils': 8.7.6
-      '@tanstack/react-table': 8.7.9_biqbaboplfbrettd7655fr4n2y
+      '@tanstack/react-table': 8.8.4_biqbaboplfbrettd7655fr4n2y
     devDependencies:
       '@monad-stack/tailwind-config': link:../../config/tailwind
       '@monad-stack/tsconfig': link:../../config/tsconfig
@@ -1583,20 +1583,20 @@ packages:
       use-sync-external-store: 1.2.0_react@18.2.0
     dev: false
 
-  /@tanstack/react-table/8.7.9_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-6MbbQn5AupSOkek1+6IYu+1yZNthAKTRZw9tW92Vi6++iRrD1GbI3lKTjJalf8lEEKOqapPzQPE20nywu0PjCA==}
+  /@tanstack/react-table/8.8.4_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-5w2AoBnDBJYuUa80sLOqelcG/eJdGwIPFBRnEiU3RCAEeZ1QIhYse/0vzhTY8VAcTXa2sjWhXNDWci4VlktNmg==}
     engines: {node: '>=12'}
     peerDependencies:
       react: '>=16'
       react-dom: '>=16'
     dependencies:
-      '@tanstack/table-core': 8.7.9
+      '@tanstack/table-core': 8.8.4
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
     dev: false
 
-  /@tanstack/table-core/8.7.9:
-    resolution: {integrity: sha512-4RkayPMV1oS2SKDXfQbFoct1w5k+pvGpmX18tCXMofK/VDRdA2hhxfsQlMvsJ4oTX8b0CI4Y3GDKn5T425jBCw==}
+  /@tanstack/table-core/8.8.4:
+    resolution: {integrity: sha512-4gq0A/Qz/JFuclxPd1UnNi5P57vbVF10mPK743Iuv2ORLLgF/O/XkaYjYDGw5SHMof8CgiT/nfdJdlgHsOfRIg==}
     engines: {node: '>=12'}
     dev: false
 
