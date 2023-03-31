@@ -7,7 +7,7 @@ import React, {
 } from "react"
 import ReactModal, { type Props } from "react-modal"
 
-export type ComstomModalProps = Props & {
+export interface IComstomModalProps extends Props {
   size?: "small" | "regular" | "large"
   title: string
   footChildren?: React.ReactNode
@@ -90,7 +90,9 @@ export const ModalContainer: FC<
   </div>
 )
 
-export const Modal: FC<ComstomModalProps & IModalFooterType> = ({
+export const Modal: FC<
+  PropsWithChildren<IComstomModalProps & IModalFooterType>
+> = ({
   isOpen,
   children,
   size = "large",

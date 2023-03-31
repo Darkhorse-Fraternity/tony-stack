@@ -1,3 +1,4 @@
 {
   "extends": "@monad-stack/tsconfig/nextjs.json",
+  "include": [".eslintrc.js", "prettier.config.cjs"]
 }

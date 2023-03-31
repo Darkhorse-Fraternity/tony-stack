@@ -1,14 +1,14 @@
 import {
   DatePick,
   Form,
-  type IFormProps,
   Input,
+  type IFormProps,
 } from "@monad-stack/daisy-hook-form"
 import { type z } from "zod"
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function SignInForm<S extends z.ZodType<any, any>>(
-  props: IFormProps<S>
+  props: IFormProps<S>,
 ) {
   return (
     <Form<S> {...props}>

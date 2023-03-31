@@ -14,7 +14,7 @@ export interface IFormProps<S extends z.ZodType<any, any>>
   /** All your form fields */
   submitText?: string
   schema?: S
-  onSubmit: (values: z.infer<S>) => Promise<void | IOnSubmitResult> | void
+  onSubmit?: (values: z.infer<S>) => Promise<void | IOnSubmitResult> | void
   initialValues?: UseFormProps<z.infer<S>>["defaultValues"]
   loading?: boolean
   errorClassName?: string
@@ -48,7 +48,7 @@ export function FormInside<S extends z.ZodType<any, any>>({
     <form
       // eslint-disable-next-line @typescript-eslint/no-misused-promises
       onSubmit={ctx.handleSubmit(async (values) => {
-        const result = (await onSubmit(values)) || {}
+        const result = (await onSubmit?.(values)) || {}
 
         for (const [key, value] of Object.entries(result)) {
           if (key === FORM_ERROR) {
