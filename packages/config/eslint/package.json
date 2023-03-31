@@ -14,7 +14,7 @@
     "eslint": "^8.34.0",
     "eslint-config-next": "^13.2.3",
     "eslint-config-prettier": "^8.6.0",
-    "eslint-config-turbo": "^0.0.9",
+    "eslint-config-turbo": "^0.0.10",
     "eslint-plugin-prettier": "^4.2.1",
     "eslint-plugin-simple-import-sort": "^10.0.0",
     "eslint-plugin-sonarjs": "^0.19.0",
