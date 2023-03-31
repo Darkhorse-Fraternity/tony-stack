@@ -21,7 +21,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@hookform/resolvers": "^2.9.11",
+    "@hookform/resolvers": "^3.0.0",
     "dayjs": "^1.11.7",
     "react-hook-form": "^7.43.4"
   },
