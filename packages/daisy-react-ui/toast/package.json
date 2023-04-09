@@ -1,6 +1,6 @@
 {
-  "name": "@monad-stack/daisy-toast",
-  "version": "0.1",
+  "name": "@monad-stack/daisy-hot-toast",
+  "version": "0.1.1",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
@@ -36,6 +36,9 @@
     "tailwindcss": "^3.2.7",
     "tsup": "^6.4.0",
     "typescript": "^5.0.0"
+  },
+  "peerDependencies": {
+    "react": "*"
   },
   "publishConfig": {
     "access": "public"

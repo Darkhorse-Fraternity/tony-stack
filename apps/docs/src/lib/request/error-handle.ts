@@ -1,6 +1,6 @@
 // import { SessionStorageKeys } from "lib/config";
+import { toast } from "@monad-stack/daisy-hot-toast"
 import { Alert } from "@monad-stack/daisy-modal"
-import { toast } from "react-hot-toast"
 import { SessionStorageKeys } from "src/const/enum"
 
 export const signInPath = "/sign-in"

@@ -4,6 +4,7 @@
   "packageRules": [
     {
       "matchPackagePatterns": ["^@monad-stack/", "eslint-config-monad"],
+      "matchDepTypes":["devDependencies", "dependencies"],
       "enabled": false
     }
   ],

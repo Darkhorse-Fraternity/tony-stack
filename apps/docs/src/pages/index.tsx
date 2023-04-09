@@ -1,7 +1,7 @@
 import { useState } from "react"
+import { toast } from "@monad-stack/daisy-hot-toast"
 import { Alert, Modal } from "@monad-stack/daisy-modal"
 import { useIsomorphicLayoutEffect } from "@monad-stack/use-hook-utils"
-import toast from "react-hot-toast"
 import MenuSlider from "src/components/menu-slider"
 
 import { type NextPageWithLayout } from "~/types/page"
