@@ -1,0 +1,43 @@
+{
+  "name": "@monad-stack/daisy-toast",
+  "version": "0.1",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "author": "Tony <lintong320@gmail.com>",
+  "files": [
+    "dist/**"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darkhorse-Fraternity/monad-stack.git"
+  },
+  "scripts": {
+    "tsup:dev": "tsup --watch",
+    "tsup:build": "tsup",
+    "lint": "eslint *.ts*",
+    "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist",
+    "type-check": "tsc --noEmit"
+  },
+  "dependencies": {
+    "react-hot-toast": "^2.4.0"
+  },
+  "devDependencies": {
+    "@monad-stack/tailwind-config": "*",
+    "@monad-stack/tsconfig": "*",
+    "@monad-stack/tsup-config": "*",
+    "@types/react": "^18.0.17",
+    "@types/react-dom": "^18.0.6",
+    "autoprefixer": "^10.4.13",
+    "eslint-config-monad": "*",
+    "postcss": "^8.4.21",
+    "react": "^18.2.0",
+    "tailwindcss": "^3.2.7",
+    "tsup": "^6.4.0",
+    "typescript": "^5.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
