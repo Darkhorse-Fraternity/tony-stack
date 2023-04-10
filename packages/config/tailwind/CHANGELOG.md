@@ -1,5 +1,11 @@
 # @monad-stack/tailwind-config
 
+## 0.1.1
+
+### Patch Changes
+
+- [#62](https://github.com/Darkhorse-Fraternity/monad-stack/pull/62) [`37ab717`](https://github.com/Darkhorse-Fraternity/monad-stack/commit/37ab71786ade9abb6fd931d9a4b87d724abf43f6) Thanks [@Darkhorse-Fraternity](https://github.com/Darkhorse-Fraternity)! - update depences
+
 ## 0.1.0
 
 ### Minor Changes
