@@ -8,7 +8,7 @@ module.exports = {
     "@monad-stack/axios-hook-client",
     "@monad-stack/daisy-layout",
     "@monad-stack/daisy-modal",
-    "@monad-stack/daisy-toast",
+    "@monad-stack/daisy-hot-toast",
     "@monad-stack/daisy-error-boundary",
     "@monad-stack/daisy-hook-form",
     "@monad-stack/daisy-react-table",
