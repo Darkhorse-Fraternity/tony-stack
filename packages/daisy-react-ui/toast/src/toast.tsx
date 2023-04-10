@@ -16,7 +16,7 @@ export const DaisyToaster: FC<ToasterProps> = (props) => (
           {t.message as string}
         </div>
         <button
-          type="button"
+          title="Close"
           className="btn-ghost btn-sm btn-circle btn"
           onClick={() => toast.dismiss(t.id)}
         >

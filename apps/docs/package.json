@@ -15,6 +15,7 @@
     "@monad-stack/axios-hook-client": "*",
     "@monad-stack/daisy-error-boundary": "*",
     "@monad-stack/daisy-hook-form": "*",
+    "@monad-stack/daisy-hot-toast": "*",
     "@monad-stack/daisy-layout": "*",
     "@monad-stack/daisy-modal": "*",
     "@monad-stack/daisy-react-table": "*",
@@ -24,7 +25,6 @@
     "next": "13.2.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-hot-toast": "^2.4.0",
     "react-json-view": "^1.21.3",
     "zod": "^3.21.4"
   },
