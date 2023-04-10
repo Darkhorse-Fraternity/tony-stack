@@ -1,5 +1,5 @@
 ---
-"@monad-stack/daisy-toast": patch
+"@monad-stack/daisy-hot-toast": patch
 ---
 
-add daisy-toast
+add daisy-hot-toast
