@@ -1,5 +1,11 @@
 # @monad-stack/daisy-hook-form
 
+## 0.2.1
+
+### Patch Changes
+
+- [#67](https://github.com/Darkhorse-Fraternity/monad-stack/pull/67) [`46d6383`](https://github.com/Darkhorse-Fraternity/monad-stack/commit/46d6383138c585f4f44c8049d1753713962d690b) Thanks [@Darkhorse-Fraternity](https://github.com/Darkhorse-Fraternity)! - fix Textarea error
+
 ## 0.2.0
 
 ### Minor Changes
