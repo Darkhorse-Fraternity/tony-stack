@@ -47,10 +47,12 @@ const DaisyTable = <TData extends RowData>({
   isLoading,
   maxHeight,
   tableClassName = "",
+  enableGlobalFilter,
   ...props
 }: IDaisyTableProps<TData>) => {
   const table = useReactTable<TData>({
     enableRowSelection,
+    enableGlobalFilter,
     filterFns: {
       fuzzy: fuzzyFilter,
       ...props.filterFns,
@@ -77,14 +79,16 @@ const DaisyTable = <TData extends RowData>({
 
   return (
     <div className="my-4 flex flex-1 flex-col">
-      {enableToolbar && (
+      {(enableToolbar || enableGlobalFilter) && (
         <div className="mb-2 flex flex-col-reverse  sm:justify-end lg:flex-row lg:justify-between">
-          <FilterBar<TData> table={table}></FilterBar>
+          {enableGlobalFilter && <FilterBar<TData> table={table}></FilterBar>}
           <div></div>
-          <div className="flex gap-x-2">
-            <ColumnVisibility<TData> table={table} />
-            <ToolBar<TData> table={table} {...{ onAdd, onDelete }} />
-          </div>
+          {enableToolbar && (
+            <div className="flex gap-x-2">
+              <ColumnVisibility<TData> table={table} />
+              <ToolBar<TData> table={table} {...{ onAdd, onDelete }} />
+            </div>
+          )}
         </div>
       )}
       <div className="relative flex flex-1">
@@ -100,7 +104,7 @@ const DaisyTable = <TData extends RowData>({
         )}
         <div className={`flex  flex-1 overflow-auto `} style={{ maxHeight }}>
           <table
-            className={`table-compact my-0  table  w-full ${emptyClassname} ${tableClassName}`}
+            className={` table-compact my-0  table  w-full ${emptyClassname} ${tableClassName}`}
           >
             {enableTableHead && <TableHead<TData> table={table}></TableHead>}
             <TableBody<TData> table={table}></TableBody>

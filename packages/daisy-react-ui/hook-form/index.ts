@@ -5,5 +5,9 @@ export {
 } from "./src/controls/date-pick"
 export { type CInputType, default as Input } from "./src/controls/input"
 export { type CSelectType, default as Select } from "./src/controls/select"
+export {
+  type CTextareaType,
+  default as Textarea,
+} from "./src/controls/textarea"
 export { default as Form, FormInside, type IFormProps } from "./src/form"
 export { FieldArrayForm } from "./src/render-array-form"
