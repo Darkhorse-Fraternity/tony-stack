@@ -12,8 +12,8 @@ import {
 
 // import { Input } from '@hireteammate/hiretual-design'
 export type CTextareaType<T extends FieldValues> = DetailedHTMLProps<
-  TextareaHTMLAttributes<HTMLInputElement>,
-  HTMLInputElement
+  TextareaHTMLAttributes<HTMLTextAreaElement>,
+  HTMLTextAreaElement
 > & {
   name: Path<T>
   label?: string
@@ -50,14 +50,12 @@ const Textarea = <T extends FieldValues = FieldValues>({
       // defaultValue={props.defaultValue}
       render={({ field, fieldState: { error } }) => (
         <>
-          <Textarea
+          <textarea
             className={` ${className} ${error?.message ? "border-red-500" : ""}
             `}
             id={name}
             {...field}
-            onChange={(e) => {
-              field.onChange(e.target.value)
-            }}
+            onChange={(e) => field.onChange(e.target.value)}
             value={field.value}
             {...props}
           />
