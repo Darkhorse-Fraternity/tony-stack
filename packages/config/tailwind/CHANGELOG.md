@@ -1,5 +1,12 @@
 # @monad-stack/tailwind-config
 
+## 0.1.2
+
+### Patch Changes
+
+- Updated dependencies [[`f897893`](https://github.com/Darkhorse-Fraternity/monad-stack/commit/f8978939f990b8c0789f639bc234bed49e47f937)]:
+  - @monad-stack/tailwindcss-plugins@0.2.0
+
 ## 0.1.1
 
 ### Patch Changes
