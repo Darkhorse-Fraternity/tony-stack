@@ -54,6 +54,7 @@ const MyTable: NextPageWithLayout = () => {
             columns={columns}
             data={data ?? []}
             enableRowSelection
+            enableGlobalFilter
             onAdd={onAdd}
             onDelete={onDelete}
           />

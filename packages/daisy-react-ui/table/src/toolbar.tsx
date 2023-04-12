@@ -21,11 +21,12 @@ export function ToolBar<TData extends RowData>({
     <div className="sm:flex sm:gap-x-2">
       {Boolean(rowSelection) && Object.keys(rowSelection).length > 0 && (
         <div
-          className=" tooltip tooltip-top   hover:tooltip-open"
+          className=" tooltip   tooltip-top hover:tooltip-open"
           data-tip="Delete"
         >
           <button
             className="btn-ghost  btn-circle btn"
+            title="Delete"
             onClick={() => {
               // eslint-disable-next-line @typescript-eslint/ban-ts-comment
               //@ts-ignore
@@ -44,6 +45,7 @@ export function ToolBar<TData extends RowData>({
         >
           <button
             className="btn-ghost btn-circle btn"
+            title="Add"
             onClick={() => onAdd(table)}
           >
             <PlusIcon className="h-5 w-5" />

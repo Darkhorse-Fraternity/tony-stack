@@ -6,5 +6,7 @@ module.exports = plugin(function ({ addComponents }) {
     // '.required': {},
     ".table-align-top :where(th, td)": { verticalAlign: "top" },
     "table th:first-child": { left: "auto !important" },
+    ".tooltip:before": { zIndex: 60},
+    ".dropdown .dropdown-content": {zIndex: 60}
   })
 })
