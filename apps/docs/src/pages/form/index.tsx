@@ -4,17 +4,17 @@ import { type z } from "zod"
 import { SignInForm } from "~/components/form/entity/sign-in"
 import MenuSlider from "~/components/menu-slider"
 import JsonView from "~/components/the-third-party/json-view"
-import { signInSchema } from "~/lib/schema"
+import { testSchema } from "~/lib/schema"
 import { type NextPageWithLayout } from "~/types/page"
 
 const DaisyForm: NextPageWithLayout = () => {
-  const [data, setData] = useState<z.infer<typeof signInSchema>>()
+  const [data, setData] = useState<z.infer<typeof testSchema>>()
 
   return (
     <div className="flex">
       <SignInForm
         initialValues={{ account: "", password: "" }}
-        schema={signInSchema}
+        schema={testSchema}
         onSubmit={(res) => {
           setData(res)
         }}
