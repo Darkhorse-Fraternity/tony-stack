@@ -59,7 +59,7 @@ module.exports = {
     "max-len": [
       "error",
       {
-        code: 150,
+        code: 80,
       },
     ],
     "new-parens": "error",
@@ -134,6 +134,6 @@ module.exports = {
     radix: "error",
     "use-isnan": "error",
     "valid-typeof": "off",
-    "space-before-function-paren": "off",
+    "space-before-function-paren": "off"
   },
 }

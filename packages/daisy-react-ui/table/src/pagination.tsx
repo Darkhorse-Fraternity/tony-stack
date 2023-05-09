@@ -40,7 +40,10 @@ export const Pagination = <TData extends RowData>({
           Next
         </Button>
       </div>
-      <div className="hidden sm:flex sm:flex-1 sm:items-center sm:justify-between">
+      <div
+        className="hidden sm:flex sm:flex-1
+      sm:items-center sm:justify-between"
+      >
         <div className="flex items-baseline gap-x-2">
           <label className="label text-sm">
             <span className=" mr-2">Page</span>
@@ -57,8 +60,8 @@ export const Pagination = <TData extends RowData>({
               }}
             >
               {[5, 10, 20].map((ps) => (
-                <option key={pageSize} value={ps}>
-                  Show {pageSize}
+                <option key={ps} value={ps}>
+                  Show {ps}
                 </option>
               ))}
             </select>

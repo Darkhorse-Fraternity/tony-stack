@@ -30,7 +30,8 @@ export function SignInForm<S extends z.ZodType<any, any>>(
       />
       <Textarea
         name="content"
-        className="input-bordered input min-h-[100px] w-[400px] focus:outline-none"
+        className="input-bordered input
+        min-h-[100px] w-[400px] focus:outline-none"
         fClassName="mb-4 mr-3 flex flex-col"
         labelClassName="mb-1"
         placeholder="input content.."

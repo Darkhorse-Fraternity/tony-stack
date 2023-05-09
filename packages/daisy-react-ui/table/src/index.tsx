@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import {
   getCoreRowModel as getDefaultCoreRowModel,
   getFacetedMinMaxValues as getDefaultFacetedMinMaxValues,
@@ -48,11 +49,13 @@ const DaisyTable = <TData extends RowData>({
   maxHeight,
   tableClassName = "",
   enableGlobalFilter,
+  enableFilters,
   ...props
 }: IDaisyTableProps<TData>) => {
   const table = useReactTable<TData>({
     enableRowSelection,
     enableGlobalFilter,
+    enableFilters,
     filterFns: {
       fuzzy: fuzzyFilter,
       ...props.filterFns,
@@ -81,8 +84,14 @@ const DaisyTable = <TData extends RowData>({
     <div className="my-4 flex flex-1 flex-col">
       {(enableToolbar || enableGlobalFilter) && (
         <div className="mb-2 flex flex-col-reverse  sm:justify-end lg:flex-row lg:justify-between">
-          {enableGlobalFilter && <FilterBar<TData> table={table}></FilterBar>}
-          <div></div>
+          {enableFilters ? (
+            <FilterBar<TData>
+              table={table}
+              enableGlobalFilter={enableGlobalFilter}
+            ></FilterBar>
+          ) : (
+            <div></div>
+          )}
           {enableToolbar && (
             <div className="flex gap-x-2">
               <ColumnVisibility<TData> table={table} />
@@ -93,12 +102,18 @@ const DaisyTable = <TData extends RowData>({
       )}
       <div className="relative flex flex-1">
         {isLoading && (
-          <div className="absolute inset-0 z-50 flex items-center justify-center  rounded-lg bg-gray-800 !bg-opacity-30">
+          <div
+            className="absolute inset-0 z-50 flex items-center
+          justify-center  rounded-lg bg-gray-800 !bg-opacity-30"
+          >
             <div className="spinner"></div>
           </div>
         )}
         {table.getRowModel().rows.length === 0 && !isLoading && (
-          <div className="absolute inset-0 z-50 flex items-center justify-center  rounded-lg">
+          <div
+            className="absolute inset-0 z-50 flex
+          items-center justify-center  rounded-lg"
+          >
             <p>No Data</p>
           </div>
         )}
