@@ -1,6 +1,6 @@
 {
   "name": "@monad-stack/tsup-config",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "license": "MIT",
   "main": "index.mjs",
   "module": "index.mjs",
