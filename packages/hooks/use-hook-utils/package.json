@@ -27,7 +27,7 @@
     "@types/react-dom": "^18.0.06",
     "eslint-config-monad": "*",
     "react": "^18.2.0",
-    "tsup": "^6.4.0",
+    "tsup": "^6.7.0",
     "typescript": "^5.0.0"
   },
   "publishConfig": {

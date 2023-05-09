@@ -60,7 +60,10 @@ const Textarea = <T extends FieldValues = FieldValues>({
             {...props}
           />
           {!disbaleError && Boolean(error?.message) && (
-            <p className="mt-2 text-xs lowercase italic text-red-500 first-letter:uppercase">
+            <p
+              className="mt-2 text-xs lowercase italic text-red-500
+             first-letter:uppercase"
+            >
               {error?.message}
             </p>
           )}

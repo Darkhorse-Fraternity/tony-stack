@@ -16,6 +16,7 @@ const MyTable: NextPageWithLayout = () => {
   const columns = [
     columnHelper.accessor("firstName", {
       header: () => "firstName",
+      meta: {},
     }),
     columnHelper.accessor("lastName", {
       cell: (info) => info.getValue(),
@@ -50,11 +51,24 @@ const MyTable: NextPageWithLayout = () => {
     <>
       <div className="flex  flex-1 flex-col">
         <div className="flex  h-[300px] flex-1 flex-col">
+          <span>Base:</span>
           <DaisyTable
             columns={columns}
             data={data ?? []}
             enableRowSelection
+            enableFilters
             enableGlobalFilter
+            onAdd={onAdd}
+            onDelete={onDelete}
+          />
+        </div>
+        <div className="flex  h-[300px] flex-1 flex-col">
+          <span>Column Filter:</span>
+          <DaisyTable
+            columns={columns}
+            enableFilters
+            enableColumnFilters
+            data={data ?? []}
             onAdd={onAdd}
             onDelete={onDelete}
           />

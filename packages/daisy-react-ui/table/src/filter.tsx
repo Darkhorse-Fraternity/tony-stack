@@ -1,9 +1,15 @@
 import React, { useRef } from "react"
 import { rankItem } from "@tanstack/match-sorter-utils"
-import { type FilterFn, type RowData, type Table } from "@tanstack/react-table"
+import {
+  type Column,
+  type FilterFn,
+  type RowData,
+  type Table,
+} from "@tanstack/react-table"
 
 interface IFilterProps<TData extends RowData> {
   table: Table<TData>
+  enableGlobalFilter?: boolean
 }
 
 export function DebouncedInput({
@@ -55,17 +61,134 @@ export const fuzzyFilter: FilterFn<any> = (row, columnId, value, addMeta) => {
   return itemRank.passed
 }
 
+function Filter<TData extends RowData, TValue>({
+  column,
+  table,
+}: {
+  column: Column<TData, TValue>
+  table: Table<TData>
+}) {
+  const firstValue = table
+    .getPreFilteredRowModel()
+    .flatRows[0]?.getValue(column.id)
+
+  const columnFilterValue = column.getFilterValue()
+
+  const sortedUniqueValues = React.useMemo(
+    () =>
+      typeof firstValue === "number"
+        ? []
+        : [...column.getFacetedUniqueValues().keys()].sort(),
+    [column.getFacetedUniqueValues()],
+  )
+
+  if (!column.getCanFilter()) {
+    return null
+  }
+
+  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+  //@ts-ignore
+  if (column.columnDef.meta?.filterComponent) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
+    return column.columnDef.meta?.filterComponent(column.setFilterValue)
+  }
+
+  return typeof firstValue === "number" ? (
+    <div>
+      <div className="flex space-x-2">
+        <DebouncedInput
+          type="number"
+          min={Number(column.getFacetedMinMaxValues()?.[0] ?? "")}
+          max={Number(column.getFacetedMinMaxValues()?.[1] ?? "")}
+          value={(columnFilterValue as [number, number])?.[0] ?? ""}
+          onChange={(value) =>
+            column.setFilterValue((old: [number, number]) => [value, old?.[1]])
+          }
+          placeholder={`Min ${
+            column.getFacetedMinMaxValues()?.[0]
+              ? `(${column.getFacetedMinMaxValues()?.[0]})`
+              : ""
+          }`}
+          className="input input-sm w-24 rounded border shadow"
+        />
+        <DebouncedInput
+          type="number"
+          min={Number(column.getFacetedMinMaxValues()?.[0] ?? "")}
+          max={Number(column.getFacetedMinMaxValues()?.[1] ?? "")}
+          value={(columnFilterValue as [number, number])?.[1] ?? ""}
+          onChange={(value) =>
+            column.setFilterValue((old: [number, number]) => [old?.[0], value])
+          }
+          placeholder={`Max ${
+            column.getFacetedMinMaxValues()?.[1]
+              ? `(${column.getFacetedMinMaxValues()?.[1]})`
+              : ""
+          }`}
+          className="input input-sm w-24 rounded border shadow"
+        />
+      </div>
+      <div className="h-1" />
+    </div>
+  ) : (
+    <>
+      <datalist id={`${column.id}list`}>
+        {/*eslint-disable-next-line @typescript-eslint/no-explicit-any */}
+        {sortedUniqueValues.slice(0, 5000).map((value: any) => (
+          <option value={value} key={value} />
+        ))}
+      </datalist>
+      <DebouncedInput
+        type="text"
+        value={(columnFilterValue ?? "") as string}
+        onChange={(value) => column.setFilterValue(value)}
+        placeholder={`Search... (${column.getFacetedUniqueValues().size})`}
+        className="input input-sm w-36 rounded border shadow"
+        list={`${column.id}list`}
+      />
+      <div className="h-1" />
+    </>
+  )
+}
+
 export const FilterBar = <TData extends RowData>({
   table,
+  enableGlobalFilter,
 }: IFilterProps<TData>) => (
-  <div className="flex  flex-wrap items-center gap-x-2">
-    <DebouncedInput
-      type="text"
-      className="input input-xs mt-1"
-      onChange={table.setGlobalFilter}
-      placeholder="Search..."
-      defaultValue={""}
-    />
+  <div className="flex  flex-wrap items-center gap-x-2 gap-y-2">
+    {enableGlobalFilter && (
+      <DebouncedInput
+        type="text"
+        className="input input-sm border shadow"
+        onChange={table.setGlobalFilter}
+        value={table.getState().globalFilter ?? ""}
+        placeholder="Search..."
+      />
+    )}
+    {table.getHeaderGroups().map((headerGroup) =>
+      headerGroup.headers.map((header) =>
+        header.column.getCanFilter() ? (
+          <div
+            key={header.id}
+            className=" flex-center flex flex-row  space-x-2"
+          >
+            <label className="capitalize">
+              {typeof header.column.columnDef.header === "string"
+                ? header.column.columnDef.header
+                : header.column.columnDef.header?.(header.getContext())}
+              :
+            </label>
+            {/* {header.column.render("Filter")} */}
+            <Filter column={header.column} table={table} />
+          </div>
+        ) : null,
+      ),
+    )}
+    {/* {table.getAllColumns().map((column) => {
+      if (column.getCanFilter()) {
+        return <label key="">{column.get}</label>
+      }
+    })} */}
   </div>
 )
 

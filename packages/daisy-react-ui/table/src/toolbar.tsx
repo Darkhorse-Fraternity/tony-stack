@@ -21,7 +21,7 @@ export function ToolBar<TData extends RowData>({
     <div className="sm:flex sm:gap-x-2">
       {Boolean(rowSelection) && Object.keys(rowSelection).length > 0 && (
         <div
-          className=" tooltip   tooltip-top hover:tooltip-open"
+          className=" tooltip-top   tooltip hover:tooltip-open"
           data-tip="Delete"
         >
           <button
@@ -40,7 +40,7 @@ export function ToolBar<TData extends RowData>({
       )}
       {onAdd && (
         <div
-          className="  tooltip tooltip-top  hover:tooltip-open"
+          className="  tooltip-top tooltip  hover:tooltip-open"
           data-tip="Add"
         >
           <button

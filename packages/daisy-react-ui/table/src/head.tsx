@@ -1,3 +1,4 @@
+/* eslint-disable max-len */
 import { flexRender, type RowData, type Table } from "@tanstack/react-table"
 
 import { SortDownIcon, SortUpIcon } from "./icons"
