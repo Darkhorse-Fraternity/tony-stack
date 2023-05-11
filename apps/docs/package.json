@@ -11,7 +11,7 @@
     "type-check": "tsc --noEmit"
   },
   "dependencies": {
-    "@faker-js/faker": "^7.6.0",
+    "@faker-js/faker": "^8.0.0",
     "@monad-stack/axios-hook-client": "*",
     "@monad-stack/daisy-error-boundary": "*",
     "@monad-stack/daisy-hook-form": "*",
