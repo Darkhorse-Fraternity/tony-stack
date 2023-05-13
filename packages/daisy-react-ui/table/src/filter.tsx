@@ -86,12 +86,17 @@ function Filter<TData extends RowData, TValue>({
     return null
   }
 
-  // eslint-disable-next-line @typescript-eslint/ban-ts-comment
-  //@ts-ignore
-  if (column.columnDef.meta?.filterComponent) {
+  if (
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     //@ts-ignore
-    return column.columnDef.meta?.filterComponent(column.setFilterValue)
+    column.columnDef.meta?.filterComponent &&
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
+    column.columnDef.meta?.isCustomFilterComponent
+  ) {
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    //@ts-ignore
+    return column.columnDef.meta?.filterComponent(column)
   }
 
   return typeof firstValue === "number" ? (
@@ -133,9 +138,8 @@ function Filter<TData extends RowData, TValue>({
   ) : (
     <>
       <datalist id={`${column.id}list`}>
-        {/*eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-        {sortedUniqueValues.slice(0, 5000).map((value: any) => (
-          <option value={value} key={value} />
+        {sortedUniqueValues.slice(0, 5000).map((value, index) => (
+          <option value={value} key={index} />
         ))}
       </datalist>
       <DebouncedInput
