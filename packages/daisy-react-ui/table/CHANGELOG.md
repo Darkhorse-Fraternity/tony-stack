@@ -1,5 +1,11 @@
 # @monad-stack/daisy-react-table
 
+## 0.6.0
+
+### Minor Changes
+
+- fix some error
+
 ## 0.5.1
 
 ### Patch Changes
