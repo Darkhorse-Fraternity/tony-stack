@@ -1,5 +1,11 @@
 # eslint-config-monad
 
+## 0.3.2
+
+### Patch Changes
+
+- [#74](https://github.com/Darkhorse-Fraternity/monad-stack/pull/74) [`9c344af`](https://github.com/Darkhorse-Fraternity/monad-stack/commit/9c344af8bfc03206061cd9165770314a23cbed43) Thanks [@Darkhorse-Fraternity](https://github.com/Darkhorse-Fraternity)! - chore: upgrade ts
+
 ## 0.3.1
 
 ### Patch Changes
