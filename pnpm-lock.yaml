@@ -47,8 +47,8 @@ importers:
   apps/docs:
     dependencies:
       '@faker-js/faker':
-        specifier: ^7.6.0
-        version: 7.6.0
+        specifier: ^8.0.0
+        version: 8.0.0
       '@monad-stack/axios-hook-client':
         specifier: '*'
         version: link:../../packages/hooks/axios-hook-client
@@ -193,7 +193,7 @@ importers:
   packages/config/tailwind:
     dependencies:
       '@monad-stack/tailwindcss-plugins':
-        specifier: ^0.2.0
+        specifier: ^0.2.1
         version: link:../../tailwindcss-plugins
       '@tailwindcss/typography':
         specifier: ^0.5.9
@@ -1377,9 +1377,9 @@ packages:
     resolution: {integrity: sha512-IoD2MfUnOV58ghIHCiil01PcohxjbYR/qCxsoC+xNgUwh1EY8jOOrYmu3d3a71+tJJ23uscEV4X2HJWMsPJu4g==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
 
-  /@faker-js/faker@7.6.0:
-    resolution: {integrity: sha512-XK6BTq1NDMo9Xqw/YkYyGjSsg44fbNwYRx7QK2CuoQgyy+f1rrTDHoExVM5PsyXCtfl2vs2vVJ0MN0yN6LppRw==}
-    engines: {node: '>=14.0.0', npm: '>=6.0.0'}
+  /@faker-js/faker@8.0.0:
+    resolution: {integrity: sha512-XDR8sApuf78GHx8mLXl3KL/q7eB52A963UGejVbdbj3OZtfGlNwp0J78b7apVzqRi0GF8l9g3eSkkaL2UmU9Aw==}
+    engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0, npm: '>=6.14.13'}
     dev: false
 
   /@floating-ui/core@0.6.2:
