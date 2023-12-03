@@ -33,7 +33,7 @@
     "@monad-stack/tailwind-config": "*",
     "@monad-stack/tailwindcss-plugins": "*",
     "@monad-stack/tsconfig": "*",
-    "@types/node": "^18.11.9",
+    "@types/node": "^20.0.0",
     "@types/react": "^18.0.17",
     "autoprefixer": "^10.4.13",
     "click-to-react-component": "^1.0.8",
